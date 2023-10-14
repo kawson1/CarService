@@ -1,6 +1,8 @@
 package com.example.carservice;
 
-public class Fault {
+import java.io.Serializable;
+
+public class Fault implements Serializable {
     public String description;
     public float value;
 }

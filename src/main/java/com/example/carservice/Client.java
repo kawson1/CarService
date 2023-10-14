@@ -1,15 +1,30 @@
 package com.example.carservice;
 
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 
-enum ClientType {
-    NEW, ATTENDING, VIP
-}
-public class Client {
-    public String name;
-    public String surname;
-    public Date birthdate;
-    public List<Visit> visitList;
-    public ClientType clientType;
+@Setter
+@Getter
+@Builder
+public class Client implements Serializable {
+
+    private UUID id;
+
+    private String name;
+
+    private String surname;
+
+    private LocalDate birthdate;
+
+    private List<Visit> visitList;
+
+    private ClientType clientType;
+
 }
