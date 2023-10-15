@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive>
+    <dir sourceOnDisk="D:\PG\SEM 7\JEE\CarService\src\main\webapp" targetInArchive="/"/>
+    <dir sourceOnDisk="D:\PG\SEM 7\JEE\CarService\target\classes" targetInArchive="/WEB-INF/classes"/>
+    <file sourceOnDisk="C:\Users\Lukasz\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar" targetInArchive="/WEB-INF/lib/gson-2.10.1.jar"/>
+    <file sourceOnDisk="D:\PG\SEM 7\JEE\CarService\target\tmp\META-INF\MANIFEST.MF" targetInArchive="/META-INF/MANIFEST.MF"/>
+</archive>

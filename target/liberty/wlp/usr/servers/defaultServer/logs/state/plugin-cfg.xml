@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><!--HTTP server plugin config file for defaultServer generated on 2023.10.11 at 12:55:55 CEST-->
-<Config ASDisableNagle="false" AcceptAllContent="false" AppServerPortPreference="HostHeader" ChunkedResponse="false" ConfigHash="-553453742" FIPSEnable="false" IISDisableNagle="false" IISPluginPriority="High" IgnoreDNSFailures="false" RefreshInterval="60" ResponseChunkSize="64" SSLConsolidate="false" TrustedProxyEnable="false" VHostMatchingCompat="false">
+<?xml version="1.0" encoding="UTF-8"?><!--HTTP server plugin config file for defaultServer generated on 2023.10.15 at 22:27:10 CEST-->
+<Config ASDisableNagle="false" AcceptAllContent="false" AppServerPortPreference="HostHeader" ChunkedResponse="false" ConfigHash="596034632" FIPSEnable="false" IISDisableNagle="false" IISPluginPriority="High" IgnoreDNSFailures="false" RefreshInterval="60" ResponseChunkSize="64" SSLConsolidate="false" TrustedProxyEnable="false" VHostMatchingCompat="false">
        
     <Log LogLevel="Error" Name="/opt/IBM/WebSphere/Plugins/logs/webserver1/http_plugin.log"/>
        
@@ -28,7 +28,7 @@
        
     <ServerCluster CloneSeparatorChange="false" GetDWLMTable="false" IgnoreAffinityRequests="true" LoadBalance="Round Robin" Name="defaultServer_default_node_Cluster" PostBufferSize="0" PostSizeLimit="-1" RemoveSpecialHeaders="true" RetryInterval="60" ServerIOTimeoutRetry="-1">
               
-        <Server CloneID="7ab7054c-5b36-4b67-8063-ffd2fda95f3b" ConnectTimeout="5" LoadBalanceWeight="20" MaxConnections="-1" Name="default_node_defaultServer" ServerIOTimeout="900" WaitForContinue="false">
+        <Server CloneID="912c81fa-2d29-4c2c-959a-4febbbb91e9f" ConnectTimeout="5" LoadBalanceWeight="20" MaxConnections="-1" Name="default_node_defaultServer" ServerIOTimeout="900" WaitForContinue="false">
                      
             <Transport Hostname="localhost" Port="5000" Protocol="http"/>
                      
@@ -52,7 +52,7 @@
        
     <UriGroup Name="default_host_defaultServer_default_node_Cluster_URIs">
               
-        <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/simple-rpg-1.0-SNAPSHOT/*"/>
+        <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/simple-carservice-1.0-SNAPSHOT/*"/>
            
     </UriGroup>
        

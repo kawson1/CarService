@@ -3,6 +3,8 @@ package com.example.carservice.Services;
 import com.example.carservice.Client;
 import com.example.carservice.Repositories.ClientRepository;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -37,4 +39,21 @@ public class ClientService {
         clientRepository.delete(clientRepository.find(id).orElseThrow());
     }
 
+    public void updatePortrait(UUID id, InputStream is) {
+        clientRepository.find(id).ifPresent(client ->{
+            try{
+                client.setPortrait(is.readAllBytes());
+                clientRepository.update(client);
+            } catch(IOException ex){
+                throw new IllegalStateException(ex);
+            }
+        });
+    }
+
+    public void deletePortrait(UUID id) {
+        clientRepository.find(id).ifPresent(client ->{
+            client.setPortrait(null);
+            clientRepository.update(client);
+        });
+    }
 }

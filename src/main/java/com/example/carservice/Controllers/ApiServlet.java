@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import jakarta.json.bind.Jsonb;
 import jakarta.json.bind.JsonbBuilder;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.MultipartConfig;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -17,6 +18,7 @@ import java.util.regex.Pattern;
 @WebServlet(urlPatterns = {
         ApiServlet.Paths.API + "/*"
 })
+@MultipartConfig(maxFileSize = 200 * 1024)
 public class ApiServlet extends HttpServlet {
 
     private ClientController clientController;
@@ -46,7 +48,7 @@ public class ApiServlet extends HttpServlet {
 
     @SuppressWarnings("RedundantThrows")
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String path = parseRequestPath(request);
         String servletPath = request.getServletPath();
 
@@ -63,20 +65,46 @@ public class ApiServlet extends HttpServlet {
             UUID uuid = extractUuid(Patterns.CLIENT, path);
             String clientsJsonString = jsonb.toJson(clientController.find(uuid));
             response.getWriter().write(clientsJsonString);
+            return;
         }
+        else if(path.matches(Patterns.CLIENT_PORTRAIT.pattern())){
+            response.setContentType("image/png");
+            UUID id = extractUuid(Patterns.CLIENT_PORTRAIT, path);
+            byte[] portrait = clientController.getPortrait(id);
+            response.setContentLength(portrait.length);
+            response.getOutputStream().write(portrait);
+        }
+        else
+            response.sendError(HttpServletResponse.SC_BAD_REQUEST);
     }
 
-//    protected void doPut(HttpServletRequest request, HttpServletResponse response) throws  ServletException, IOException{
-//        String path = parseRequestPath(request);
-//        String servletPath = request.getServletPath();
-//        if(Paths.API.equals(servletPath)){
-//            if(path.matches(Patterns.CLIENT_PORTRAIT.pattern())){
-//                UUID uuid = extractUuid(Patterns.CLIENT_PORTRAIT, path);
-//                clientController.putClientPortrait(uuid, request.getPart("portrait").getInputStream());
-//                return;
-//            }
-//        }
-//    }
+    protected void doPut(HttpServletRequest request, HttpServletResponse response) throws  ServletException, IOException{
+        String path = parseRequestPath(request);
+        String servletPath = request.getServletPath();
+        if(!Paths.API.equals(servletPath))
+            response.sendError(HttpServletResponse.SC_BAD_REQUEST);
+        if(path.matches(Patterns.CLIENT_PORTRAIT.pattern())){
+            UUID uuid = extractUuid(Patterns.CLIENT_PORTRAIT, path);
+            clientController.putClientPortrait(uuid, request.getPart("portrait").getInputStream());
+            return;
+        }
+        else
+            response.sendError(HttpServletResponse.SC_BAD_REQUEST);
+    }
+
+    protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws  ServletException, IOException{
+        String path = parseRequestPath(request);
+        String servletPath = request.getServletPath();
+        if(!Paths.API.equals(servletPath))
+            response.sendError(HttpServletResponse.SC_BAD_REQUEST);
+        if(path.matches(Patterns.CLIENT_PORTRAIT.pattern())){
+            UUID uuid = extractUuid(Patterns.CLIENT_PORTRAIT, path);
+            clientController.deleteClientPortrait(uuid);
+            return;
+        }
+        else
+            response.sendError(HttpServletResponse.SC_BAD_REQUEST);
+    }
 
     /**
      * Gets path info from the request and returns it. No null is returned, instead empty string is used.

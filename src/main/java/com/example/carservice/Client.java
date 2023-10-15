@@ -6,7 +6,6 @@ import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
@@ -26,5 +25,7 @@ public class Client implements Serializable {
     private List<Visit> visitList;
 
     private ClientType clientType;
+
+    private byte[] portrait;
 
 }

@@ -1,0 +1,31 @@
+# GET CLIENTS
+GET http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/clients
+
+###
+
+# GET CLIENT
+GET http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/clients/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
+
+###
+
+# GET PORTRAIT
+GET http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/clients/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/portrait
+
+###
+
+# PUT PORTRAIT
+PUT http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/clients/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/portrait
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="portrait";
+
+<@D:\POBRANE\ninja_turtles_PNG72.png>
+--boundary
+
+###
+
+# DELETE PORTRAIT
+DELETE http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/clients/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/portrait
+
+

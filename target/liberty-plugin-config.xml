@@ -3,28 +3,28 @@
     <activeBuildProfiles>
         <profileId>liberty</profileId>
     </activeBuildProfiles>
-    <installDirectory>/home/student/184948/CarService/target/liberty/wlp</installDirectory>
-    <serverDirectory>/home/student/184948/CarService/target/liberty/wlp/usr/servers/defaultServer</serverDirectory>
-    <userDirectory>/home/student/184948/CarService/target/liberty/wlp/usr</userDirectory>
-    <serverOutputDirectory>/home/student/184948/CarService/target/liberty/wlp/usr/servers/defaultServer</serverOutputDirectory>
+    <installDirectory>D:\PG\SEM 7\JEE\CarService\target\liberty\wlp</installDirectory>
+    <serverDirectory>D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\usr\servers\defaultServer</serverDirectory>
+    <userDirectory>D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\usr</userDirectory>
+    <serverOutputDirectory>D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\usr\servers\defaultServer</serverOutputDirectory>
     <serverName>defaultServer</serverName>
-    <configDirectory>/home/student/184948/CarService/src/main/liberty/config</configDirectory>
-    <configFile>/home/student/184948/CarService/src/main/liberty/config/server.xml</configFile>
+    <configDirectory>D:\PG\SEM 7\JEE\CarService\src\main\liberty\config</configDirectory>
+    <configFile>D:\PG\SEM 7\JEE\CarService\src\main\liberty\config\server.xml</configFile>
     <appsDirectory>dropins</appsDirectory>
     <looseApplication>true</looseApplication>
     <stripVersion>false</stripVersion>
     <installAppPackages>project</installAppPackages>
-    <applicationFilename>simple-rpg-1.0-SNAPSHOT.war.xml</applicationFilename>
+    <applicationFilename>simple-carservice-1.0-SNAPSHOT.war.xml</applicationFilename>
     <assemblyArtifact>
         <groupId>io.openliberty</groupId>
         <artifactId>openliberty-kernel</artifactId>
         <version>23.0.0.9</version>
         <type>zip</type>
     </assemblyArtifact>
-    <assemblyArchive>/home/student/.m2/repository/io/openliberty/openliberty-kernel/23.0.0.9/openliberty-kernel-23.0.0.9.zip</assemblyArchive>
-    <assemblyInstallDirectory>/home/student/184948/CarService/target/liberty</assemblyInstallDirectory>
+    <assemblyArchive>C:\Users\Lukasz\.m2\repository\io\openliberty\openliberty-kernel\23.0.0.9\openliberty-kernel-23.0.0.9.zip</assemblyArchive>
+    <assemblyInstallDirectory>D:\PG\SEM 7\JEE\CarService\target\liberty</assemblyInstallDirectory>
     <refresh>false</refresh>
-    <installAppsConfigDropins>/home/student/184948/CarService/target/liberty/wlp/usr/servers/defaultServer/configDropins/defaults/install_apps_configuration_1491924271.xml</installAppsConfigDropins>
+    <installAppsConfigDropins>D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\usr\servers\defaultServer\configDropins\defaults\install_apps_configuration_1491924271.xml</installAppsConfigDropins>
     <projectType>war</projectType>
     <projectCompileDependency>com.google.code.gson:gson:2.10.1</projectCompileDependency>
 </liberty-plugin-config>

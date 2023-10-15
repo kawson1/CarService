@@ -1,6 +1,8 @@
 package com.example.carservice.Controllers;
 
 import com.example.carservice.Client;
+import com.example.carservice.Controllers.Exception.BadRequestException;
+import com.example.carservice.Controllers.Exception.NotFoundException;
 import com.example.carservice.Services.ClientService;
 
 import java.io.InputStream;
@@ -17,12 +19,12 @@ public class ClientController {
 
     public Client find(UUID id){
         return clientService.find(id)
-                .orElseThrow();
+                .orElseThrow(NotFoundException::new);
     }
 
     public Client find(String name){
         return clientService.find(name)
-                .orElseThrow();
+                .orElseThrow(NotFoundException::new);
     }
 
     public List<Client> getClients(){
@@ -30,21 +32,51 @@ public class ClientController {
     }
 
     public void create(Client client){
-        clientService.create(client);
+        try {
+            clientService.update(client);
+        } catch(IllegalArgumentException ex){
+            throw new BadRequestException(ex);
+        }
     }
 
     public void update(Client client){
-        clientService.update(client);
+        try {
+            clientService.update(client);
+        } catch(IllegalArgumentException ex){
+            throw new BadRequestException(ex);
+        }
     }
 
     public void delete(UUID id){
         clientService.find(id).ifPresentOrElse(
                 entity -> clientService.delete(id),
                 () -> {
+                    throw new NotFoundException();
                 }
         );
     }
 
-    public void putClientPortrait(UUID uuid, InputStream portrait) {
+    public byte[] getPortrait(UUID id) {
+        return clientService.find(id)
+                .map(Client::getPortrait)
+                .orElseThrow(NotFoundException::new);
+    }
+
+    public void putClientPortrait(UUID id, InputStream portrait) {
+        clientService.find(id).ifPresentOrElse(
+                entity -> clientService.updatePortrait(id, portrait),
+                () -> {
+                    throw new NotFoundException();
+                }
+        );
+    }
+
+    public void deleteClientPortrait(UUID id) {
+        clientService.find(id).ifPresentOrElse(
+                entity -> clientService.deletePortrait(id),
+                () -> {
+                    throw new NotFoundException();
+                }
+        );
     }
 }
