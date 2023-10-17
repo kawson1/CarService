@@ -1,8 +1,13 @@
-package com.example.carservice.Configuration;
+package com.example.carservice.Configuration.Observer;
 
 import com.example.carservice.Client;
 import com.example.carservice.ClientType;
 import com.example.carservice.Services.ClientService;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.Initialized;
+import jakarta.enterprise.context.control.RequestContextController;
+import jakarta.enterprise.event.Observes;
+import jakarta.inject.Inject;
 import jakarta.servlet.ServletContextEvent;
 import jakarta.servlet.ServletContextListener;
 import jakarta.servlet.annotation.WebListener;
@@ -10,18 +15,26 @@ import jakarta.servlet.annotation.WebListener;
 import java.time.LocalDate;
 import java.util.UUID;
 
-@WebListener
-public class InitializeData implements ServletContextListener {
+@ApplicationScoped
+public class InitializeData {
 
     private ClientService clientService;
 
-    @Override
-    public void contextInitialized(ServletContextEvent event) {
-        clientService = (ClientService) event.getServletContext().getAttribute("clientService");
+    private final RequestContextController requestContextController;
+
+    @Inject
+    public InitializeData(ClientService clientService, RequestContextController requestContextController){
+        this.clientService = clientService;
+        this.requestContextController = requestContextController;
+    }
+
+    public void contextInitialized(@Observes @Initialized(ApplicationScoped.class) Object init) {
         init();
     }
 
     private void init(){
+        requestContextController.activate();
+
         Client c1 = Client.builder()
                 .id(UUID.fromString("c4804e0f-769e-4ab9-9ebe-0578fb4f00a6"))
                 .name("Klient1")
@@ -58,6 +71,8 @@ public class InitializeData implements ServletContextListener {
         clientService.create(c2);
         clientService.create(c3);
         clientService.create(c4);
+
+        requestContextController.deactivate();
     }
 
 }

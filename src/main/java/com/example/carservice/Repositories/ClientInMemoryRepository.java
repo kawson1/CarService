@@ -2,15 +2,19 @@ package com.example.carservice.Repositories;
 
 import com.example.carservice.Client;
 import com.example.carservice.Components.DataStore;
+import jakarta.enterprise.context.RequestScoped;
+import jakarta.inject.Inject;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+@RequestScoped
 public class ClientInMemoryRepository implements ClientRepository{
 
     private final DataStore store;
 
+    @Inject
     public ClientInMemoryRepository(DataStore store){
         this.store = store;
     }

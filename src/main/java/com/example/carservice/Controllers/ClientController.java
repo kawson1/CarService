@@ -4,15 +4,19 @@ import com.example.carservice.Client;
 import com.example.carservice.Controllers.Exception.BadRequestException;
 import com.example.carservice.Controllers.Exception.NotFoundException;
 import com.example.carservice.Services.ClientService;
+import jakarta.enterprise.context.RequestScoped;
+import jakarta.inject.Inject;
 
 import java.io.InputStream;
 import java.util.List;
 import java.util.UUID;
 
+@RequestScoped
 public class ClientController {
 
     private final ClientService clientService;
 
+    @Inject
     public ClientController(ClientService clientService){
         this.clientService = clientService;
     }

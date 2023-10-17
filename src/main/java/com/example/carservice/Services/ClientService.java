@@ -2,6 +2,9 @@ package com.example.carservice.Services;
 
 import com.example.carservice.Client;
 import com.example.carservice.Repositories.ClientRepository;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
+import lombok.NoArgsConstructor;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,10 +12,16 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+/**
+ * Force makes that every final property will be set null / 0 / false
+ */
+@NoArgsConstructor(force = true)
+@ApplicationScoped
 public class ClientService {
 
     private final ClientRepository clientRepository;
 
+    @Inject
     public ClientService(ClientRepository clientRepository){
         this.clientRepository = clientRepository;
     }

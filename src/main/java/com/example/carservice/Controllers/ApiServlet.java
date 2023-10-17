@@ -1,6 +1,6 @@
 package com.example.carservice.Controllers;
 
-import com.google.gson.Gson;
+import jakarta.inject.Inject;
 import jakarta.json.bind.Jsonb;
 import jakarta.json.bind.JsonbBuilder;
 import jakarta.servlet.ServletException;
@@ -40,10 +40,9 @@ public class ApiServlet extends HttpServlet {
 
     private final Jsonb jsonb = JsonbBuilder.create();
 
-    @Override
-    public void init() throws ServletException {
-        super.init();
-        clientController = (ClientController) getServletContext().getAttribute("clientController");
+    @Inject
+    public ApiServlet(ClientController clientController) {
+        this.clientController = clientController;
     }
 
     @SuppressWarnings("RedundantThrows")
