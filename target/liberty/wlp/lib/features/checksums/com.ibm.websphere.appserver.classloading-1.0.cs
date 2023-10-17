@@ -1,6 +1,6 @@
-#Sun Oct 15 15:16:04 CEST 2023
-lib/com.ibm.ws.classloading_1.1.81.jar=1f0278b6a4d20995bc5e7f0958a7bbfc
-dev/spi/ibm/com.ibm.websphere.appserver.spi.classloading_1.4.81.jar=5848197668195bde289a14b1f3e1f369
-dev/api/spec/com.ibm.websphere.javaee.activity.1.0_1.0.81.jar=68ca6cfae06a76248f4f8cf7ea2e3d7c
-dev/spi/ibm/javadoc/com.ibm.websphere.appserver.spi.classloading_1.4-javadoc.zip=f89b77219fd1a53385cf063f2bbc0267
-lib/features/com.ibm.websphere.appserver.classloading-1.0.mf=2682cc0414e4f80c30130203f2face24
+#Tue Oct 17 19:04:29 CEST 2023
+dev/api/spec/com.ibm.websphere.javaee.activity.1.0_1.0.82.jar=d374373f6cee3a0e50c3b78d848c37e1
+lib/com.ibm.ws.classloading_1.1.82.jar=50fb4f75628311155189bce8d5dc1869
+dev/spi/ibm/javadoc/com.ibm.websphere.appserver.spi.classloading_1.4-javadoc.zip=2b982d60a96fdf49df26898805af20b1
+lib/features/com.ibm.websphere.appserver.classloading-1.0.mf=1824263ee592cbc2670238362e20f61b
+dev/spi/ibm/com.ibm.websphere.appserver.spi.classloading_1.4.82.jar=8f89774370fcc71f38a145a4b9c2e8db

@@ -1,12 +1,12 @@
 Created-By: 17.0.4.1 (IBM Corporation)
-IBM-AppliesTo: io.openliberty;productVersion="23.0.0.9"
+IBM-AppliesTo: io.openliberty;productVersion="23.0.0.10"
 IBM-Feature-Version: 2
 IBM-InstallTo: core
 IBM-License-Agreement: wlp/lafiles/LA
 IBM-Process-Types: server,
  client
 IBM-ProductID: io.openliberty
-Subsystem-Content: com.ibm.websphere.appserver.eeCompatible-10.0; ibm.tolerates:="11.0"; type="osgi.subsystem.feature",
+Subsystem-Content: com.ibm.websphere.appserver.eeCompatible-10.0; type="osgi.subsystem.feature",
  io.openliberty.jakarta.annotation.2.1; location:="dev/api/spec/,lib/"; mavenCoordinates="jakarta.annotation:jakarta.annotation-api:2.1.1"; version="[1.0.0,1.0.200)"
 Subsystem-Description: %description
 Subsystem-License: https://www.eclipse.org/legal/epl-2.0/

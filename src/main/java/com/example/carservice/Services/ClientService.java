@@ -1,10 +1,12 @@
 package com.example.carservice.Services;
 
 import com.example.carservice.Client;
+import com.example.carservice.Components.FileUtility;
 import com.example.carservice.Repositories.ClientRepository;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Base64;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -13,7 +15,10 @@ public class ClientService {
 
     private final ClientRepository clientRepository;
 
+    private final FileUtility fileUtility = new FileUtility();
+
     public ClientService(ClientRepository clientRepository){
+
         this.clientRepository = clientRepository;
     }
 
@@ -42,8 +47,7 @@ public class ClientService {
     public void updatePortrait(UUID id, InputStream is) {
         clientRepository.find(id).ifPresent(client ->{
             try{
-                client.setPortrait(is.readAllBytes());
-                clientRepository.update(client);
+                fileUtility.savePortrait(is.readAllBytes(), id);
             } catch(IOException ex){
                 throw new IllegalStateException(ex);
             }
@@ -52,8 +56,7 @@ public class ClientService {
 
     public void deletePortrait(UUID id) {
         clientRepository.find(id).ifPresent(client ->{
-            client.setPortrait(null);
-            clientRepository.update(client);
+            fileUtility.deletePortrait(id);
         });
     }
 }

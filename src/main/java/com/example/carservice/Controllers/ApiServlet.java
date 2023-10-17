@@ -86,7 +86,6 @@ public class ApiServlet extends HttpServlet {
         if(path.matches(Patterns.CLIENT_PORTRAIT.pattern())){
             UUID uuid = extractUuid(Patterns.CLIENT_PORTRAIT, path);
             clientController.putClientPortrait(uuid, request.getPart("portrait").getInputStream());
-            return;
         }
         else
             response.sendError(HttpServletResponse.SC_BAD_REQUEST);

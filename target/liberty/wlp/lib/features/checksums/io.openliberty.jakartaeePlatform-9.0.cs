@@ -1,4 +1,4 @@
-#Sun Oct 15 15:16:09 CEST 2023
-lib/features/io.openliberty.jakartaeePlatform-9.0.mf=cfe4f8d5524b221957be148162207cfc
-lib/com.ibm.ws.javaee.version_1.0.81.jar=205a8780f5c6950bc81b2d8b2448af20
-lib/io.openliberty.jakartaee.platform.v9_1.0.81.jar=505454b9521d9151e6dcaabebb53e160
+#Tue Oct 17 19:04:30 CEST 2023
+lib/features/io.openliberty.jakartaeePlatform-9.0.mf=3193682aa34954fdd67336c62a7be82f
+lib/com.ibm.ws.javaee.version_1.0.82.jar=45ec3a736772690a86ff8cc3f11d6a52
+lib/io.openliberty.jakartaee.platform.v9_1.0.82.jar=6a18fa3fb7ff6b8dc0778ee350299573

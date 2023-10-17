@@ -1,3 +1,3 @@
-#Sun Oct 15 15:16:09 CEST 2023
-lib/features/io.openliberty.jsonb-3.0.mf=60b49fa43aed6ad606c056d794a2100f
-lib/com.ibm.ws.jsonb.service_1.0.81.jar=a6babaf041b8a7894ed072f5c6d5699e
+#Tue Oct 17 19:04:28 CEST 2023
+lib/features/io.openliberty.jsonb-3.0.mf=024f32ee1f3784743e3f3becc4f54676
+lib/com.ibm.ws.jsonb.service_1.0.82.jar=593f0c98f95bac02d4a6b933d7c69f30

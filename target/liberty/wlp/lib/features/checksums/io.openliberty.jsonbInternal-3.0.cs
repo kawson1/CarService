@@ -1,2 +1,2 @@
-#Sun Oct 15 15:16:07 CEST 2023
-lib/features/io.openliberty.jsonbInternal-3.0.mf=ff55c5920a4f09aa5f327a778cf3095e
+#Tue Oct 17 19:04:30 CEST 2023
+lib/features/io.openliberty.jsonbInternal-3.0.mf=beea8a5176930ddf59cb43be74acd9ef

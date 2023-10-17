@@ -1,9 +1,9 @@
-#Sun Oct 15 15:16:05 CEST 2023
-lib/com.ibm.ws.app.manager_1.1.81.jar=e359084d420a94fc505fc79669013724
-dev/api/ibm/com.ibm.websphere.appserver.api.basics_1.4.81.jar=fb73ed3a4da1e54dc5c5abf09dbbf7b7
-lib/com.ibm.ws.app.manager.ready_1.0.81.jar=fd3e0080f5fff130dcbce61979ef3bfd
-lib/features/com.ibm.websphere.appserver.appmanager-1.0.mf=c1d2536fe42645077e7d4245be2ce6d5
-dev/api/ibm/javadoc/com.ibm.websphere.appserver.api.basics_1.4-javadoc.zip=64bd270fc5cf2c855028ebc76af70b2c
-dev/spi/ibm/com.ibm.websphere.appserver.spi.application_1.1.81.jar=f0e152cb46dfd5718bb17af725cbeff7
-dev/spi/ibm/javadoc/com.ibm.websphere.appserver.spi.application_1.1-javadoc.zip=d61f1f31e6d73d9278b433139ac21c8b
-lib/com.ibm.websphere.security_1.1.81.jar=f77d32dcb23088d6555c2c4f7c69b8e0
+#Tue Oct 17 19:04:34 CEST 2023
+lib/com.ibm.ws.app.manager_1.1.82.jar=ec7bae393f7cc45c43abe63ac3e5f189
+dev/api/ibm/com.ibm.websphere.appserver.api.basics_1.4.82.jar=63e337c6248a6892c8a5381de3a2d3a8
+lib/features/com.ibm.websphere.appserver.appmanager-1.0.mf=2ab2c2f8bf6de7f1d805e0baf1300256
+dev/api/ibm/javadoc/com.ibm.websphere.appserver.api.basics_1.4-javadoc.zip=38d7cca2cb9483bc75d1ee49edd964ff
+lib/com.ibm.websphere.security_1.1.82.jar=f836883f139abfb2540f7df0b6ff1d1f
+dev/spi/ibm/javadoc/com.ibm.websphere.appserver.spi.application_1.1-javadoc.zip=9f842267534e10fc5908bce9a39abe89
+lib/com.ibm.ws.app.manager.ready_1.0.82.jar=408dfd57c92807415c0e5f605dd7d121
+dev/spi/ibm/com.ibm.websphere.appserver.spi.application_1.1.82.jar=69676727f27f25491997d2622d97e14c

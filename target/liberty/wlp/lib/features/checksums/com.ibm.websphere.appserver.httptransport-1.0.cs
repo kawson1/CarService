@@ -1,5 +1,5 @@
-#Sun Oct 15 15:16:02 CEST 2023
-lib/features/com.ibm.websphere.appserver.httptransport-1.0.mf=cd693e06bf0326f56659468a3b800a31
-dev/spi/ibm/javadoc/com.ibm.websphere.appserver.spi.httptransport_4.2-javadoc.zip=e32f1921d1fd701ad0d1a0540ab3b729
-dev/spi/ibm/com.ibm.websphere.appserver.spi.httptransport_4.2.81.jar=e31096a6a35e88c44e92825344497b1c
-lib/com.ibm.ws.transport.http_1.0.81.jar=f8fd9338771d5ce9b54fa36e7e423eab
+#Tue Oct 17 19:04:28 CEST 2023
+lib/features/com.ibm.websphere.appserver.httptransport-1.0.mf=4df2f7799ef3e191e00d695f2dc6df83
+lib/com.ibm.ws.transport.http_1.0.82.jar=63eaffa1f40422e604cbea79710cb36e
+dev/spi/ibm/javadoc/com.ibm.websphere.appserver.spi.httptransport_4.2-javadoc.zip=894c4b692d52d9781e20588c90e6f084
+dev/spi/ibm/com.ibm.websphere.appserver.spi.httptransport_4.2.82.jar=5a19e9aca3c868bdc53d465c3b1aec3d

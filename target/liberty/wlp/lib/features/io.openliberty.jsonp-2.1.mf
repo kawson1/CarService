@@ -2,7 +2,7 @@ Created-By: 17.0.4.1 (IBM Corporation)
 IBM-API-Package: jakarta.json; type=spec,
  jakarta.json.stream; type=spec,
  jakarta.json.spi; type=spec
-IBM-AppliesTo: io.openliberty;productVersion="23.0.0.9"
+IBM-AppliesTo: io.openliberty;productVersion="23.0.0.10"
 IBM-Feature-Version: 2
 IBM-InstallTo: core
 IBM-License-Agreement: wlp/lafiles/LA
