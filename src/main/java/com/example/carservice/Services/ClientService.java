@@ -1,6 +1,7 @@
 package com.example.carservice.Services;
 
 import com.example.carservice.Client;
+import com.example.carservice.Components.FileUtility;
 import com.example.carservice.Repositories.ClientRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
@@ -20,6 +21,8 @@ import java.util.UUID;
 public class ClientService {
 
     private final ClientRepository clientRepository;
+
+    private final FileUtility fileUtility = new FileUtility();
 
     @Inject
     public ClientService(ClientRepository clientRepository){
@@ -51,8 +54,7 @@ public class ClientService {
     public void updatePortrait(UUID id, InputStream is) {
         clientRepository.find(id).ifPresent(client ->{
             try{
-                client.setPortrait(is.readAllBytes());
-                clientRepository.update(client);
+                fileUtility.savePortrait(is.readAllBytes(), id);
             } catch(IOException ex){
                 throw new IllegalStateException(ex);
             }
@@ -61,8 +63,7 @@ public class ClientService {
 
     public void deletePortrait(UUID id) {
         clientRepository.find(id).ifPresent(client ->{
-            client.setPortrait(null);
-            clientRepository.update(client);
+            fileUtility.deletePortrait(id);
         });
     }
 }

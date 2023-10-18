@@ -1,3 +1,3 @@
-#Sun Oct 15 23:51:22 CEST 2023
-lib/com.ibm.ws.injection.jakarta_1.0.81.jar=b7233b123afbdece9fb099ac8439f722
-lib/features/com.ibm.websphere.appserver.injection-2.0.mf=8f96e2bad627a01f116efb82d8e60751
+#Wed Oct 18 00:54:03 CEST 2023
+lib/features/com.ibm.websphere.appserver.injection-2.0.mf=0face500c9786f5501fa41cb46c5c752
+lib/com.ibm.ws.injection.jakarta_1.0.82.jar=9423ad63106bbbc1486c37271c99fb08

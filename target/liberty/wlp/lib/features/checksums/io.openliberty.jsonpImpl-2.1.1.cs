@@ -1,4 +1,4 @@
-#Sun Oct 15 23:51:18 CEST 2023
-lib/io.openliberty.org.eclipse.parsson.1.1_1.0.81.jar=955a53921d0ad6006eebbf5cde2c8baa
-dev/api/spec/io.openliberty.jakarta.jsonp.2.1_1.0.81.jar=d8a9fce84aa7424fadd21aa22ee6a935
-lib/features/io.openliberty.jsonpImpl-2.1.1.mf=fa01b906ebde68e6a62d182ff18b9afa
+#Wed Oct 18 00:54:07 CEST 2023
+lib/io.openliberty.org.eclipse.parsson.1.1_1.0.82.jar=b3d982bf64e085eaea5c908c1c931c18
+dev/api/spec/io.openliberty.jakarta.jsonp.2.1_1.0.82.jar=934f955445b1184564e21a73f126a7f7
+lib/features/io.openliberty.jsonpImpl-2.1.1.mf=eb42608bfe5a0a0f1b5aabbdfac0b69e

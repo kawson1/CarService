@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
 @MultipartConfig(maxFileSize = 200 * 1024)
 public class ApiServlet extends HttpServlet {
 
-    private ClientController clientController;
+    private final ClientController clientController;
 
     public static final class Paths{
         public static final String API = "/api";

@@ -1,9 +1,11 @@
 package com.example.carservice.Components;
 
+import jakarta.enterprise.context.Dependent;
 import lombok.SneakyThrows;
 
 import java.io.*;
 
+@Dependent
 public class CloningUtility {
 
     /**

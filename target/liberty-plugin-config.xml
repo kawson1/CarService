@@ -18,10 +18,10 @@
     <assemblyArtifact>
         <groupId>io.openliberty</groupId>
         <artifactId>openliberty-kernel</artifactId>
-        <version>23.0.0.9</version>
+        <version>23.0.0.10</version>
         <type>zip</type>
     </assemblyArtifact>
-    <assemblyArchive>C:\Users\Lukasz\.m2\repository\io\openliberty\openliberty-kernel\23.0.0.9\openliberty-kernel-23.0.0.9.zip</assemblyArchive>
+    <assemblyArchive>C:\Users\Lukasz\.m2\repository\io\openliberty\openliberty-kernel\23.0.0.10\openliberty-kernel-23.0.0.10.zip</assemblyArchive>
     <assemblyInstallDirectory>D:\PG\SEM 7\JEE\CarService\target\liberty</assemblyInstallDirectory>
     <refresh>false</refresh>
     <installAppsConfigDropins>D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\usr\servers\defaultServer\configDropins\defaults\install_apps_configuration_1491924271.xml</installAppsConfigDropins>

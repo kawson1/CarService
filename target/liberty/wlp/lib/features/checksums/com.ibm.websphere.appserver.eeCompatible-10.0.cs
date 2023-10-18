@@ -1,4 +1,4 @@
-#Sun Oct 15 23:51:16 CEST 2023
-lib/io.openliberty.java11.internal_1.0.81.jar=09f80d8ff6e8e45457ebc55a5ce2b0bd
-lib/features/com.ibm.websphere.appserver.eeCompatible-10.0.mf=722b5b2b05494086c3af2ec285ad9fad
-lib/com.ibm.ws.javaee.version_1.0.81.jar=205a8780f5c6950bc81b2d8b2448af20
+#Wed Oct 18 00:54:08 CEST 2023
+lib/features/com.ibm.websphere.appserver.eeCompatible-10.0.mf=e4bbbf60bdd00c5f8ddb8f2ad98942d7
+lib/io.openliberty.java11.internal_1.0.82.jar=7a942aaa5c20c3e263054ceca9d10bc4
+lib/com.ibm.ws.javaee.version_1.0.82.jar=45ec3a736772690a86ff8cc3f11d6a52

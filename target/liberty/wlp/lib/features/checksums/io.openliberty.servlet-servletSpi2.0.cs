@@ -1,4 +1,4 @@
-#Sun Oct 15 23:51:25 CEST 2023
-dev/spi/ibm/javadoc/io.openliberty.servlet.spi_2.13-javadoc.zip=b76dd9fef8741e4309e3b24f0bf97792
-dev/spi/ibm/io.openliberty.servlet.spi_2.13.81.jar=c898fa465e3470a2e982048cb5785e17
-lib/features/io.openliberty.servlet-servletSpi2.0.mf=93e79efd215f330de167713c5276889c
+#Wed Oct 18 00:54:05 CEST 2023
+dev/spi/ibm/javadoc/io.openliberty.servlet.spi_2.13-javadoc.zip=c58604c8f40b3601372213980b41d762
+dev/spi/ibm/io.openliberty.servlet.spi_2.13.82.jar=a407e9366cab02c753b98e52e047a973
+lib/features/io.openliberty.servlet-servletSpi2.0.mf=8db308603a194095a8dd284b47f688fc

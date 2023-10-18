@@ -1,3 +1,3 @@
-#Sun Oct 15 23:51:19 CEST 2023
-lib/features/io.openliberty.jakarta.cdi-4.0.mf=243a39d9778755447f5176f53a4f2ede
-dev/api/spec/io.openliberty.jakarta.cdi.4.0_1.0.81.jar=9f64ff140c0814c739a02fbf6b373f59
+#Wed Oct 18 00:54:05 CEST 2023
+lib/features/io.openliberty.jakarta.cdi-4.0.mf=da436bb6c6e45cd8f8c684546ee6a7cb
+dev/api/spec/io.openliberty.jakarta.cdi.4.0_1.0.82.jar=b3b6afc1be103c18a28e3f20bcb280b0

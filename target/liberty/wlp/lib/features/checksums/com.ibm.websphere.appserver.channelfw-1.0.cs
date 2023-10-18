@@ -1,9 +1,9 @@
-#Sun Oct 15 23:51:25 CEST 2023
-lib/com.ibm.ws.wsbytebuffer_1.0.81.jar=a3339e9ed3d62e851d96cb2288b633f9
-lib/features/com.ibm.websphere.appserver.channelfw-1.0.mf=cce550225ac44a21e34d08c64e21a173
-lib/io.openliberty.endpoint_1.0.81.jar=1ca4e60a0a0cd1190e2dfb6cde1b144a
-dev/api/ibm/javadoc/com.ibm.websphere.appserver.api.endpoint_1.0-javadoc.zip=7dbf122e7b3217c285d2493f3709d76f
-lib/com.ibm.ws.channelfw_1.0.81.jar=4b4a4919ef232e3b87d9345ab95a4bb2
-lib/io.openliberty.accesslists.internal_1.0.81.jar=71fc7eaab56e77c377cf0f58dda7f9d0
-lib/com.ibm.ws.timer_1.0.81.jar=7ac7419b8a000e8c832ee36e2d479b23
-dev/api/ibm/com.ibm.websphere.appserver.api.endpoint_1.0.81.jar=d3d1f8375ad26e9defabb6df810b67e7
+#Wed Oct 18 00:54:02 CEST 2023
+lib/io.openliberty.endpoint_1.0.82.jar=fc5f2b88301017044c9b5d2684f06c3b
+lib/features/com.ibm.websphere.appserver.channelfw-1.0.mf=571f5926f71e3d9570a1a8a4fa186d10
+lib/com.ibm.ws.wsbytebuffer_1.0.82.jar=89f22a8abcd3cfb399a214b8039fdaae
+dev/api/ibm/javadoc/com.ibm.websphere.appserver.api.endpoint_1.0-javadoc.zip=b8c272574fcf1565f97ecb6845a33cda
+lib/com.ibm.ws.channelfw_1.0.82.jar=fd4ab14405492e771750c86eef7efd4b
+lib/io.openliberty.accesslists.internal_1.0.82.jar=d7239b17688356efe380468d076aa1f6
+lib/com.ibm.ws.timer_1.0.82.jar=be04557d6e577cfe978fd6dee99965bb
+dev/api/ibm/com.ibm.websphere.appserver.api.endpoint_1.0.82.jar=d6524659a65c32e37067e4b103efeb95

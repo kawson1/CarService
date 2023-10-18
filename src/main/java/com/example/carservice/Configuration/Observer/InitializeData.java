@@ -11,6 +11,7 @@ import jakarta.inject.Inject;
 import jakarta.servlet.ServletContextEvent;
 import jakarta.servlet.ServletContextListener;
 import jakarta.servlet.annotation.WebListener;
+import lombok.SneakyThrows;
 
 import java.time.LocalDate;
 import java.util.UUID;
@@ -18,7 +19,7 @@ import java.util.UUID;
 @ApplicationScoped
 public class InitializeData {
 
-    private ClientService clientService;
+    private final ClientService clientService;
 
     private final RequestContextController requestContextController;
 
@@ -32,6 +33,7 @@ public class InitializeData {
         init();
     }
 
+    @SneakyThrows
     private void init(){
         requestContextController.activate();
 
