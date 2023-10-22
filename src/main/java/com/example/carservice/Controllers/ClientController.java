@@ -1,10 +1,12 @@
 package com.example.carservice.Controllers;
 
 import com.example.carservice.Client;
+import com.example.carservice.Components.FileUtility;
 import com.example.carservice.Controllers.Exception.BadRequestException;
 import com.example.carservice.Controllers.Exception.NotFoundException;
 import com.example.carservice.Services.ClientService;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 import java.util.UUID;
@@ -56,13 +58,14 @@ public class ClientController {
         );
     }
 
-    public byte[] getPortrait(UUID id) {
-        return clientService.find(id)
-                .map(Client::getPortrait)
-                .orElseThrow(NotFoundException::new);
+    public byte[] getPortrait(UUID id) throws IOException {
+        if(clientService.find(id).isPresent())
+            return clientService.getPortrait(id);
+        else
+            throw new NotFoundException();
     }
 
-    public void putClientPortrait(UUID id, InputStream portrait) {
+    public void putClientPortrait(UUID id, InputStream portrait) throws IOException {
         clientService.find(id).ifPresentOrElse(
                 entity -> clientService.updatePortrait(id, portrait),
                 () -> {

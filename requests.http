@@ -18,10 +18,23 @@ PUT http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/clients/c4804e0f-76
 Content-Type: multipart/form-data; boundary=boundary
 
 --boundary
-Content-Disposition: form-data; name="portrait";
+Content-Disposition: form-data; name="portrait"; filename="sigrid.png'
 
-<@D:\POBRANE\ninja_turtles_PNG72.png>
+< /home/student/Desktop/s184948/delete/CarService-jakartaee-servlet/images.jpeg
 --boundary
+
+###
+
+
+PUT http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/clients/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/portrait
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="portrait"; filename="sigrid.png'
+
+< D:\POBRANE\IMG-20230412-WA0000.jpg
+--boundary--
+
 
 ###
 

@@ -10,15 +10,16 @@ import java.util.Base64;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+import java.util.function.Function;
 
 public class ClientService {
 
     private final ClientRepository clientRepository;
 
-    private final FileUtility fileUtility = new FileUtility();
+    private final FileUtility fileUtility;
 
-    public ClientService(ClientRepository clientRepository){
-
+    public ClientService(ClientRepository clientRepository, FileUtility fileUtility){
+        this.fileUtility = fileUtility;
         this.clientRepository = clientRepository;
     }
 
@@ -47,6 +48,7 @@ public class ClientService {
     public void updatePortrait(UUID id, InputStream is) {
         clientRepository.find(id).ifPresent(client ->{
             try{
+                System.out.println("TUI");
                 fileUtility.savePortrait(is.readAllBytes(), id);
             } catch(IOException ex){
                 throw new IllegalStateException(ex);
@@ -58,5 +60,9 @@ public class ClientService {
         clientRepository.find(id).ifPresent(client ->{
             fileUtility.deletePortrait(id);
         });
+    }
+
+    public byte[] getPortrait(UUID uuid) throws IOException {
+        return fileUtility.getPortrait(uuid);
     }
 }
