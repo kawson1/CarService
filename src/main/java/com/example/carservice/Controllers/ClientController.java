@@ -1,86 +1,27 @@
 package com.example.carservice.Controllers;
 
 import com.example.carservice.Client;
-import com.example.carservice.Controllers.Exception.BadRequestException;
-import com.example.carservice.Controllers.Exception.NotFoundException;
-import com.example.carservice.Services.ClientService;
-import jakarta.enterprise.context.RequestScoped;
-import jakarta.inject.Inject;
-
 import java.io.InputStream;
 import java.util.List;
 import java.util.UUID;
 
-@RequestScoped
-public class ClientController {
+public interface ClientController {
 
-    private final ClientService clientService;
+    Client find(UUID id);
 
-    @Inject
-    public ClientController(ClientService clientService){
-        this.clientService = clientService;
-    }
+    Client find(String name);
 
-    public Client find(UUID id){
-        return clientService.find(id)
-                .orElseThrow(NotFoundException::new);
-    }
+    List<Client> getClients();
 
-    public Client find(String name){
-        return clientService.find(name)
-                .orElseThrow(NotFoundException::new);
-    }
+    void create(Client client);
 
-    public List<Client> getClients(){
-        return clientService.findAll();
-    }
+    void update(Client client);
 
-    public void create(Client client){
-        try {
-            clientService.update(client);
-        } catch(IllegalArgumentException ex){
-            throw new BadRequestException(ex);
-        }
-    }
+    void delete(UUID id);
 
-    public void update(Client client){
-        try {
-            clientService.update(client);
-        } catch(IllegalArgumentException ex){
-            throw new BadRequestException(ex);
-        }
-    }
+    byte[] getPortrait(UUID id);
 
-    public void delete(UUID id){
-        clientService.find(id).ifPresentOrElse(
-                entity -> clientService.delete(id),
-                () -> {
-                    throw new NotFoundException();
-                }
-        );
-    }
+    void putClientPortrait(UUID id, InputStream portrait);
 
-    public byte[] getPortrait(UUID id) {
-        return clientService.find(id)
-                .map(Client::getPortrait)
-                .orElseThrow(NotFoundException::new);
-    }
-
-    public void putClientPortrait(UUID id, InputStream portrait) {
-        clientService.find(id).ifPresentOrElse(
-                entity -> clientService.updatePortrait(id, portrait),
-                () -> {
-                    throw new NotFoundException();
-                }
-        );
-    }
-
-    public void deleteClientPortrait(UUID id) {
-        clientService.find(id).ifPresentOrElse(
-                entity -> clientService.deletePortrait(id),
-                () -> {
-                    throw new NotFoundException();
-                }
-        );
-    }
+    void deleteClientPortrait(UUID id);
 }
