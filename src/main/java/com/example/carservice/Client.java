@@ -1,8 +1,6 @@
 package com.example.carservice;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -12,6 +10,8 @@ import java.util.UUID;
 @Setter
 @Getter
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class Client implements Serializable {
 
     private UUID id;

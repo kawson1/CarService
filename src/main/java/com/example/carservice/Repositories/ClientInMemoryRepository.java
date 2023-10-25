@@ -45,7 +45,7 @@ public class ClientInMemoryRepository implements ClientRepository{
 
     @Override
     public void delete(Client entity) {
-        throw new UnsupportedOperationException("Not implemented.");
+        store.deleteClient(entity);
     }
 
     @Override

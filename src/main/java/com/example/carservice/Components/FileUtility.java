@@ -1,12 +1,21 @@
 package com.example.carservice.Components;
 
+import com.example.carservice.Client;
+import com.example.carservice.Controllers.Exception.NotFoundException;
+
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.UUID;
 
 public class FileUtility {
 
     public static class Paths{
-        public static final String portraitsPath = "D:\\PG\\SEM 7\\JEE\\CarService\\src\\main\\resources\\portraits\\";
+    }
+
+    private final String portraitsPath;
+    public FileUtility(){
+        this.portraitsPath = "D:\\PG\\SEM 7\\JEE\\CarService\\src\\main\\resources\\portraits\\";
     }
 
     private void save(byte[] data, String fileName) throws IOException {
@@ -21,11 +30,21 @@ public class FileUtility {
         new File(fileName).delete();
     }
 
+
+    public byte[] getPortrait(UUID uuid) throws IOException {
+        Path file = Path.of(portraitsPath + uuid.toString() + ".jpeg");
+        try {
+            return Files.readAllBytes(file);
+        } catch(Exception ex) {
+            throw new NotFoundException();
+        }
+    }
+
     public void savePortrait(byte[] data, UUID uuid) throws IOException {
-        save(data, Paths.portraitsPath + uuid.toString() + ".png");
+        save(data, portraitsPath + uuid.toString() + ".jpeg");
     }
 
     public void deletePortrait(UUID uuid){
-        delete(Paths.portraitsPath + uuid.toString() + ".png");
+        delete(portraitsPath + uuid.toString() + ".jpeg");
     }
 }

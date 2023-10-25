@@ -1,5 +1,10 @@
 package com.example.carservice.Controllers;
 
+import com.example.carservice.Client;
+import com.example.carservice.Garage;
+import com.example.carservice.Services.GarageService;
+import com.example.carservice.Services.VisitService;
+import com.example.carservice.Visit;
 import jakarta.inject.Inject;
 import jakarta.json.bind.Jsonb;
 import jakarta.json.bind.JsonbBuilder;
@@ -23,6 +28,10 @@ public class ApiServlet extends HttpServlet {
 
     private final ClientController clientController;
 
+    private final GarageService garageService;
+
+    private final VisitService visitService;
+
     public static final class Paths{
         public static final String API = "/api";
     }
@@ -36,13 +45,24 @@ public class ApiServlet extends HttpServlet {
         public static final Pattern CLIENTS = Pattern.compile("/clients/?");
 
         public static final Pattern CLIENT_PORTRAIT = Pattern.compile("/clients/(%s)/portrait".formatted(UUID.pattern()));
+
+        public static final Pattern GARAGE = Pattern.compile("/garages/(%s)".formatted(UUID.pattern()));
+
+        public static final Pattern GARAGES = Pattern.compile("/garages/?");
+
+        public static final Pattern VISITS = Pattern.compile("/visits/?");
+
+        public static final Pattern VISIT = Pattern.compile("/visits/(%s)".formatted(UUID.pattern()));
+
     }
 
     private final Jsonb jsonb = JsonbBuilder.create();
 
     @Inject
-    public ApiServlet(ClientController clientController) {
+    public ApiServlet(ClientController clientController, GarageService garageService, VisitService visitService) {
         this.clientController = clientController;
+        this.garageService = garageService;
+        this.visitService = visitService;
     }
 
     @SuppressWarnings("RedundantThrows")
@@ -73,6 +93,28 @@ public class ApiServlet extends HttpServlet {
             response.setContentLength(portrait.length);
             response.getOutputStream().write(portrait);
         }
+        else if(path.matches(Patterns.GARAGES.pattern())){
+            response.setContentType("application/json");
+            String garagesJsonString = jsonb.toJson(garageService.findAll());
+            response.getWriter().write(garagesJsonString);
+        }
+        else if(path.matches(Patterns.GARAGE.pattern())){
+            response.setContentType("application/json");
+            UUID id = extractUuid(Patterns.GARAGE, path);
+            String garageJsonString = jsonb.toJson(garageService.find(id));
+            response.getWriter().write(garageJsonString);
+        }
+        else if(path.matches(Patterns.VISITS.pattern())){
+            response.setContentType("application/json");
+            String garagesJsonString = jsonb.toJson(visitService.findAll());
+            response.getWriter().write(garagesJsonString);
+        }
+        else if(path.matches(Patterns.VISIT.pattern())){
+            response.setContentType("application/json");
+            UUID id = extractUuid(Patterns.VISIT, path);
+            String visitJsonString = jsonb.toJson(visitService.find(id));
+            response.getWriter().write(visitJsonString);
+        }
         else
             response.sendError(HttpServletResponse.SC_BAD_REQUEST);
     }
@@ -87,6 +129,18 @@ public class ApiServlet extends HttpServlet {
             clientController.putClientPortrait(uuid, request.getPart("portrait").getInputStream());
             return;
         }
+        if(path.matches(Patterns.CLIENTS.pattern())){
+            clientController.update(jsonb.fromJson(request.getReader(), Client.class));
+            return;
+        }
+        if(path.matches(Patterns.GARAGES.pattern())){
+            garageService.update(jsonb.fromJson(request.getReader(), Garage.class));
+            return;
+        }
+        if(path.matches(Patterns.VISITS.pattern())){
+            visitService.update(jsonb.fromJson(request.getReader(), Visit.class));
+            return;
+        }
         else
             response.sendError(HttpServletResponse.SC_BAD_REQUEST);
     }
@@ -99,6 +153,21 @@ public class ApiServlet extends HttpServlet {
         if(path.matches(Patterns.CLIENT_PORTRAIT.pattern())){
             UUID uuid = extractUuid(Patterns.CLIENT_PORTRAIT, path);
             clientController.deleteClientPortrait(uuid);
+            return;
+        }
+        if(path.matches(Patterns.CLIENT.pattern())){
+            UUID uuid = extractUuid(Patterns.CLIENT, path);
+            clientController.delete(uuid);
+            return;
+        }
+        if(path.matches(Patterns.GARAGE.pattern())){
+            UUID uuid = extractUuid(Patterns.GARAGE, path);
+            garageService.delete(uuid);
+            return;
+        }
+        if(path.matches(Patterns.VISIT.pattern())){
+            UUID uuid = extractUuid(Patterns.VISIT, path);
+            visitService.delete(uuid);
             return;
         }
         else

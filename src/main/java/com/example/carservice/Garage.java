@@ -1,8 +1,19 @@
 package com.example.carservice;
 
-import java.util.List;
+import lombok.*;
 
-public class Garage {
+import java.io.Serializable;
+import java.util.List;
+import java.util.UUID;
+
+@Setter
+@Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class Garage implements Serializable{
+
+    public UUID id;
     public String title;
     public String city;
     public String zipCode;
