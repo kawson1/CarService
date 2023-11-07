@@ -2,6 +2,7 @@ package com.example.carservice.Services;
 
 import com.example.carservice.Client;
 import com.example.carservice.Components.FileUtility;
+import com.example.carservice.Controllers.Exception.NotFoundException;
 import com.example.carservice.Repositories.ClientRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
@@ -65,5 +66,18 @@ public class ClientService {
         clientRepository.find(id).ifPresent(client ->{
             fileUtility.deletePortrait(id);
         });
+    }
+
+    public byte[] getPortrait(UUID id) {
+        if(clientRepository.find(id).isPresent())
+        {
+            try{
+                return fileUtility.getPortrait(id);
+            }catch(IOException ex){
+                throw new NotFoundException("Portrait file not found");
+            }
+        }
+        else
+            throw new NotFoundException();
     }
 }

@@ -36,7 +36,11 @@ public class FileUtility {
         try {
             return Files.readAllBytes(file);
         } catch(Exception ex) {
-            throw new NotFoundException();
+            try {
+                return Files.readAllBytes(Path.of("D:\\PG\\SEM 7\\JEE\\CarService\\src\\main\\resources\\portraits\\default_client.jpg"));
+            } catch(Exception ex2) {
+                throw new NotFoundException();
+            }
         }
     }
 

@@ -7,6 +7,7 @@ import com.example.carservice.Services.ClientService;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Inject;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 import java.util.UUID;
@@ -61,9 +62,10 @@ public class ClientControllerImplementation implements ClientController {
     }
 
     public byte[] getPortrait(UUID id) {
-        return clientService.find(id)
-                .map(Client::getPortrait)
-                .orElseThrow(NotFoundException::new);
+        if(clientService.find(id).isPresent())
+            return clientService.getPortrait(id);
+        else
+            throw new NotFoundException();
     }
 
     public void putClientPortrait(UUID id, InputStream portrait) {

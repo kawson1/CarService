@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                template="/WEB-INF/template/main.xhtml">
+
+    <ui:define name="content">
+
+        <article class="text--justified">
+            <header><h2>Visits</h2></header>
+
+            <h:dataTable value="#{visitList.getAllVisits()}" var="visit"
+                         styleClass="table align-middle mb-0 bg-white" headerClass="bg-light">
+
+                <h:column>
+                    <f:facet name="header">Date</f:facet>
+                    <h:outputText value="#{visit.date}"/>
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Client name</f:facet>
+                    <h:outputText value="#{visit.client.name}"/>
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Client surname</f:facet>
+                    <h:outputText value="#{visit.client.surname}"/>
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Garage title</f:facet>
+                    <h:outputText value="#{visit.garage.title}"/>
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">VIN</f:facet>
+                    <h:outputText value="#{visit.VIN}"/>
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Delete</f:facet>
+                    <h:form>
+                        <h:commandButton styleClass="btn" value="Delete"
+                                         action="#{visitList.deleteAction(visit)}"/>
+                    </h:form>
+                </h:column>
+
+            </h:dataTable>
+
+            <h:link outcome="/visits/visit_create.xhtml" value="Create"/>
+            <f:facet name="footer">
+                <h:button styleClass="btn" outcome="/visits/visit_create.xhtml"
+                          value="Create new visit"/>
+            </f:facet>
+        </article>
+    </ui:define>
+
+</ui:composition>

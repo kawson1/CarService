@@ -1,0 +1,17 @@
+a.nav-link {
+    color: crimson;
+}
+li {
+    list-style-type: disc;
+}
+* {
+    font-family: monospace;
+}
+table{
+    border-collapse: separate;
+    border-spacing: 50px 0;
+}
+td {
+    padding: 10px 0;
+    text-align: center;
+}

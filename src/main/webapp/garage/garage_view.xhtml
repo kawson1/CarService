@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                template="/WEB-INF/template/main.xhtml">
+
+    <f:metadata>
+        <f:viewParam name="id" value="#{garageView.id}" required="true"/>
+        <f:viewAction action="#{garageView.init()}"/>
+    </f:metadata>
+
+    <ui:define name="content">
+        <article>
+            <header><h2><h:outputText value="#{garageView.garage.title}"/></h2></header>
+            <header><h3><h:outputText value="#{garageView.id}"/></h3></header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="row mb-2">
+                            <div class="col-6">
+                                <h4>City</h4>
+                            </div>
+                            <div class="col-6">
+                                <h:outputText value="#{garageView.garage.city}"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="row mb-2">
+                            <div class="col-6">
+                                <h4>Employees count</h4>
+                            </div>
+                            <div class="col-6">
+                                <h:outputText value="#{garageView.garage.countEmployees}"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="row mb-2">
+                            <div class="col-6">
+                                <h4>Zip-code</h4>
+                            </div>
+                            <div class="col-6">f
+                                <h:outputText value="#{garageView.garage.zipCode}"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ui:include src="/visits/visit_list.xhtml">
+                        <ui:param name="visits" value="#{visitList.getVisits(garageView.garage)}"></ui:param>
+                    </ui:include>
+
+                    <div class="col-4">
+                        <div class="row mb-2">
+                            <f:facet name="header">Delete</f:facet>
+                            <h:form>
+                                <h:commandButton styleClass="btn" value="Delete"
+                                                 action="#{garageView.deleteAction()}"/>
+                            </h:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </ui:define>
+
+</ui:composition>

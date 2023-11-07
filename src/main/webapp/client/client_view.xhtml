@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                template="/WEB-INF/template/main.xhtml">
+
+    <f:metadata>
+        <f:viewParam name="id" value="#{clientView.id}" required="true"/>
+        <f:viewAction action="#{clientView.init()}"/>
+    </f:metadata>
+
+    <ui:define name="content">
+        <article>
+            <header><h2><h:outputText value="#{clientView.client.name} #{clientView.client.surname}"/></h2></header>
+            <header><h3><h:outputText value="#{clientView.id}"/></h3></header>
+            <div class="container">
+                <div class="col-3">
+                    <h:graphicImage alt="Client portrait" styleClass="w-100"
+                                    value="/api/clients/#{clientView.id}/portrait"/>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="row mb-2">
+                            <div class="col-6">
+                                <h4>Birthdate</h4>
+                            </div>
+                            <div class="col-6">
+                                <h:outputText value="#{clientView.client.birthdate}"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="row mb-2">
+                            <div class="col-6">
+                                <h4>Client type</h4>
+                            </div>
+                            <div class="col-6">
+                                <h:outputText value="#{clientView.client.clientType}"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ui:include src="/visits/visit_list.xhtml">
+                        <ui:param name="visits" value="#{visitList.getVisits(clientView.client)}"></ui:param>
+                    </ui:include>
+
+                    <div class="col-4">
+                        <div class="row mb-2">
+                            <f:facet name="header">Delete</f:facet>
+                            <h:form>
+                                <h:commandButton styleClass="btn" value="Delete"
+                                                 action="#{clientView.deleteAction()}"/>
+                            </h:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </ui:define>
+
+</ui:composition>

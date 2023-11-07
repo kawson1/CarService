@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                template="/WEB-INF/template/main.xhtml">
+
+    <ui:define name="content">
+
+        <article class="text--justified">
+            <header><h2>Garages</h2></header>
+
+            <h:dataTable value="#{garageList.garages}" var="garage"
+                         styleClass="table align-middle mb-0 bg-white" headerClass="bg-light">
+                <h:column>
+                    <f:facet name="header">Title</f:facet>
+                    <h:outputText value="#{garage.title}"/>
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">City</f:facet>
+                    <h:outputText value="#{garage.city}"/>
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Zip Code</f:facet>
+                    <h:outputText value="#{garage.zipCode}"/>
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Employees count</f:facet>
+                    <h:outputText value="#{garage.countEmployees}"/>
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">View</f:facet>
+                    <h:link outcome="/garage/garage_view.xhtml" value="View">
+                        <f:param name="id" value="#{garage.id}"/>
+                    </h:link>
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Edit</f:facet>
+                    <h:link outcome="/garage/garage_edit.xhtml" value="Edit">
+                        <f:param name="id" value="#{garage.id}"/>
+                    </h:link>
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Delete</f:facet>
+                    <h:form>
+                        <h:commandButton styleClass="btn" value="Delete"
+                                         action="#{garageList.deleteAction(garage)}"/>
+                    </h:form>
+                </h:column>
+
+                <f:facet name="footer">
+                    <h:button styleClass="btn" outcome="/garage/garage_create__basic.xhtml"
+                              value="Create new garage"/>
+                </f:facet>
+            </h:dataTable>
+        </article>
+    </ui:define>
+
+</ui:composition>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                template="/WEB-INF/template/main.xhtml">
+
+   <f:metadata>
+      <f:viewParam name="id" value="#{garageEdit.id}" required="true"/>
+      <f:viewAction action="#{garageEdit.init()}"/>
+   </f:metadata>
+
+   <ui:define name="content">
+      <article>
+         <header><h2>Edit garage info</h2></header>
+         <h:form styleClass="container" onreset="onReset()" enctype="multipart/form-data">
+            <div class="row">
+               <div class="col-4 p-2">
+                  <div class="form-outline">
+                     <h:inputText id="title" value="#{garageEdit.garage.title}" styleClass="form-control"/>
+                     <h:outputLabel for="title" value="Title:" styleClass="form-label"/>
+                  </div>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-4 p-2">
+                  <div class="form-outline">
+                     <h:inputText id="city" value="#{garageEdit.garage.city}" styleClass="form-control"/>
+                     <h:outputLabel for="city" value="City:" styleClass="form-label"/>
+                  </div>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-4 p-2">
+                  <div class="form-outline">
+                     <h:inputText id="zipcode" value="#{garageEdit.garage.zipCode}" styleClass="form-control"/>
+                     <h:outputLabel for="zipcode" value="Zip-code:" styleClass="form-label"/>
+                  </div>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-4 p-2">
+                  <div class="form-outline">
+                     <h:inputText id="countemployees" value="#{garageEdit.garage.countEmployees}" styleClass="form-control"/>
+                     <h:outputLabel for="countemployees" value="Count employees:" styleClass="form-label"/>
+                  </div>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-2 p-2 text-center">
+                  <h:commandButton styleClass="btn btn-primary" value="Update"
+                                   action="#{garageEdit.saveAction()}"/>
+               </div>
+               <div class="col-2 p-2 text-center">
+                  <h:commandButton styleClass="btn btn-secondary" type="reset" value="Reset"/>
+               </div>
+            </div>
+         </h:form>
+      </article>
+   </ui:define>
+
+</ui:composition>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Simple Car Service web application."/>
+        <meta name="keywords" content="CARSERVICE"/>
+        <meta name="author" content="Łukasz Kawa"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Car Service</title>
+
+        <h:outputStylesheet name="default/css/main.css"/>
+        <h:outputScript library="mdb" name="js/main.js" target="body"/>
+    </h:head>
+
+    <h:body>
+        <div class="container">
+            <header class="mb-4 mt-4">
+                <h1>Simple Car Service</h1>
+            </header>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+                <div class="container-fluid">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <h:link styleClass="nav-link" outcome="/index.xhtml">Home</h:link>
+                        </li>
+                        <li class="nav-item">
+                            <h:link styleClass="nav-link"
+                                    outcome="/garage/garage_list.xhtml">Garages</h:link>
+                        </li>
+                        <li class="nav-item">
+                            <h:link styleClass="nav-link"
+                                    outcome="/client/client_list.xhtml">Clients</h:link>
+                        </li>
+                        <li class="nav-item">
+                            <h:link styleClass="nav-link"
+                                    outcome="/visits/all_visits_list.xhtml">Visits</h:link>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="mb-4 mt-4">
+                <ui:insert name="content"/>
+            </main>
+
+            <footer class="text-center text-lg-start bg-light text-muted p-2">
+                <div class="text-center">
+                    Łukasz Kawa
+                </div>
+                <div class="text-center">
+                    All character's portraits were created using
+                    <a href="http://dmheroes.com">DMHeroes</a> developed by
+                    <a href="https://twitter.com/ChristianOesch">Christian Oesch</a>.
+                </div>
+            </footer>
+        </div>
+    </h:body>
+</f:view>
+</html>

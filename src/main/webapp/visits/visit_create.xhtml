@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                template="/WEB-INF/template/main.xhtml">
+        <f:metadata>
+            <f:viewAction action="#{visitCreate.init()}"/>
+        </f:metadata>
+
+    <ui:define name="content">
+        <article class="text--justified">
+            <header><h2>Create visit</h2></header>
+
+            <h:form styleClass="container" onreset="onReset()" enctype="multipart/form-data">
+
+                <div class="row">
+                    <div class="col-4 p-2">
+                        <div class="form-outline">
+                            <h:inputText id="date" value="#{visitCreate.visit.date}" styleClass="form-control"/>
+                            <h:outputLabel for="date" value="Date:" styleClass="form-label"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4 p-2">
+                        <div class="form-outline">
+                            <h:inputText id="VIN" value="#{visitCreate.visit.VIN}" styleClass="form-control"/>
+                            <h:outputLabel for="VIN" value="VIN:" styleClass="form-label"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4 p-2">
+                        <fieldset>
+
+                            <legend class="form-label fs-6">Garage:</legend>
+                            <ui:repeat value="#{visitCreate.garages}" var="garage">
+                                <div class="form-check">
+                                    <h:selectOneRadio id="radioId" group="garage"
+                                                      value="#{visitCreate.garage}"
+                                                      styleClass="form-check-input"
+                                                      enabledClass="form-check-label"
+                                                      converter="garageConverter">
+                                        <f:selectItem itemValue="#{garage}" itemLabel="#{garage.title}"/>
+                                    </h:selectOneRadio>
+                                </div>
+                            </ui:repeat>
+
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4 p-2">
+                        <fieldset>
+                            <legend class="form-label fs-6">Client:</legend>
+                            <!-- Instead of ui:repeat the h:selectOneRadio with f:selectItems can be used but then
+                            Faces renders table or list and custom styling with CSS libraties can be troublesome. -->
+                            <ui:repeat value="#{visitCreate.clients}" var="client">
+                                <div class="form-check">
+                                    <h:selectOneRadio group="client"
+                                                      value="#{visitCreate.client}"
+                                                      styleClass="form-check-input"
+                                                      enabledClass="form-check-label"
+                                                      converter="clientConverter">
+                                        <f:selectItem itemValue="#{client}" itemLabel="#{client.name} #{client.surname}"/>
+                                    </h:selectOneRadio>
+                                </div>
+                            </ui:repeat>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-2 p-2 text-center">
+                        <h:commandButton styleClass="btn btn-primary" value="Create"
+                        action="#{visitCreate.saveAction()}"/>
+                    </div>
+                </div>
+            </h:form>
+        </article>
+    </ui:define>
+</ui:composition>
