@@ -27,4 +27,7 @@
     <installAppsConfigDropins>D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\usr\servers\defaultServer\configDropins\defaults\install_apps_configuration_1491924271.xml</installAppsConfigDropins>
     <projectType>war</projectType>
     <projectCompileDependency>com.google.code.gson:gson:2.10.1</projectCompileDependency>
+    <projectCompileDependency>javax:javaee-api:8.0</projectCompileDependency>
+    <projectCompileDependency>com.sun.mail:javax.mail:1.6.0</projectCompileDependency>
+    <projectCompileDependency>javax.activation:activation:1.1</projectCompileDependency>
 </liberty-plugin-config>

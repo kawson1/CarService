@@ -1,7 +1,6 @@
 com\example\carservice\Components\FileUtility.class
 com\example\carservice\Visit$VisitBuilder.class
 com\example\carservice\View\Converter\LocalDateConverter.class
-com\example\carservice\Controllers\ApiServlet$Paths.class
 com\example\carservice\Repositories\VisitRepository.class
 com\example\carservice\Services\VisitService.class
 com\example\carservice\ClientType.class
@@ -10,7 +9,6 @@ com\example\carservice\View\Converter\UuidConverter.class
 com\example\carservice\Repositories\GarageInMemoryRepository.class
 com\example\carservice\Garage$GarageBuilder.class
 com\example\carservice\Controllers\Exception\BadRequestException.class
-com\example\carservice\Controllers\ApiServlet$Patterns.class
 com\example\carservice\View\Visit\VisitList.class
 com\example\carservice\Repositories\ClientInMemoryRepository.class
 com\example\carservice\View\Garage\GarageEdit.class
@@ -22,7 +20,6 @@ com\example\carservice\Client.class
 com\example\carservice\Components\DataStore.class
 com\example\carservice\Configuration\Observer\InitializeData.class
 com\example\carservice\Client$ClientBuilder.class
-com\example\carservice\Controllers\ApiServlet.class
 com\example\carservice\Components\CloningUtility.class
 com\example\carservice\Components\FileUtility$Paths.class
 com\example\carservice\Repositories\ClientRepository.class
@@ -36,9 +33,9 @@ com\example\carservice\Controllers\Exception\NotFoundException.class
 com\example\carservice\Fault.class
 com\example\carservice\Controllers\ClientControllerImplementation.class
 com\example\carservice\Repositories\VisitInMemoryRepository.class
+com\example\carservice\Controllers\ApplicationConfig.class
 com\example\carservice\Garage.class
 com\example\carservice\Controllers\Exception\HttpRequestException.class
-com\example\carservice\Controllers\Filter\ExceptionFilter.class
 com\example\carservice\View\Converter\ClientConverter.class
 com\example\carservice\Repositories\Repository.class
 com\example\carservice\View\Visit\VisitCreate.class
