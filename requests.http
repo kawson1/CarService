@@ -84,28 +84,39 @@ Content-Type: application/json
 
 
 # GET VISITS
-GET http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/visits
+GET http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/garages/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/visits
 
 ###
 
 # GET GARAGE
-GET http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/visits/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
+GET http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/garages/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/visits/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
 
 ###
 
 # DELETE GARAGE
-DELETE http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/visits/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
+DELETE http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/garages/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/visits/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
 
 ###
 
 # UPDATE GARAGE
-PUT http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/visits
+PUT http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/garages/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/visits
 Content-Type: application/json
 
 {
   "id": "c4804e0f-769e-4ab9-9ebe-0578fb4f00a6",
   "date": "2021-11-11",
   "VIN": "XXXXXXXXXXXXXXXXX"
+}
+
+###
+
+# CREATE VISIT
+POST http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/garages/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/visits
+Content-Type: application/json
+
+{
+  "date": "2021-11-11",
+  "VIN": "SDOTKDSOGFKDO"
 }
 
 

@@ -15,7 +15,7 @@ public class FileUtility {
 
     private final String portraitsPath;
     public FileUtility(){
-        this.portraitsPath = "D:\\PG\\SEM 7\\JEE\\CarService\\src\\main\\resources\\portraits\\";
+        this.portraitsPath = "/home/student/Desktop/184948/CarService/src/main/resources/portraits/";
     }
 
     private void save(byte[] data, String fileName) throws IOException {
@@ -37,7 +37,7 @@ public class FileUtility {
             return Files.readAllBytes(file);
         } catch(Exception ex) {
             try {
-                return Files.readAllBytes(Path.of("D:\\PG\\SEM 7\\JEE\\CarService\\src\\main\\resources\\portraits\\default_client.jpg"));
+                return Files.readAllBytes(Path.of("/home/student/Desktop/184948/CarService/src/main/resources/portraits/default_client.jpg"));
             } catch(Exception ex2) {
                 throw new NotFoundException();
             }

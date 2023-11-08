@@ -10,6 +10,8 @@ import java.util.UUID;
 @Setter
 @Getter
 @Builder
+@ToString
+@EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class Client implements Serializable {

@@ -34,6 +34,11 @@ public class VisitService {
 
     public List<Visit> findAll() { return visitRepository.findAll(); }
 
+    public List<Visit> findAll(UUID garageId) {
+        return visitRepository.findAll()
+            .stream().filter(visit -> visit.garage.getId().equals(garageId)).toList();
+    }
+
     public void create(Visit visit){
         visitRepository.create(visit);
     }

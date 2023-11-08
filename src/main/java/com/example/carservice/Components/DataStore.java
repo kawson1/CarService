@@ -107,7 +107,8 @@ public class DataStore {
     }
 
     public synchronized void updateVisit(Visit value) throws IllegalArgumentException {
-        if (visits.removeIf(garage -> garage.getId().equals(value.getId()))) {
+        if (visits.removeIf(visit -> visit.getId().equals(value.getId()))) {
+            System.out.println(value.getVIN());
             visits.add(cloningUtility.clone(value));
         } else {
             throw new IllegalArgumentException("The Visit id: " + value.getId() +" does not exists");

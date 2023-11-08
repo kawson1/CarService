@@ -1,212 +1,212 @@
-io.openliberty.faces.4.0.internal;1.0.82.cl231020231002-1201;false;1699201215153;36651;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.faces.4.0.internal_1.0.82.jar
-io.openliberty.org.apache.jasper.expressionLanguage.5.0;1.0.82.cl231020231002-1201;false;1699201218875;168504;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.org.apache.jasper.expressionLanguage.5.0_1.0.82.jar
-com.ibm.ws.jndi;1.0.82.cl231020231002-1201;false;1699402243700;159527;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.jndi_1.0.82.jar
-com.ibm.ws.app.manager.module;1.0.82.cl231020231002-1201;false;1699201212271;100211;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.app.manager.module_1.0.82.jar
-com.ibm.ws.repository.liberty;1.0.82.cl231020231002-1201;false;1696252296000;9630;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.repository.liberty_1.0.82.jar
-com.ibm.ws.javaee.metadata.context;1.0.82.cl231020231002-1201;false;1699201217597;23634;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.javaee.metadata.context_1.0.82.jar
-com.ibm.ws.jaxrs.2.x.config;1.0.82.cl231020231002-1201;false;1699402244170;26650;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.jaxrs.2.x.config_1.0.82.jar
-com.ibm.ws.cdi.web.jakarta;1.0.82.cl231020231002-1201;false;1699201218627;40715;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.cdi.web.jakarta_1.0.82.jar
-com.ibm.ws.managedobject;1.0.82.cl231020231002-1201;false;1699201215737;16398;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.managedobject_1.0.82.jar
-io.openliberty.session.6.0.internal;1.0.82.cl231020231002-1201;false;1699201213621;20426;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.session.6.0.internal_1.0.82.jar
-com.ibm.websphere.appserver.spi.kernel.filemonitor;1.0.82.cl231020231002-1201;false;1696252296000;4244;dev/spi/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\spi\ibm\com.ibm.websphere.appserver.spi.kernel.filemonitor_1.0.82.jar
-com.ibm.ws.artifact.url;1.0.82.cl231020231002-1201;false;1699201219276;27015;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.artifact.url_1.0.82.jar
-com.ibm.ws.webserver.plugin.runtime.interfaces;1.0.82.cl231020231002-1201;false;1699201213436;5832;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.webserver.plugin.runtime.interfaces_1.0.82.jar
-io.openliberty.jakarta.annotation.2.1;1.0.82.cl231020231002-1201;false;1699201220245;23733;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.annotation.2.1_1.0.82.jar
-io.openliberty.org.jboss.resteasy.cdi.ee10;1.0.82.cl231020231002-1201;false;1699402244943;55323;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.org.jboss.resteasy.cdi.ee10_1.0.82.jar
-com.ibm.websphere.appserver.spi.kernel.metatype;1.0.82.cl231020231002-1201;false;1696252296000;4073;dev/spi/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\spi\ibm\com.ibm.websphere.appserver.spi.kernel.metatype_1.0.82.jar
-io.openliberty.cdi.4.0.internal.services.fragment;1.0.82.cl231020231002-1201;false;1699201215750;2937;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.cdi.4.0.internal.services.fragment_1.0.82.jar
-com.ibm.websphere.appserver.spi.transaction;1.1.82.cl231020231002-1201;false;1699201217063;3972;dev/spi/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\spi\ibm\com.ibm.websphere.appserver.spi.transaction_1.1.82.jar
-com.ibm.ws.serialization;1.0.82.cl231020231002-1201;false;1699201212097;26205;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.serialization_1.0.82.jar
-com.ibm.ws.org.apache.commons.fileupload.jakarta;1.0.82.cl231020231002-1201;false;1699201213350;72428;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.org.apache.commons.fileupload.jakarta_1.0.82.jar
-com.ibm.ws.org.eclipse.equinox.region;1.0.82.cl231020231002-1201;false;1696252296000;71473;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.org.eclipse.equinox.region_1.0.82.jar
-com.ibm.ws.config.schemagen;1.0.82.cl231020231002-1201;false;1696252296000;94864;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.config.schemagen_1.0.82.jar
-com.ibm.ws.logging;1.0.82.cl231020231002-1201;false;1696252296000;427849;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.logging_1.0.82.jar
-io.openliberty.jakarta.transaction.2.0;1.0.82.cl231020231002-1201;false;1699201219965;30067;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.transaction.2.0_1.0.82.jar
-com.ibm.ws.kernel.boot.ws-launch;1.0.82.cl231020231002-1201;false;1696252296000;2273;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\ws-launch.jar
-io.openliberty.transaction;1.1.82.cl231020231002-1201;false;1699201220061;17743;dev/api/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\ibm\io.openliberty.transaction_1.1.82.jar
-com.ibm.ws.install;1.0.82.cl231020231002-1201;false;1696252296000;3677846;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.install_1.0.82.jar
-com.ibm.ws.javaee.dd.ejb;1.1.82.cl231020231002-1201;false;1699201207384;33293;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.javaee.dd.ejb_1.1.82.jar
-com.ibm.ws.classloader.context;1.0.82.cl231020231002-1201;false;1699201220410;41439;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.classloader.context_1.0.82.jar
-com.ibm.ws.anno;1.1.82.cl231020231002-1201;false;1699201211042;1078655;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.anno_1.1.82.jar
-com.ibm.ws.tx.embeddable.jakarta;1.0.82.cl231020231002-1201;false;1699201216865;130891;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.tx.embeddable.jakarta_1.0.82.jar
-com.ibm.ws.install.map;1.0.82.cl231020231002-1201;false;1696252296000;28635;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.install.map_1.0.82.jar
-com.ibm.ws.cdi.jndi.jakarta;1.0.82.cl231020231002-1201;false;1699402244770;10148;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.cdi.jndi.jakarta_1.0.82.jar
-com.ibm.ws.transaction.context.jakarta;1.0.82.cl231020231002-1201;false;1699201210806;17418;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.transaction.context.jakarta_1.0.82.jar
-com.ibm.ws.org.apache.commons.io;1.0.82.cl231020231002-1201;false;1699201213361;327244;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.org.apache.commons.io_1.0.82.jar
-com.ibm.websphere.appserver.spi.kernel.service;1.8.82.cl231020231002-1201;false;1696252296000;121922;dev/spi/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\spi\ibm\com.ibm.websphere.appserver.spi.kernel.service_1.8.82.jar
-io.openliberty.cdi.4.0.internal.web;1.0.82.cl231020231002-1201;false;1699201218763;6575;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.cdi.4.0.internal.web_1.0.82.jar
-io.openliberty.jakarta.mail.2.1;1.0.82.cl231020231002-1201;false;1699402243924;234126;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.mail.2.1_1.0.82.jar
-com.ibm.ws.threading;1.1.82.cl231020231002-1201;false;1696252296000;205413;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.threading_1.1.82.jar
-io.openliberty.checkpoint;1.0.82.cl231020231002-1201;false;1696252296000;68485;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.checkpoint_1.0.82.jar
-com.ibm.ws.crypto.passwordutil;1.0.82.cl231020231002-1201;false;1696252296000;80527;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.crypto.passwordutil_1.0.82.jar
-com.ibm.ws.kernel.boot;1.0.82.cl231020231002-1201;false;1696252296000;830572;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.kernel.boot_1.0.82.jar
-io.openliberty.jakarta.xmlWS.4.0;1.0.82.cl231020231002-1201;false;1699201216335;73656;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.xmlWS.4.0_1.0.82.jar
-com.ibm.ws.event;1.0.82.cl231020231002-1201;false;1696252296000;82659;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.event_1.0.82.jar
-io.openliberty.jakarta.servlet.6.0;1.0.82.cl231020231002-1201;false;1699201217940;353127;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.servlet.6.0_1.0.82.jar
-io.openliberty.jakarta.xmlBinding.4.0;1.0.82.cl231020231002-1201;false;1699201219812;125357;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.xmlBinding.4.0_1.0.82.jar
-com.ibm.ws.kernel.instrument.check;1.0.82.cl231020231002-1201;false;1696252296000;6880;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\bootstrap-agent.jar
-com.ibm.ws.request.probes;1.0.82.cl231020231002-1201;false;1699201211868;64840;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.request.probes_1.0.82.jar
-com.ibm.ws.injection.jakarta;1.0.82.cl231020231002-1201;false;1699201216486;421219;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.injection.jakarta_1.0.82.jar
-com.ibm.websphere.appserver.spi.logging;1.1.82.cl231020231002-1201;false;1696252296000;51453;dev/spi/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\spi\ibm\com.ibm.websphere.appserver.spi.logging_1.1.82.jar
-com.ibm.websphere.appserver.api.endpoint;1.0.82.cl231020231002-1201;false;1699201210711;3634;dev/api/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\ibm\com.ibm.websphere.appserver.api.endpoint_1.0.82.jar
-io.openliberty.jakarta.pages.3.1;1.0.82.cl231020231002-1201;false;1699201212579;69087;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.pages.3.1_1.0.82.jar
-io.openliberty.servlet;1.1.82.cl231020231002-1201;false;1699201211555;30371;dev/api/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\ibm\io.openliberty.servlet_1.1.82.jar
-io.openliberty.jakarta.expressionLanguage.5.0;1.0.82.cl231020231002-1201;false;1699201211269;114969;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.expressionLanguage.5.0_1.0.82.jar
-com.ibm.websphere.appserver.spi.classloading;1.4.82.cl231020231002-1201;false;1699201217264;15870;dev/spi/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\spi\ibm\com.ibm.websphere.appserver.spi.classloading_1.4.82.jar
-com.ibm.ws.org.apache.aries.util;1.0.82.cl231020231002-1201;false;1696252296000;112994;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.org.apache.aries.util_1.0.82.jar
-com.ibm.ws.app.manager.lifecycle;1.0.82.cl231020231002-1201;false;1699201212636;5419;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.app.manager.lifecycle_1.0.82.jar
-com.ibm.ws.adaptable.module;1.0.82.cl231020231002-1201;false;1699201219023;64806;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.adaptable.module_1.0.82.jar
-com.ibm.ws.recoverylog;1.0.82.cl231020231002-1201;false;1699201216845;272475;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.recoverylog_1.0.82.jar
-com.ibm.ws.resource;1.0.82.cl231020231002-1201;false;1699201217857;42194;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.resource_1.0.82.jar
-com.ibm.ws.org.jboss.jdeparser.1.0.0;1.0.82.cl231020231002-1201;false;1699201215739;164036;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.org.jboss.jdeparser.1.0.0_1.0.82.jar
-io.openliberty.jakarta.interceptor.2.1;1.0.82.cl231020231002-1201;false;1699201216545;23011;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.interceptor.2.1_1.0.82.jar
-io.openliberty.jakarta.persistence.api.3.1;1.0.82.cl231020231002-1201;false;1699201216399;2410;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.jakarta.persistence.api.3.1_1.0.82.jar
-io.openliberty.java11.internal;1.0.82.cl231020231002-1201;false;1699201214800;2312;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.java11.internal_1.0.82.jar
-io.openliberty.jakarta.restfulWS.3.1;1.0.82.cl231020231002-1201;false;1699402244045;151690;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.restfulWS.3.1_1.0.82.jar
-io.openliberty.cdi.spi;1.1.82.cl231020231002-1201;false;1699201215917;3864;dev/spi/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\spi\ibm\io.openliberty.cdi.spi_1.1.82.jar
-io.openliberty.org.glassfish.hk2.osgi-resource-locator;1.0.82.cl231020231002-1201;false;1699201219887;18965;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.org.glassfish.hk2.osgi-resource-locator_1.0.82.jar
-com.ibm.ws.cdi.transaction.jakarta;1.0.82.cl231020231002-1201;false;1699201218081;7696;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.cdi.transaction.jakarta_1.0.82.jar
-org.eclipse.osgi;3.18.300.cl231020231002-1201;false;1696252296000;1458820;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\org.eclipse.osgi_3.18.300.jar
-com.ibm.ws.kernel.cmdline;1.0.82.cl231020231002-1201;false;1696252296000;360515;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.kernel.cmdline_1.0.82.jar
-com.ibm.ws.jsonb.service;1.0.82.cl231020231002-1201;false;1699201210921;11882;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.jsonb.service_1.0.82.jar
-com.ibm.ws.org.jboss.jandex;1.0.82.cl231020231002-1201;false;1696252296000;230240;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.org.jboss.jandex_1.0.82.jar
-com.ibm.ws.repository;1.0.82.cl231020231002-1201;false;1696252296000;279880;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.repository_1.0.82.jar
-io.openliberty.jakarta.jsonb.3.0;1.0.82.cl231020231002-1201;false;1699201215380;33384;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.jsonb.3.0_1.0.82.jar
-com.ibm.ws.app.manager.war.jakarta;1.0.82.cl231020231002-1201;false;1699201213126;112560;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.app.manager.war.jakarta_1.0.82.jar
-com.ibm.ws.jsf.shared.jakarta;1.0.82.cl231020231002-1201;false;1699201215022;37259;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.jsf.shared.jakarta_1.0.82.jar
-com.ibm.ws.crypto.certificateutil;1.0.82.cl231020231002-1201;false;1696252296000;12662;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.crypto.certificateutil_1.0.82.jar
-com.ibm.ws.logging.hpel;1.0.82.cl231020231002-1201;false;1696252296000;689850;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.logging.hpel_1.0.82.jar
-com.ibm.ws.timer;1.0.82.cl231020231002-1201;false;1699201210555;7075;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.timer_1.0.82.jar
-com.ibm.websphere.appserver.spi.javaeedd;1.7.82.cl231020231002-1201;false;1699201207598;67149;dev/spi/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\spi\ibm\com.ibm.websphere.appserver.spi.javaeedd_1.7.82.jar
-com.ibm.websphere.appserver.api.hpel;2.0.82.cl231020231002-1201;false;1696252296000;136255;dev/api/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\ibm\com.ibm.websphere.appserver.api.hpel_2.0.82.jar
-com.ibm.ws.kernel.metatype.helper;1.0.82.cl231020231002-1201;false;1696252296000;37313;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.kernel.metatype.helper_1.0.82.jar
-com.ibm.ws.kernel.service;1.3.82.cl231020231002-1201;false;1696252296000;386054;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.kernel.service_1.3.82.jar
-com.ibm.websphere.appserver.spi.application;1.1.82.cl231020231002-1201;false;1699201220861;8258;dev/spi/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\spi\ibm\com.ibm.websphere.appserver.spi.application_1.1.82.jar
-io.openliberty.jakarta.websocket.2.1;1.0.82.cl231020231002-1201;false;1699201218186;23011;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.websocket.2.1_1.0.82.jar
-com.ibm.ws.logging.osgi;1.0.82.cl231020231002-1201;false;1696252296000;279718;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.logging.osgi_1.0.82.jar
-com.ibm.ws.javaee.platform.v7;1.0.82.cl231020231002-1201;false;1699201211813;2855;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.javaee.platform.v7_1.0.82.jar
-io.openliberty.org.jboss.weld5.se;1.0.82.cl231020231002-1201;false;1699201215973;152113;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.org.jboss.weld5.se_1.0.82.jar
-com.ibm.tx.jta.jakarta;1.0.82.cl231020231002-1201;false;1699201216673;481223;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.tx.jta.jakarta_1.0.82.jar
-com.ibm.ws.javaee.platform.v8;1.0.82.cl231020231002-1201;false;1699201212685;2852;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.javaee.platform.v8_1.0.82.jar
-com.ibm.ws.artifact.equinox.module;1.0.82.cl231020231002-1201;false;1699201219091;22686;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.artifact.equinox.module_1.0.82.jar
-io.openliberty.org.jboss.resteasy.server.ee10;1.0.82.cl231020231002-1201;false;1699402244952;102084;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.org.jboss.resteasy.server.ee10_1.0.82.jar
-com.ibm.ws.dynamic.bundle;1.0.82.cl231020231002-1201;false;1699201212413;17172;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.dynamic.bundle_1.0.82.jar
-io.openliberty.cdi.4.0.thirdparty;1.0.82.cl231020231002-1201;false;1699201216003;18237;dev/api/third-party/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\third-party\io.openliberty.cdi.4.0.thirdparty_1.0.82.jar
-io.openliberty.jaxrs30;1.0.82.cl231020231002-1201;false;1699402244274;8906;dev/api/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\ibm\io.openliberty.jaxrs30_1.0.82.jar
-com.ibm.ws.wsbytebuffer;1.0.82.cl231020231002-1201;false;1699201210558;70169;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.wsbytebuffer_1.0.82.jar
-com.ibm.ws.artifact.file;1.0.82.cl231020231002-1201;false;1699201219179;27553;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.artifact.file_1.0.82.jar
-com.ibm.websphere.appserver.spi.kernel.embeddable;1.1.82.cl231020231002-1201;false;1696252296000;12046;dev/spi/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\spi\ibm\com.ibm.websphere.appserver.spi.kernel.embeddable_1.1.82.jar
-com.ibm.websphere.appserver.spi.anno;1.1.82.cl231020231002-1201;false;1699201211052;35607;dev/spi/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\spi\ibm\com.ibm.websphere.appserver.spi.anno_1.1.82.jar
-com.ibm.ws.org.glassfish.json.1.0;1.0.82.cl231020231002-1201;false;1696252296000;67656;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.org.glassfish.json.1.0_1.0.82.jar
-io.openliberty.jakarta.cdi.4.0;1.0.82.cl231020231002-1201;false;1699201212520;169015;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.cdi.4.0_1.0.82.jar
-com.ibm.ws.repository.resolver;1.0.82.cl231020231002-1201;false;1696252296000;50661;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.repository.resolver_1.0.82.jar
-com.ibm.ws.org.eclipse.equinox.coordinator;1.0.82.cl231020231002-1201;false;1696252296000;48329;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.org.eclipse.equinox.coordinator_1.0.82.jar
-com.ibm.ws.org.eclipse.equinox.metatype;1.0.82.cl231020231002-1201;false;1696252296000;94168;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.org.eclipse.equinox.metatype_1.0.82.jar
-com.ibm.ws.cdi.2.0.jsf.jakarta;1.0.82.cl231020231002-1201;false;1699201214896;7488;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.cdi.2.0.jsf.jakarta_1.0.82.jar
-com.ibm.ws.app.manager;1.1.82.cl231020231002-1201;false;1699201220682;279885;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.app.manager_1.1.82.jar
-com.ibm.ws.artifact.zip;1.0.82.cl231020231002-1201;false;1699201219372;195405;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.artifact.zip_1.0.82.jar
-com.ibm.ws.webcontainer.servlet.3.1.jakarta;1.0.82.cl231020231002-1201;false;1699201213418;178758;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.webcontainer.servlet.3.1.jakarta_1.0.82.jar
-io.openliberty.org.eclipse.angus.activation;1.0.82.cl231020231002-1201;false;1699402237753;23091;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.org.eclipse.angus.activation_1.0.82.jar
-com.ibm.ws.context;1.0.82.cl231020231002-1201;false;1699201217588;67144;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.context_1.0.82.jar
-com.ibm.ws.artifact.loose;1.0.82.cl231020231002-1201;false;1699201219259;69165;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.artifact.loose_1.0.82.jar
-io.openliberty.jakarta.jsonp.2.1;1.0.82.cl231020231002-1201;false;1699201214473;47925;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.jsonp.2.1_1.0.82.jar
-com.ibm.ws.config;1.0.82.cl231020231002-1201;false;1696252296000;766579;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.config_1.0.82.jar
-com.ibm.ws.security.utility;1.0.82.cl231020231002-1201;false;1696252296000;155424;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.security.utility_1.0.82.jar
-com.ibm.ws.kernel.equinox.module;1.0.82.cl231020231002-1201;false;1696252296000;15763;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.kernel.equinox.module_1.0.82.jar
-com.ibm.ws.org.apache.aries.jmx.api;1.0.82.cl231020231002-1201;false;1696252296000;31093;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.org.apache.aries.jmx.api_1.0.82.jar
-com.ibm.ws.org.apache.httpcomponents;1.0.82.cl231020231002-1201;false;1699402244262;1557527;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.org.apache.httpcomponents_1.0.82.jar
-com.ibm.ws.kernel.filemonitor;1.0.82.cl231020231002-1201;false;1696252296000;75543;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.kernel.filemonitor_1.0.82.jar
-io.openliberty.cdi.4.0.internal.weld;1.0.82.cl231020231002-1201;false;1699201215779;43149;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.cdi.4.0.internal.weld_1.0.82.jar
-com.ibm.ws.org.apache.aries.jndi.api;1.1.82.cl231020231002-1201;false;1699402243710;14365;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.org.apache.aries.jndi.api_1.1.82.jar
-com.ibm.ws.channelfw;1.0.82.cl231020231002-1201;false;1699201210546;675568;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.channelfw_1.0.82.jar
-io.openliberty.org.eclipse.yasson.3.0;1.0.82.cl231020231002-1201;false;1699201215497;433063;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.org.eclipse.yasson.3.0_1.0.82.jar
-com.ibm.ws.crypto.ltpakeyutil;1.0.82.cl231020231002-1201;false;1696252296000;33693;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.crypto.ltpakeyutil_1.0.82.jar
-io.openliberty.endpoint;1.0.82.cl231020231002-1201;false;1699201210643;14481;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.endpoint_1.0.82.jar
-com.ibm.ws.org.apache.felix.scr;1.0.82.cl231020231002-1201;false;1696252296000;479303;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.org.apache.felix.scr_1.0.82.jar
-com.ibm.rls.jdbc.jakarta;1.0.82.cl231020231002-1201;false;1699201216661;95446;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.rls.jdbc.jakarta_1.0.82.jar
-io.openliberty.org.eclipse.persistence-3.1;1.0.82.cl231020231002-1201;false;1699201218945;162539;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.org.eclipse.persistence-3.1_1.0.82.jar
-com.ibm.websphere.javaee.activity.1.0;1.0.82.cl231020231002-1201;false;1699201217250;4447;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\com.ibm.websphere.javaee.activity.1.0_1.0.82.jar
-com.ibm.ws.security.java2sec;1.0.82.cl231020231002-1201;false;1699201212282;19694;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.security.java2sec_1.0.82.jar
-io.openliberty.jakartaee.platform.v9;1.0.82.cl231020231002-1201;false;1699201218009;2949;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.jakartaee.platform.v9_1.0.82.jar
-com.ibm.ws.cdi.internal.jakarta;1.0.82.cl231020231002-1201;false;1699201215642;97382;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.cdi.internal.jakarta_1.0.82.jar
-com.ibm.ws.org.slf4j.jdk14;1.0.82.cl231020231002-1201;false;1699201214309;9238;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.org.slf4j.jdk14_1.0.82.jar
-com.ibm.ws.artifact;1.0.82.cl231020231002-1201;false;1699201219381;26201;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.artifact_1.0.82.jar
-com.ibm.ws.transaction.jakarta;1.0.82.cl231020231002-1201;false;1699201216855;138917;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.transaction.jakarta_1.0.82.jar
-com.ibm.ws.org.apache.aries.jmx.core.whiteboard;1.0.82.cl231020231002-1201;false;1696252296000;142429;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.org.apache.aries.jmx.core.whiteboard_1.0.82.jar
-io.openliberty.el.internal.cdi.jakarta;1.0.82.cl231020231002-1201;false;1699201211265;3759;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.el.internal.cdi.jakarta_1.0.82.jar
-com.ibm.ws.collector.manager;1.0.82.cl231020231002-1201;false;1696252296000;35862;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.collector.manager_1.0.82.jar
-com.ibm.websphere.appserver.spi.httptransport;4.2.82.cl231020231002-1201;false;1699201211341;15917;dev/spi/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\spi\ibm\com.ibm.websphere.appserver.spi.httptransport_4.2.82.jar
-io.openliberty.faces.4.0.thirdparty;1.0.82.cl231020231002-1201;false;1699201215279;272095;dev/api/third-party/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\third-party\io.openliberty.faces.4.0.thirdparty_1.0.82.jar
-io.openliberty.servlet.spi;2.13.82.cl231020231002-1201;false;1699201213028;172052;dev/spi/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\spi\ibm\io.openliberty.servlet.spi_2.13.82.jar
-com.ibm.ws.session.jakarta;1.0.82.cl231020231002-1201;false;1699201213374;302539;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.session.jakarta_1.0.82.jar
-com.ibm.ws.webserver.plugin.runtime.jakarta;1.0.82.cl231020231002-1201;false;1699201213486;35394;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.webserver.plugin.runtime.jakarta_1.0.82.jar
-io.openliberty.webcontainer.servlet.6.0.internal;1.0.82.cl231020231002-1201;false;1699201213873;47856;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.webcontainer.servlet.6.0.internal_1.0.82.jar
-com.ibm.ws.classloading.configuration;1.0.82.cl231020231002-1201;false;1699201219494;17431;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.classloading.configuration_1.0.82.jar
-com.ibm.ws.security.audit.reader;1.0.82.cl231020231002-1201;false;1696252296000;108676;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.security.audit.reader_1.0.82.jar
-com.ibm.ws.http.plugin.merge;1.0.82.cl231020231002-1201;false;1699201213135;48812;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.http.plugin.merge_1.0.82.jar
-com.ibm.ws.javaee.platform.v7.jndi;1.0.82.cl231020231002-1201;false;1699402243369;8182;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.javaee.platform.v7.jndi_1.0.82.jar
-com.ibm.ws.jndi.url.contexts;1.0.82.cl231020231002-1201;false;1699402243553;42523;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.jndi.url.contexts_1.0.82.jar
-io.openliberty.jakarta.enterpriseBeans.4.0;1.0.82.cl231020231002-1201;false;1699201217520;59684;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.enterpriseBeans.4.0_1.0.82.jar
-io.openliberty.restfulWS30.jsonb20provider;1.0.82.cl231020231002-1201;false;1699402245082;15720;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.restfulWS30.jsonb20provider_1.0.82.jar
-io.openliberty.jakarta.activation.2.1;1.0.82.cl231020231002-1201;false;1699201212842;63514;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.activation.2.1_1.0.82.jar
-com.ibm.websphere.javaee.jsonp.1.0;1.0.82.cl231020231002-1201;false;1696252296000;18465;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\com.ibm.websphere.javaee.jsonp.1.0_1.0.82.jar
-com.ibm.ws.tx.jta.extensions.jakarta;1.0.82.cl231020231002-1201;false;1699201216873;15871;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.tx.jta.extensions.jakarta_1.0.82.jar
-com.ibm.ws.diagnostics;1.0.82.cl231020231002-1201;false;1696252296000;70471;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.diagnostics_1.0.82.jar
-com.ibm.ws.javaee.dd;1.0.82.cl231020231002-1201;false;1699201207568;84002;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.javaee.dd_1.0.82.jar
-com.ibm.ws.logging.hpel.osgi;1.0.82.cl231020231002-1201;false;1696252296000;42010;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.logging.hpel.osgi_1.0.82.jar
-com.ibm.ws.container.service;1.0.82.cl231020231002-1201;false;1699201211926;411893;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.container.service_1.0.82.jar
-io.openliberty.jakarta.connectors.2.1;1.0.82.cl231020231002-1201;false;1699201214405;62998;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.connectors.2.1_1.0.82.jar
-com.ibm.ws.webcontainer.cors.jakarta;1.0.82.cl231020231002-1201;false;1699201213384;51300;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.webcontainer.cors.jakarta_1.0.82.jar
-com.ibm.ws.webcontainer.jakarta;1.1.82.cl231020231002-1201;false;1699201213405;2034437;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.webcontainer.jakarta_1.1.82.jar
-io.openliberty.jakarta.soap.3.0;1.0.82.cl231020231002-1201;false;1699201216203;34127;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.soap.3.0_1.0.82.jar
-com.ibm.ws.org.objectweb.asm;1.0.82.cl231020231002-1201;false;1696252296000;371162;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.org.objectweb.asm_1.0.82.jar
-com.ibm.ws.kernel.feature;1.0.82.cl231020231002-1201;false;1696252296000;694469;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.kernel.feature_1.0.82.jar
-io.openliberty.jakarta.validation.3.0;1.0.82.cl231020231002-1201;false;1699201212788;91536;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.validation.3.0_1.0.82.jar
-com.ibm.ws.product.utility;1.0.82.cl231020231002-1201;false;1696252296000;180635;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.product.utility_1.0.82.jar
-io.openliberty.org.jboss.weld5;1.0.82.cl231020231002-1201;false;1699201215993;2073686;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.org.jboss.weld5_1.0.82.jar
-com.ibm.ws.artifact.bundle;1.0.82.cl231020231002-1201;false;1699201219032;14057;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.artifact.bundle_1.0.82.jar
-com.ibm.ws.webcontainer.servlet.4.0.jakarta;1.0.82.cl231020231002-1201;false;1699201213428;68003;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.webcontainer.servlet.4.0.jakarta_1.0.82.jar
-io.openliberty.cdi.4.0.interfaces;1.0.82.cl231020231002-1201;false;1699201215748;4103;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.cdi.4.0.interfaces_1.0.82.jar
-com.ibm.ws.install.featureUtility;1.0.82.cl231020231002-1201;false;1696252296000;174401;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.install.featureUtility_1.0.82.jar
-com.ibm.tx.util.jakarta;1.0.82.cl231020231002-1201;false;1699201216684;21992;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.tx.util.jakarta_1.0.82.jar
-io.openliberty.org.apache.commons.codec;1.15.82.cl231020231002-1201;false;1699402244331;352832;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.org.apache.commons.codec_1.15.82.jar
-io.openliberty.jakarta.websocket.client.2.1;1.0.82.cl231020231002-1201;false;1699201218247;41100;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.websocket.client.2.1_1.0.82.jar
-com.ibm.ws.javaee.version;1.0.82.cl231020231002-1201;false;1699201218008;5839;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.javaee.version_1.0.82.jar
-com.ibm.ws.jmx;1.0.82.cl231020231002-1201;false;1696252296000;24773;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.jmx_1.0.82.jar
-com.ibm.websphere.appserver.api.config;1.2.82.cl231020231002-1201;false;1696252296000;5220;dev/api/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\ibm\com.ibm.websphere.appserver.api.config_1.2.82.jar
-com.ibm.ws.cdi.interfaces.jakarta;1.0.82.cl231020231002-1201;false;1699201216842;12740;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.cdi.interfaces.jakarta_1.0.82.jar
-io.openliberty.org.eclipse.parsson.1.1;1.0.82.cl231020231002-1201;false;1699201214626;112068;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.org.eclipse.parsson.1.1_1.0.82.jar
-com.ibm.ws.webserver.plugin.utility;1.0.82.cl231020231002-1201;false;1699201214055;251857;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.webserver.plugin.utility_1.0.82.jar
-com.ibm.json4j;1.0.82.cl231020231002-1201;false;1696252296000;37679;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.json4j_1.0.82.jar
-io.openliberty.jakarta.faces.4.0;1.0.82.cl231020231002-1201;false;1699201211493;1399583;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.faces.4.0_1.0.82.jar
-com.ibm.websphere.appserver.spi.containerServices;4.0.82.cl231020231002-1201;false;1699201212189;60636;dev/spi/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\spi\ibm\com.ibm.websphere.appserver.spi.containerServices_4.0.82.jar
-com.ibm.ws.javaee.ddmodel;1.0.82.cl231020231002-1201;false;1699201207585;1217607;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.javaee.ddmodel_1.0.82.jar
-io.openliberty.org.jboss.classfilewriter.1.3;1.3.82.cl231020231002-1201;false;1699201215955;121563;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.org.jboss.classfilewriter.1.3_1.3.82.jar
-io.openliberty.org.apache.myfaces.4.0;1.0.82.cl231020231002-1201;false;1699201215303;2629686;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.org.apache.myfaces.4.0_1.0.82.jar
-com.ibm.ws.org.apache.aries.jndi.core;1.1.82.cl231020231002-1201;false;1699402243790;51442;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.org.apache.aries.jndi.core_1.1.82.jar
-com.ibm.websphere.org.reactivestreams.reactive-streams.1.0;1.1.82.cl231020231002-1201;false;1699402243109;14515;dev/api/stable/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\stable\com.ibm.websphere.org.reactivestreams.reactive-streams.1.0_1.1.82.jar
-com.ibm.ws.runtime.update;1.0.82.cl231020231002-1201;false;1696252296000;46790;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.runtime.update_1.0.82.jar
-io.openliberty.jakartaee.platform.v10;1.0.82.cl231020231002-1201;false;1699201214696;2959;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.jakartaee.platform.v10_1.0.82.jar
-com.ibm.websphere.appserver.spi.threading;1.1.82.cl231020231002-1201;false;1696252296000;4104;dev/spi/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\spi\ibm\com.ibm.websphere.appserver.spi.threading_1.1.82.jar
-com.ibm.ws.kernel.boot.archive;1.0.82.cl231020231002-1201;false;1696252296000;348470;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.kernel.boot.archive_1.0.82.jar
-com.ibm.ws.javaee.platform.defaultresource;1.0.82.cl231020231002-1201;false;1699201211759;9634;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.javaee.platform.defaultresource_1.0.82.jar
-com.ibm.websphere.appserver.api.basics;1.4.82.cl231020231002-1201;false;1699201220692;45720;dev/api/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\ibm\com.ibm.websphere.appserver.api.basics_1.4.82.jar
-io.openliberty.webcontainer.servlet.6.0.internal.factories;1.0.82.cl231020231002-1201;false;1699201213712;30350;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.webcontainer.servlet.6.0.internal.factories_1.0.82.jar
-io.openliberty.org.jboss.resteasy.common.ee10;1.0.82.cl231020231002-1201;false;1699402244373;2450416;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.org.jboss.resteasy.common.ee10_1.0.82.jar
-io.openliberty.org.apache.commons.logging;1.2.82.cl231020231002-1201;false;1699402244340;60085;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.org.apache.commons.logging_1.2.82.jar
-com.ibm.ws.app.manager.ready;1.0.82.cl231020231002-1201;false;1699201220635;6804;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.app.manager.ready_1.0.82.jar
-io.openliberty.transaction.internal.cdi20.jakarta;1.0.82.cl231020231002-1201;false;1699201216942;33797;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.transaction.internal.cdi20.jakarta_1.0.82.jar
-com.ibm.ws.cdi.weld.jakarta;1.0.82.cl231020231002-1201;false;1699201215651;189146;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.cdi.weld.jakarta_1.0.82.jar
-com.ibm.ws.transport.http;1.0.82.cl231020231002-1201;false;1699201211330;1690826;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.transport.http_1.0.82.jar
-com.ibm.websphere.appserver.api.kernel.service;1.1.82.cl231020231002-1201;false;1696252296000;4600;dev/api/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\ibm\com.ibm.websphere.appserver.api.kernel.service_1.1.82.jar
-com.ibm.ws.config.server.schemagen;1.0.82.cl231020231002-1201;false;1696252296000;50789;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.config.server.schemagen_1.0.82.jar
-com.ibm.websphere.appserver.spi.artifact;1.2.82.cl231020231002-1201;false;1699201219583;24671;dev/spi/ibm/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\spi\ibm\com.ibm.websphere.appserver.spi.artifact_1.2.82.jar
-com.ibm.ws.classloading;1.1.82.cl231020231002-1201;false;1699201217255;471645;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.classloading_1.1.82.jar
-io.openliberty.jakarta.persistence.3.1;1.0.82.cl231020231002-1201;false;1699201216425;169220;dev/api/spec/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\dev\api\spec\io.openliberty.jakarta.persistence.3.1_1.0.82.jar
-com.ibm.ws.javaee.dd.common;1.1.82.cl231020231002-1201;false;1699201207228;26661;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.javaee.dd.common_1.1.82.jar
-io.openliberty.accesslists.internal;1.0.82.cl231020231002-1201;false;1699201210567;22425;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.accesslists.internal_1.0.82.jar
-com.ibm.websphere.security;1.1.82.cl231020231002-1201;false;1699201220634;105201;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.websphere.security_1.1.82.jar
-io.openliberty.org.jboss.logging35;1.0.82.cl231020231002-1201;false;1699402244357;60596;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\io.openliberty.org.jboss.logging35_1.0.82.jar
-com.ibm.ws.artifact.overlay;1.0.82.cl231020231002-1201;false;1699201219268;51312;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.artifact.overlay_1.0.82.jar
-com.ibm.ws.org.slf4j.api;1.0.82.cl231020231002-1201;false;1699201214170;41961;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.org.slf4j.api_1.0.82.jar
-com.ibm.ws.repository.parsers;1.0.82.cl231020231002-1201;false;1696252296000;95958;lib/;D:\PG\SEM 7\JEE\CarService\target\liberty\wlp\lib\com.ibm.ws.repository.parsers_1.0.82.jar
+io.openliberty.faces.4.0.internal;1.0.82.cl231020231002-1201;false;1699438559356;36651;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.faces.4.0.internal_1.0.82.jar
+io.openliberty.org.apache.jasper.expressionLanguage.5.0;1.0.82.cl231020231002-1201;false;1699438559416;168504;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.org.apache.jasper.expressionLanguage.5.0_1.0.82.jar
+com.ibm.ws.jndi;1.0.82.cl231020231002-1201;false;1699438559636;159527;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.jndi_1.0.82.jar
+com.ibm.ws.repository.liberty;1.0.82.cl231020231002-1201;false;1696252296000;9630;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.repository.liberty_1.0.82.jar
+com.ibm.ws.app.manager.module;1.0.82.cl231020231002-1201;false;1699438559324;100211;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.app.manager.module_1.0.82.jar
+com.ibm.ws.jaxrs.2.x.config;1.0.82.cl231020231002-1201;false;1699438559716;26650;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.jaxrs.2.x.config_1.0.82.jar
+com.ibm.ws.javaee.metadata.context;1.0.82.cl231020231002-1201;false;1699438559860;23634;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.javaee.metadata.context_1.0.82.jar
+com.ibm.ws.cdi.web.jakarta;1.0.82.cl231020231002-1201;false;1699438560420;40715;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.cdi.web.jakarta_1.0.82.jar
+com.ibm.ws.managedobject;1.0.82.cl231020231002-1201;false;1699438560332;16398;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.managedobject_1.0.82.jar
+io.openliberty.session.6.0.internal;1.0.82.cl231020231002-1201;false;1699438560364;20426;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.session.6.0.internal_1.0.82.jar
+com.ibm.websphere.appserver.spi.kernel.filemonitor;1.0.82.cl231020231002-1201;false;1696252296000;4244;dev/spi/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/spi/ibm/com.ibm.websphere.appserver.spi.kernel.filemonitor_1.0.82.jar
+com.ibm.ws.artifact.url;1.0.82.cl231020231002-1201;false;1699438559072;27015;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.artifact.url_1.0.82.jar
+io.openliberty.org.jboss.resteasy.cdi.ee10;1.0.82.cl231020231002-1201;false;1699438559692;55323;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.org.jboss.resteasy.cdi.ee10_1.0.82.jar
+com.ibm.ws.webserver.plugin.runtime.interfaces;1.0.82.cl231020231002-1201;false;1699438560364;5832;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.webserver.plugin.runtime.interfaces_1.0.82.jar
+io.openliberty.jakarta.annotation.2.1;1.0.82.cl231020231002-1201;false;1699438559904;23733;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.annotation.2.1_1.0.82.jar
+com.ibm.websphere.appserver.spi.kernel.metatype;1.0.82.cl231020231002-1201;false;1696252296000;4073;dev/spi/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/spi/ibm/com.ibm.websphere.appserver.spi.kernel.metatype_1.0.82.jar
+io.openliberty.cdi.4.0.internal.services.fragment;1.0.82.cl231020231002-1201;false;1699438558976;2937;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.cdi.4.0.internal.services.fragment_1.0.82.jar
+com.ibm.websphere.appserver.spi.transaction;1.1.82.cl231020231002-1201;false;1699438559992;3972;dev/spi/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/spi/ibm/com.ibm.websphere.appserver.spi.transaction_1.1.82.jar
+com.ibm.ws.serialization;1.0.82.cl231020231002-1201;false;1699438559952;26205;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.serialization_1.0.82.jar
+com.ibm.ws.org.apache.commons.fileupload.jakarta;1.0.82.cl231020231002-1201;false;1699438560336;72428;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.org.apache.commons.fileupload.jakarta_1.0.82.jar
+com.ibm.ws.org.eclipse.equinox.region;1.0.82.cl231020231002-1201;false;1696252296000;71473;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.org.eclipse.equinox.region_1.0.82.jar
+com.ibm.ws.logging;1.0.82.cl231020231002-1201;false;1696252296000;427849;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.logging_1.0.82.jar
+com.ibm.ws.config.schemagen;1.0.82.cl231020231002-1201;false;1696252296000;94864;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.config.schemagen_1.0.82.jar
+io.openliberty.jakarta.transaction.2.0;1.0.82.cl231020231002-1201;false;1699438560500;30067;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.transaction.2.0_1.0.82.jar
+com.ibm.ws.kernel.boot.ws-launch;1.0.82.cl231020231002-1201;false;1696252296000;2273;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/ws-launch.jar
+io.openliberty.transaction;1.1.82.cl231020231002-1201;false;1699438560500;17743;dev/api/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/ibm/io.openliberty.transaction_1.1.82.jar
+com.ibm.ws.install;1.0.82.cl231020231002-1201;false;1696252296000;3677846;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.install_1.0.82.jar
+com.ibm.ws.javaee.dd.ejb;1.1.82.cl231020231002-1201;false;1699438559532;33293;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.javaee.dd.ejb_1.1.82.jar
+com.ibm.ws.classloader.context;1.0.82.cl231020231002-1201;false;1699438559800;41439;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.classloader.context_1.0.82.jar
+com.ibm.ws.anno;1.1.82.cl231020231002-1201;false;1699438560284;1078655;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.anno_1.1.82.jar
+com.ibm.ws.tx.embeddable.jakarta;1.0.82.cl231020231002-1201;false;1699438559988;130891;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.tx.embeddable.jakarta_1.0.82.jar
+com.ibm.ws.install.map;1.0.82.cl231020231002-1201;false;1696252296000;28635;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.install.map_1.0.82.jar
+com.ibm.ws.cdi.jndi.jakarta;1.0.82.cl231020231002-1201;false;1699438559604;10148;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.cdi.jndi.jakarta_1.0.82.jar
+com.ibm.ws.transaction.context.jakarta;1.0.82.cl231020231002-1201;false;1699438559280;17418;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.transaction.context.jakarta_1.0.82.jar
+com.ibm.ws.org.apache.commons.io;1.0.82.cl231020231002-1201;false;1699438560340;327244;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.org.apache.commons.io_1.0.82.jar
+com.ibm.websphere.appserver.spi.kernel.service;1.8.82.cl231020231002-1201;false;1696252296000;121922;dev/spi/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/spi/ibm/com.ibm.websphere.appserver.spi.kernel.service_1.8.82.jar
+io.openliberty.cdi.4.0.internal.web;1.0.82.cl231020231002-1201;false;1699438560420;6575;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.cdi.4.0.internal.web_1.0.82.jar
+io.openliberty.jakarta.mail.2.1;1.0.82.cl231020231002-1201;false;1699438559396;234126;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.mail.2.1_1.0.82.jar
+io.openliberty.checkpoint;1.0.82.cl231020231002-1201;false;1696252296000;68485;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.checkpoint_1.0.82.jar
+com.ibm.ws.threading;1.1.82.cl231020231002-1201;false;1696252296000;205413;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.threading_1.1.82.jar
+com.ibm.ws.crypto.passwordutil;1.0.82.cl231020231002-1201;false;1696252296000;80527;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.crypto.passwordutil_1.0.82.jar
+com.ibm.ws.kernel.boot;1.0.82.cl231020231002-1201;false;1696252296000;830572;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.kernel.boot_1.0.82.jar
+io.openliberty.jakarta.xmlWS.4.0;1.0.82.cl231020231002-1201;false;1699438560256;73656;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.xmlWS.4.0_1.0.82.jar
+com.ibm.ws.event;1.0.82.cl231020231002-1201;false;1696252296000;82659;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.event_1.0.82.jar
+io.openliberty.jakarta.xmlBinding.4.0;1.0.82.cl231020231002-1201;false;1699438559584;125357;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.xmlBinding.4.0_1.0.82.jar
+io.openliberty.jakarta.servlet.6.0;1.0.82.cl231020231002-1201;false;1699438560128;353127;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.servlet.6.0_1.0.82.jar
+com.ibm.ws.kernel.instrument.check;1.0.82.cl231020231002-1201;false;1696252296000;6880;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/bootstrap-agent.jar
+com.ibm.ws.request.probes;1.0.82.cl231020231002-1201;false;1699438559172;64840;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.request.probes_1.0.82.jar
+com.ibm.ws.injection.jakarta;1.0.82.cl231020231002-1201;false;1699438559052;421219;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.injection.jakarta_1.0.82.jar
+com.ibm.websphere.appserver.spi.logging;1.1.82.cl231020231002-1201;false;1696252296000;51453;dev/spi/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/spi/ibm/com.ibm.websphere.appserver.spi.logging_1.1.82.jar
+com.ibm.websphere.appserver.api.endpoint;1.0.82.cl231020231002-1201;false;1699438560060;3634;dev/api/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.endpoint_1.0.82.jar
+io.openliberty.jakarta.pages.3.1;1.0.82.cl231020231002-1201;false;1699438558912;69087;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.pages.3.1_1.0.82.jar
+io.openliberty.servlet;1.1.82.cl231020231002-1201;false;1699438560172;30371;dev/api/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/ibm/io.openliberty.servlet_1.1.82.jar
+io.openliberty.jakarta.expressionLanguage.5.0;1.0.82.cl231020231002-1201;false;1699438559564;114969;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.expressionLanguage.5.0_1.0.82.jar
+com.ibm.websphere.appserver.spi.classloading;1.4.82.cl231020231002-1201;false;1699438559116;15870;dev/spi/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/spi/ibm/com.ibm.websphere.appserver.spi.classloading_1.4.82.jar
+com.ibm.ws.org.apache.aries.util;1.0.82.cl231020231002-1201;false;1696252296000;112994;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.org.apache.aries.util_1.0.82.jar
+com.ibm.ws.app.manager.lifecycle;1.0.82.cl231020231002-1201;false;1699438559492;5419;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.app.manager.lifecycle_1.0.82.jar
+com.ibm.ws.adaptable.module;1.0.82.cl231020231002-1201;false;1699438559072;64806;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.adaptable.module_1.0.82.jar
+com.ibm.ws.recoverylog;1.0.82.cl231020231002-1201;false;1699438559988;272475;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.recoverylog_1.0.82.jar
+com.ibm.ws.resource;1.0.82.cl231020231002-1201;false;1699438559952;42194;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.resource_1.0.82.jar
+com.ibm.ws.org.jboss.jdeparser.1.0.0;1.0.82.cl231020231002-1201;false;1699438558976;164036;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.org.jboss.jdeparser.1.0.0_1.0.82.jar
+io.openliberty.jakarta.interceptor.2.1;1.0.82.cl231020231002-1201;false;1699438559092;23011;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.interceptor.2.1_1.0.82.jar
+io.openliberty.java11.internal;1.0.82.cl231020231002-1201;false;1699438560236;2312;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.java11.internal_1.0.82.jar
+io.openliberty.jakarta.persistence.api.3.1;1.0.82.cl231020231002-1201;false;1699438560568;2410;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.jakarta.persistence.api.3.1_1.0.82.jar
+io.openliberty.jakarta.restfulWS.3.1;1.0.82.cl231020231002-1201;false;1699438559192;151690;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.restfulWS.3.1_1.0.82.jar
+io.openliberty.cdi.spi;1.1.82.cl231020231002-1201;false;1699438558976;3864;dev/spi/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/spi/ibm/io.openliberty.cdi.spi_1.1.82.jar
+io.openliberty.org.glassfish.hk2.osgi-resource-locator;1.0.82.cl231020231002-1201;false;1699438559584;18965;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.org.glassfish.hk2.osgi-resource-locator_1.0.82.jar
+com.ibm.ws.cdi.transaction.jakarta;1.0.82.cl231020231002-1201;false;1699438560152;7696;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.cdi.transaction.jakarta_1.0.82.jar
+org.eclipse.osgi;3.18.300.cl231020231002-1201;false;1696252296000;1458820;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/org.eclipse.osgi_3.18.300.jar
+com.ibm.ws.kernel.cmdline;1.0.82.cl231020231002-1201;false;1696252296000;360515;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.kernel.cmdline_1.0.82.jar
+com.ibm.ws.org.jboss.jandex;1.0.82.cl231020231002-1201;false;1696252296000;230240;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.org.jboss.jandex_1.0.82.jar
+com.ibm.ws.repository;1.0.82.cl231020231002-1201;false;1696252296000;279880;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.repository_1.0.82.jar
+com.ibm.ws.jsonb.service;1.0.82.cl231020231002-1201;false;1699438560444;11882;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.jsonb.service_1.0.82.jar
+io.openliberty.jakarta.jsonb.3.0;1.0.82.cl231020231002-1201;false;1699438559820;33384;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.jsonb.3.0_1.0.82.jar
+com.ibm.ws.jsf.shared.jakarta;1.0.82.cl231020231002-1201;false;1699438559356;37259;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.jsf.shared.jakarta_1.0.82.jar
+com.ibm.ws.app.manager.war.jakarta;1.0.82.cl231020231002-1201;false;1699438560332;112560;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.app.manager.war.jakarta_1.0.82.jar
+com.ibm.ws.crypto.certificateutil;1.0.82.cl231020231002-1201;false;1696252296000;12662;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.crypto.certificateutil_1.0.82.jar
+com.ibm.ws.logging.hpel;1.0.82.cl231020231002-1201;false;1696252296000;689850;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.logging.hpel_1.0.82.jar
+com.ibm.ws.timer;1.0.82.cl231020231002-1201;false;1699438560056;7075;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.timer_1.0.82.jar
+com.ibm.websphere.appserver.spi.javaeedd;1.7.82.cl231020231002-1201;false;1699438559544;67149;dev/spi/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/spi/ibm/com.ibm.websphere.appserver.spi.javaeedd_1.7.82.jar
+com.ibm.websphere.appserver.api.hpel;2.0.82.cl231020231002-1201;false;1696252296000;136255;dev/api/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.hpel_2.0.82.jar
+com.ibm.ws.kernel.metatype.helper;1.0.82.cl231020231002-1201;false;1696252296000;37313;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.kernel.metatype.helper_1.0.82.jar
+com.ibm.ws.kernel.service;1.3.82.cl231020231002-1201;false;1696252296000;386054;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.kernel.service_1.3.82.jar
+com.ibm.websphere.appserver.spi.application;1.1.82.cl231020231002-1201;false;1699438559304;8258;dev/spi/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/spi/ibm/com.ibm.websphere.appserver.spi.application_1.1.82.jar
+io.openliberty.jakarta.websocket.2.1;1.0.82.cl231020231002-1201;false;1699438558948;23011;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.websocket.2.1_1.0.82.jar
+com.ibm.ws.logging.osgi;1.0.82.cl231020231002-1201;false;1696252296000;279718;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.logging.osgi_1.0.82.jar
+com.ibm.ws.javaee.platform.v7;1.0.82.cl231020231002-1201;false;1699438559512;2855;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.javaee.platform.v7_1.0.82.jar
+io.openliberty.org.jboss.weld5.se;1.0.82.cl231020231002-1201;false;1699438558980;152113;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.org.jboss.weld5.se_1.0.82.jar
+com.ibm.tx.jta.jakarta;1.0.82.cl231020231002-1201;false;1699438559984;481223;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.tx.jta.jakarta_1.0.82.jar
+com.ibm.ws.javaee.platform.v8;1.0.82.cl231020231002-1201;false;1699438560396;2852;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.javaee.platform.v8_1.0.82.jar
+io.openliberty.org.jboss.resteasy.server.ee10;1.0.82.cl231020231002-1201;false;1699438559696;102084;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.org.jboss.resteasy.server.ee10_1.0.82.jar
+com.ibm.ws.artifact.equinox.module;1.0.82.cl231020231002-1201;false;1699438559072;22686;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.artifact.equinox.module_1.0.82.jar
+com.ibm.ws.dynamic.bundle;1.0.82.cl231020231002-1201;false;1699438559032;17172;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.dynamic.bundle_1.0.82.jar
+io.openliberty.cdi.4.0.thirdparty;1.0.82.cl231020231002-1201;false;1699438558996;18237;dev/api/third-party/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/third-party/io.openliberty.cdi.4.0.thirdparty_1.0.82.jar
+io.openliberty.jaxrs30;1.0.82.cl231020231002-1201;false;1699438559728;8906;dev/api/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/ibm/io.openliberty.jaxrs30_1.0.82.jar
+com.ibm.ws.wsbytebuffer;1.0.82.cl231020231002-1201;false;1699438560060;70169;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.wsbytebuffer_1.0.82.jar
+com.ibm.ws.artifact.file;1.0.82.cl231020231002-1201;false;1699438559072;27553;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.artifact.file_1.0.82.jar
+com.ibm.websphere.appserver.spi.kernel.embeddable;1.1.82.cl231020231002-1201;false;1696252296000;12046;dev/spi/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/spi/ibm/com.ibm.websphere.appserver.spi.kernel.embeddable_1.1.82.jar
+com.ibm.websphere.appserver.spi.anno;1.1.82.cl231020231002-1201;false;1699438560284;35607;dev/spi/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/spi/ibm/com.ibm.websphere.appserver.spi.anno_1.1.82.jar
+com.ibm.ws.org.glassfish.json.1.0;1.0.82.cl231020231002-1201;false;1696252296000;67656;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.org.glassfish.json.1.0_1.0.82.jar
+io.openliberty.jakarta.cdi.4.0;1.0.82.cl231020231002-1201;false;1699438559840;169015;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.cdi.4.0_1.0.82.jar
+com.ibm.ws.repository.resolver;1.0.82.cl231020231002-1201;false;1696252296000;50661;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.repository.resolver_1.0.82.jar
+com.ibm.ws.org.eclipse.equinox.metatype;1.0.82.cl231020231002-1201;false;1696252296000;94168;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.org.eclipse.equinox.metatype_1.0.82.jar
+com.ibm.ws.org.eclipse.equinox.coordinator;1.0.82.cl231020231002-1201;false;1696252296000;48329;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.org.eclipse.equinox.coordinator_1.0.82.jar
+com.ibm.ws.cdi.2.0.jsf.jakarta;1.0.82.cl231020231002-1201;false;1699438559352;7488;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.cdi.2.0.jsf.jakarta_1.0.82.jar
+com.ibm.ws.artifact.zip;1.0.82.cl231020231002-1201;false;1699438559076;195405;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.artifact.zip_1.0.82.jar
+com.ibm.ws.app.manager;1.1.82.cl231020231002-1201;false;1699438559304;279885;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.app.manager_1.1.82.jar
+com.ibm.ws.webcontainer.servlet.3.1.jakarta;1.0.82.cl231020231002-1201;false;1699438560360;178758;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.webcontainer.servlet.3.1.jakarta_1.0.82.jar
+io.openliberty.org.eclipse.angus.activation;1.0.82.cl231020231002-1201;false;1699438559436;23091;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.org.eclipse.angus.activation_1.0.82.jar
+com.ibm.ws.context;1.0.82.cl231020231002-1201;false;1699438559860;67144;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.context_1.0.82.jar
+com.ibm.ws.artifact.loose;1.0.82.cl231020231002-1201;false;1699438559072;69165;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.artifact.loose_1.0.82.jar
+io.openliberty.jakarta.jsonp.2.1;1.0.82.cl231020231002-1201;false;1699438559452;47925;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.jsonp.2.1_1.0.82.jar
+com.ibm.ws.config;1.0.82.cl231020231002-1201;false;1696252296000;766579;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.config_1.0.82.jar
+com.ibm.ws.security.utility;1.0.82.cl231020231002-1201;false;1696252296000;155424;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.security.utility_1.0.82.jar
+com.ibm.ws.kernel.equinox.module;1.0.82.cl231020231002-1201;false;1696252296000;15763;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.kernel.equinox.module_1.0.82.jar
+com.ibm.ws.org.apache.aries.jmx.api;1.0.82.cl231020231002-1201;false;1696252296000;31093;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.org.apache.aries.jmx.api_1.0.82.jar
+com.ibm.ws.org.apache.httpcomponents;1.0.82.cl231020231002-1201;false;1699438559724;1557527;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.org.apache.httpcomponents_1.0.82.jar
+com.ibm.ws.kernel.filemonitor;1.0.82.cl231020231002-1201;false;1696252296000;75543;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.kernel.filemonitor_1.0.82.jar
+io.openliberty.cdi.4.0.internal.weld;1.0.82.cl231020231002-1201;false;1699438558976;43149;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.cdi.4.0.internal.weld_1.0.82.jar
+com.ibm.ws.org.apache.aries.jndi.api;1.1.82.cl231020231002-1201;false;1699438559636;14365;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.org.apache.aries.jndi.api_1.1.82.jar
+com.ibm.ws.channelfw;1.0.82.cl231020231002-1201;false;1699438560056;675568;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.channelfw_1.0.82.jar
+io.openliberty.org.eclipse.yasson.3.0;1.0.82.cl231020231002-1201;false;1699438559820;433063;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.org.eclipse.yasson.3.0_1.0.82.jar
+com.ibm.ws.crypto.ltpakeyutil;1.0.82.cl231020231002-1201;false;1696252296000;33693;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.crypto.ltpakeyutil_1.0.82.jar
+io.openliberty.endpoint;1.0.82.cl231020231002-1201;false;1699438560060;14481;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.endpoint_1.0.82.jar
+com.ibm.ws.org.apache.felix.scr;1.0.82.cl231020231002-1201;false;1696252296000;479303;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.org.apache.felix.scr_1.0.82.jar
+com.ibm.rls.jdbc.jakarta;1.0.82.cl231020231002-1201;false;1699438559980;95446;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.rls.jdbc.jakarta_1.0.82.jar
+io.openliberty.org.eclipse.persistence-3.1;1.0.82.cl231020231002-1201;false;1699438560524;162539;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.org.eclipse.persistence-3.1_1.0.82.jar
+com.ibm.websphere.javaee.activity.1.0;1.0.82.cl231020231002-1201;false;1699438559112;4447;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/com.ibm.websphere.javaee.activity.1.0_1.0.82.jar
+com.ibm.ws.security.java2sec;1.0.82.cl231020231002-1201;false;1699438559324;19694;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.security.java2sec_1.0.82.jar
+io.openliberty.jakartaee.platform.v9;1.0.82.cl231020231002-1201;false;1699438559924;2949;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.jakartaee.platform.v9_1.0.82.jar
+com.ibm.ws.cdi.internal.jakarta;1.0.82.cl231020231002-1201;false;1699438558972;97382;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.cdi.internal.jakarta_1.0.82.jar
+com.ibm.ws.artifact;1.0.82.cl231020231002-1201;false;1699438559076;26201;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.artifact_1.0.82.jar
+com.ibm.ws.org.slf4j.jdk14;1.0.82.cl231020231002-1201;false;1699438559664;9238;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.org.slf4j.jdk14_1.0.82.jar
+com.ibm.ws.transaction.jakarta;1.0.82.cl231020231002-1201;false;1699438559988;138917;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.transaction.jakarta_1.0.82.jar
+com.ibm.ws.org.apache.aries.jmx.core.whiteboard;1.0.82.cl231020231002-1201;false;1696252296000;142429;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.org.apache.aries.jmx.core.whiteboard_1.0.82.jar
+io.openliberty.el.internal.cdi.jakarta;1.0.82.cl231020231002-1201;false;1699438559560;3759;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.el.internal.cdi.jakarta_1.0.82.jar
+com.ibm.ws.collector.manager;1.0.82.cl231020231002-1201;false;1696252296000;35862;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.collector.manager_1.0.82.jar
+com.ibm.websphere.appserver.spi.httptransport;4.2.82.cl231020231002-1201;false;1699438560476;15917;dev/spi/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/spi/ibm/com.ibm.websphere.appserver.spi.httptransport_4.2.82.jar
+io.openliberty.faces.4.0.thirdparty;1.0.82.cl231020231002-1201;false;1699438559360;272095;dev/api/third-party/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/third-party/io.openliberty.faces.4.0.thirdparty_1.0.82.jar
+io.openliberty.servlet.spi;2.13.82.cl231020231002-1201;false;1699438560548;172052;dev/spi/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/spi/ibm/io.openliberty.servlet.spi_2.13.82.jar
+com.ibm.ws.session.jakarta;1.0.82.cl231020231002-1201;false;1699438560344;302539;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.session.jakarta_1.0.82.jar
+com.ibm.ws.webserver.plugin.runtime.jakarta;1.0.82.cl231020231002-1201;false;1699438560364;35394;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.webserver.plugin.runtime.jakarta_1.0.82.jar
+io.openliberty.webcontainer.servlet.6.0.internal;1.0.82.cl231020231002-1201;false;1699438560364;47856;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.webcontainer.servlet.6.0.internal_1.0.82.jar
+com.ibm.ws.security.audit.reader;1.0.82.cl231020231002-1201;false;1696252296000;108676;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.security.audit.reader_1.0.82.jar
+com.ibm.ws.classloading.configuration;1.0.82.cl231020231002-1201;false;1699438559076;17431;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.classloading.configuration_1.0.82.jar
+com.ibm.ws.javaee.platform.v7.jndi;1.0.82.cl231020231002-1201;false;1699438559152;8182;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.javaee.platform.v7.jndi_1.0.82.jar
+com.ibm.ws.http.plugin.merge;1.0.82.cl231020231002-1201;false;1699438560332;48812;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.http.plugin.merge_1.0.82.jar
+com.ibm.ws.jndi.url.contexts;1.0.82.cl231020231002-1201;false;1699438559636;42523;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.jndi.url.contexts_1.0.82.jar
+io.openliberty.jakarta.enterpriseBeans.4.0;1.0.82.cl231020231002-1201;false;1699438560020;59684;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.enterpriseBeans.4.0_1.0.82.jar
+io.openliberty.restfulWS30.jsonb20provider;1.0.82.cl231020231002-1201;false;1699438559772;15720;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.restfulWS30.jsonb20provider_1.0.82.jar
+io.openliberty.jakarta.activation.2.1;1.0.82.cl231020231002-1201;false;1699438559476;63514;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.activation.2.1_1.0.82.jar
+com.ibm.websphere.javaee.jsonp.1.0;1.0.82.cl231020231002-1201;false;1696252296000;18465;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/com.ibm.websphere.javaee.jsonp.1.0_1.0.82.jar
+com.ibm.ws.tx.jta.extensions.jakarta;1.0.82.cl231020231002-1201;false;1699438559988;15871;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.tx.jta.extensions.jakarta_1.0.82.jar
+com.ibm.ws.javaee.dd;1.0.82.cl231020231002-1201;false;1699438559532;84002;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.javaee.dd_1.0.82.jar
+com.ibm.ws.diagnostics;1.0.82.cl231020231002-1201;false;1696252296000;70471;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.diagnostics_1.0.82.jar
+com.ibm.ws.logging.hpel.osgi;1.0.82.cl231020231002-1201;false;1696252296000;42010;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.logging.hpel.osgi_1.0.82.jar
+com.ibm.ws.container.service;1.0.82.cl231020231002-1201;false;1699438559948;411893;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.container.service_1.0.82.jar
+io.openliberty.jakarta.connectors.2.1;1.0.82.cl231020231002-1201;false;1699438560196;62998;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.connectors.2.1_1.0.82.jar
+com.ibm.ws.webcontainer.cors.jakarta;1.0.82.cl231020231002-1201;false;1699438560344;51300;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.webcontainer.cors.jakarta_1.0.82.jar
+com.ibm.ws.webcontainer.jakarta;1.1.82.cl231020231002-1201;false;1699438560356;2034437;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.webcontainer.jakarta_1.1.82.jar
+io.openliberty.jakarta.soap.3.0;1.0.82.cl231020231002-1201;false;1699438560256;34127;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.soap.3.0_1.0.82.jar
+com.ibm.ws.kernel.feature;1.0.82.cl231020231002-1201;false;1696252296000;694469;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.kernel.feature_1.0.82.jar
+com.ibm.ws.org.objectweb.asm;1.0.82.cl231020231002-1201;false;1696252296000;371162;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.org.objectweb.asm_1.0.82.jar
+io.openliberty.jakarta.validation.3.0;1.0.82.cl231020231002-1201;false;1699438559212;91536;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.validation.3.0_1.0.82.jar
+com.ibm.ws.product.utility;1.0.82.cl231020231002-1201;false;1696252296000;180635;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.product.utility_1.0.82.jar
+io.openliberty.org.jboss.weld5;1.0.82.cl231020231002-1201;false;1699438558992;2073686;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.org.jboss.weld5_1.0.82.jar
+com.ibm.ws.artifact.bundle;1.0.82.cl231020231002-1201;false;1699438559072;14057;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.artifact.bundle_1.0.82.jar
+com.ibm.ws.webcontainer.servlet.4.0.jakarta;1.0.82.cl231020231002-1201;false;1699438560360;68003;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.webcontainer.servlet.4.0.jakarta_1.0.82.jar
+io.openliberty.cdi.4.0.interfaces;1.0.82.cl231020231002-1201;false;1699438558976;4103;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.cdi.4.0.interfaces_1.0.82.jar
+com.ibm.ws.install.featureUtility;1.0.82.cl231020231002-1201;false;1696252296000;174401;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.install.featureUtility_1.0.82.jar
+io.openliberty.org.apache.commons.codec;1.15.82.cl231020231002-1201;false;1699438559732;352832;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.org.apache.commons.codec_1.15.82.jar
+com.ibm.tx.util.jakarta;1.0.82.cl231020231002-1201;false;1699438559984;21992;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.tx.util.jakarta_1.0.82.jar
+io.openliberty.jakarta.websocket.client.2.1;1.0.82.cl231020231002-1201;false;1699438558948;41100;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.websocket.client.2.1_1.0.82.jar
+com.ibm.ws.javaee.version;1.0.82.cl231020231002-1201;false;1699438560396;5839;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.javaee.version_1.0.82.jar
+com.ibm.ws.jmx;1.0.82.cl231020231002-1201;false;1696252296000;24773;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.jmx_1.0.82.jar
+com.ibm.websphere.appserver.api.config;1.2.82.cl231020231002-1201;false;1696252296000;5220;dev/api/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.config_1.2.82.jar
+com.ibm.ws.cdi.interfaces.jakarta;1.0.82.cl231020231002-1201;false;1699438559984;12740;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.cdi.interfaces.jakarta_1.0.82.jar
+io.openliberty.org.eclipse.parsson.1.1;1.0.82.cl231020231002-1201;false;1699438559452;112068;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.org.eclipse.parsson.1.1_1.0.82.jar
+com.ibm.ws.webserver.plugin.utility;1.0.82.cl231020231002-1201;false;1699438560364;251857;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.webserver.plugin.utility_1.0.82.jar
+com.ibm.json4j;1.0.82.cl231020231002-1201;false;1696252296000;37679;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.json4j_1.0.82.jar
+io.openliberty.jakarta.faces.4.0;1.0.82.cl231020231002-1201;false;1699438559236;1399583;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.faces.4.0_1.0.82.jar
+com.ibm.websphere.appserver.spi.containerServices;4.0.82.cl231020231002-1201;false;1699438559952;60636;dev/spi/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/spi/ibm/com.ibm.websphere.appserver.spi.containerServices_4.0.82.jar
+io.openliberty.org.jboss.classfilewriter.1.3;1.3.82.cl231020231002-1201;false;1699438558980;121563;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.org.jboss.classfilewriter.1.3_1.3.82.jar
+com.ibm.ws.javaee.ddmodel;1.0.82.cl231020231002-1201;false;1699438559540;1217607;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.javaee.ddmodel_1.0.82.jar
+io.openliberty.org.apache.myfaces.4.0;1.0.82.cl231020231002-1201;false;1699438559372;2629686;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.org.apache.myfaces.4.0_1.0.82.jar
+com.ibm.ws.org.apache.aries.jndi.core;1.1.82.cl231020231002-1201;false;1699438559636;51442;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.org.apache.aries.jndi.core_1.1.82.jar
+com.ibm.websphere.org.reactivestreams.reactive-streams.1.0;1.1.82.cl231020231002-1201;false;1699438560216;14515;dev/api/stable/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/stable/com.ibm.websphere.org.reactivestreams.reactive-streams.1.0_1.1.82.jar
+com.ibm.ws.runtime.update;1.0.82.cl231020231002-1201;false;1696252296000;46790;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.runtime.update_1.0.82.jar
+io.openliberty.jakartaee.platform.v10;1.0.82.cl231020231002-1201;false;1699438559132;2959;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.jakartaee.platform.v10_1.0.82.jar
+com.ibm.websphere.appserver.spi.threading;1.1.82.cl231020231002-1201;false;1696252296000;4104;dev/spi/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/spi/ibm/com.ibm.websphere.appserver.spi.threading_1.1.82.jar
+com.ibm.ws.kernel.boot.archive;1.0.82.cl231020231002-1201;false;1696252296000;348470;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.kernel.boot.archive_1.0.82.jar
+com.ibm.ws.javaee.platform.defaultresource;1.0.82.cl231020231002-1201;false;1699438559512;9634;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.javaee.platform.defaultresource_1.0.82.jar
+com.ibm.websphere.appserver.api.basics;1.4.82.cl231020231002-1201;false;1699438559304;45720;dev/api/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.basics_1.4.82.jar
+io.openliberty.webcontainer.servlet.6.0.internal.factories;1.0.82.cl231020231002-1201;false;1699438560364;30350;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.webcontainer.servlet.6.0.internal.factories_1.0.82.jar
+io.openliberty.org.jboss.resteasy.common.ee10;1.0.82.cl231020231002-1201;false;1699438559752;2450416;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.org.jboss.resteasy.common.ee10_1.0.82.jar
+io.openliberty.org.apache.commons.logging;1.2.82.cl231020231002-1201;false;1699438559732;60085;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.org.apache.commons.logging_1.2.82.jar
+com.ibm.ws.app.manager.ready;1.0.82.cl231020231002-1201;false;1699438559300;6804;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.app.manager.ready_1.0.82.jar
+io.openliberty.transaction.internal.cdi20.jakarta;1.0.82.cl231020231002-1201;false;1699438559992;33797;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.transaction.internal.cdi20.jakarta_1.0.82.jar
+com.ibm.ws.cdi.weld.jakarta;1.0.82.cl231020231002-1201;false;1699438558976;189146;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.cdi.weld.jakarta_1.0.82.jar
+com.ibm.ws.transport.http;1.0.82.cl231020231002-1201;false;1699438560476;1690826;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.transport.http_1.0.82.jar
+com.ibm.websphere.appserver.api.kernel.service;1.1.82.cl231020231002-1201;false;1696252296000;4600;dev/api/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.kernel.service_1.1.82.jar
+com.ibm.ws.config.server.schemagen;1.0.82.cl231020231002-1201;false;1696252296000;50789;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.config.server.schemagen_1.0.82.jar
+com.ibm.websphere.appserver.spi.artifact;1.2.82.cl231020231002-1201;false;1699438559076;24671;dev/spi/ibm/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/spi/ibm/com.ibm.websphere.appserver.spi.artifact_1.2.82.jar
+com.ibm.ws.classloading;1.1.82.cl231020231002-1201;false;1699438559116;471645;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.classloading_1.1.82.jar
+io.openliberty.jakarta.persistence.3.1;1.0.82.cl231020231002-1201;false;1699438560572;169220;dev/api/spec/;/home/student/Desktop/184948/CarService/target/liberty/wlp/dev/api/spec/io.openliberty.jakarta.persistence.3.1_1.0.82.jar
+com.ibm.ws.javaee.dd.common;1.1.82.cl231020231002-1201;false;1699438559532;26661;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.javaee.dd.common_1.1.82.jar
+io.openliberty.accesslists.internal;1.0.82.cl231020231002-1201;false;1699438560060;22425;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.accesslists.internal_1.0.82.jar
+io.openliberty.org.jboss.logging35;1.0.82.cl231020231002-1201;false;1699438559732;60596;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/io.openliberty.org.jboss.logging35_1.0.82.jar
+com.ibm.websphere.security;1.1.82.cl231020231002-1201;false;1699438560328;105201;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.websphere.security_1.1.82.jar
+com.ibm.ws.artifact.overlay;1.0.82.cl231020231002-1201;false;1699438559072;51312;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.artifact.overlay_1.0.82.jar
+com.ibm.ws.org.slf4j.api;1.0.82.cl231020231002-1201;false;1699438559664;41961;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.org.slf4j.api_1.0.82.jar
+com.ibm.ws.repository.parsers;1.0.82.cl231020231002-1201;false;1696252296000;95958;lib/;/home/student/Desktop/184948/CarService/target/liberty/wlp/lib/com.ibm.ws.repository.parsers_1.0.82.jar

@@ -14,7 +14,7 @@ public interface ClientController {
     @GET
     @Path("/clients/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    Client find(UUID id);
+    Client find(@PathParam("id") UUID id);
 
     Client find(String name);
 
@@ -35,7 +35,7 @@ public interface ClientController {
 
     @DELETE
     @Path("/clients/{id}")
-    void delete(UUID id);
+    void delete(@PathParam("id") UUID id);
 
     @GET
     @Path("/clients/{id}/portrait")
