@@ -111,7 +111,7 @@ Content-Type: application/json
 ###
 
 # CREATE VISIT
-POST http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/garages/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/visits
+POST http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/garages/c4804e0f-769e-4ab9-9ebe-0578fb4f00a5/visits
 Content-Type: application/json
 
 {

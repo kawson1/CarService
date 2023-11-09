@@ -82,7 +82,8 @@ public class GarageControllerImplementation implements GarageController{
     public void delete(UUID id){
         garageService.find(id).ifPresentOrElse(
                 entity -> garageService.delete(id),
-                () -> {
+                () ->
+                {
                     throw new NotFoundException();
                 }
         );
