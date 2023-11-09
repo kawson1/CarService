@@ -1,7 +1,6 @@
 package com.example.carservice.Components;
 
-import com.example.carservice.Client;
-import com.example.carservice.Controllers.Exception.NotFoundException;
+import jakarta.ws.rs.NotFoundException;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -37,7 +36,7 @@ public class FileUtility {
             return Files.readAllBytes(file);
         } catch(Exception ex) {
             try {
-                return Files.readAllBytes(Path.of("/home/student/Desktop/184948/CarService/src/main/resources/portraits/default_client.jpg"));
+                return Files.readAllBytes(Path.of(portraitsPath + "default_client.jpg"));
             } catch(Exception ex2) {
                 throw new NotFoundException();
             }

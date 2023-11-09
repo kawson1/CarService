@@ -1,7 +1,5 @@
 package com.example.carservice.View.Garage;
 
-import com.example.carservice.Client;
-import com.example.carservice.Controllers.Exception.NotFoundException;
 import com.example.carservice.Garage;
 import com.example.carservice.Services.GarageService;
 import com.example.carservice.Services.VisitService;

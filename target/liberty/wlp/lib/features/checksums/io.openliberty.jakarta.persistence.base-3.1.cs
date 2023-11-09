@@ -1,3 +1,3 @@
-#Wed Nov 08 11:16:00 CET 2023
+#Thu Nov 09 23:47:15 CET 2023
 lib/features/io.openliberty.jakarta.persistence.base-3.1.mf=f1e0ef8cf5fcdcc365edec304e26e74e
 lib/io.openliberty.org.eclipse.persistence-3.1_1.0.82.jar=d2fe0cf4fdc8ebc266156f6351ee2bae

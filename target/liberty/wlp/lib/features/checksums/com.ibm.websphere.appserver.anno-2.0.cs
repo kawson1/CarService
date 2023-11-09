@@ -1,4 +1,4 @@
-#Wed Nov 08 11:16:00 CET 2023
+#Thu Nov 09 23:47:06 CET 2023
 lib/features/com.ibm.websphere.appserver.anno-2.0.mf=5c4766cf21615bb1817c50fef264c083
 lib/com.ibm.ws.anno_1.1.82.jar=41cac643a0d9f142e69081f4fc05b76f
 dev/spi/ibm/javadoc/com.ibm.websphere.appserver.spi.anno_1.1-javadoc.zip=d98c19eb0ab5ff1c67875e8aa749064c

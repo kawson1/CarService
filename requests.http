@@ -26,6 +26,18 @@ Content-Type: application/json
 
 ###
 
+# CREATE CLIENT
+POST http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/clients
+Content-Type: application/json
+
+{
+  "name": "NEW CLIENT",
+  "surname": "NEW KOWALSKI",
+  "birthdate": "1990-10-10"
+}
+
+###
+
 # GET PORTRAIT
 GET http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/clients/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/portrait
 
@@ -80,25 +92,42 @@ Content-Type: application/json
 
 ###
 
+# CREATE GARAGE
+POST http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/garages
+Content-Type: application/json
+
+{
+  "title": "NEW GARAGE",
+  "city": "NEW CITY",
+  "zipCode": "90-900",
+  "countEmployees": 5
+}
+
+###
+
 ## VISIT ##
 
+# GET ALL VISITS
+GET http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/visits
+
+###
 
 # GET VISITS
 GET http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/garages/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/visits
 
 ###
 
-# GET GARAGE
+# GET VISIT
 GET http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/garages/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/visits/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
 
 ###
 
-# DELETE GARAGE
+# DELETE VISIT
 DELETE http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/garages/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/visits/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
 
 ###
 
-# UPDATE GARAGE
+# UPDATE VISIT
 PUT http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/garages/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/visits
 Content-Type: application/json
 

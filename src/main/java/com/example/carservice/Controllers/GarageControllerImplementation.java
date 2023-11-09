@@ -2,10 +2,11 @@ package com.example.carservice.Controllers;
 
 import com.example.carservice.Garage;
 import com.example.carservice.Controllers.Exception.BadRequestException;
-import com.example.carservice.Controllers.Exception.NotFoundException;
 import com.example.carservice.Services.GarageService;
+import com.example.carservice.Services.VisitService;
 import jakarta.inject.Inject;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.ws.rs.NotFoundException;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.WebApplicationException;
 import jakarta.ws.rs.core.Context;
@@ -23,6 +24,8 @@ public class GarageControllerImplementation implements GarageController{
 
     private final GarageService garageService;
 
+    private final VisitService visitService;
+
     /**
      * Allows to create {@link UriBuilder} based on current request.
      */
@@ -38,9 +41,11 @@ public class GarageControllerImplementation implements GarageController{
     @Inject
     public GarageControllerImplementation(
             GarageService garageService,
+            VisitService visitService,
             @SuppressWarnings("CdiInjectionPointsInspection") UriInfo uriInfo
     ) {
         this.garageService = garageService;
+        this.visitService = visitService;
         this.uriInfo = uriInfo;
     }
 
@@ -81,7 +86,11 @@ public class GarageControllerImplementation implements GarageController{
 
     public void delete(UUID id){
         garageService.find(id).ifPresentOrElse(
-                entity -> garageService.delete(id),
+                entity -> {
+                    visitService.findAll(id).stream()
+                                    .forEach(visit -> visitService.delete(visit.getId()));
+                    garageService.delete(id);
+                },
                 () ->
                 {
                     throw new NotFoundException();

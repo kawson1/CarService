@@ -1,12 +1,10 @@
 package com.example.carservice.Services;
 
-import com.example.carservice.Controllers.Exception.NotFoundException;
-import com.example.carservice.Garage;
-import com.example.carservice.Repositories.GarageRepository;
 import com.example.carservice.Repositories.VisitRepository;
 import com.example.carservice.Visit;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
+import jakarta.ws.rs.NotFoundException;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
@@ -48,9 +46,6 @@ public class VisitService {
     }
 
     public void delete(UUID id){
-/*
-        garageRepository.delete(garageRepository.find(id).orElseThrow());
-*/
         visitRepository.find(id).ifPresentOrElse(
                 entity -> visitRepository.delete(entity),
                 () -> {

@@ -2,10 +2,10 @@ package com.example.carservice.Services;
 
 import com.example.carservice.Client;
 import com.example.carservice.Components.FileUtility;
-import com.example.carservice.Controllers.Exception.NotFoundException;
 import com.example.carservice.Repositories.ClientRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
+import jakarta.ws.rs.NotFoundException;
 import lombok.NoArgsConstructor;
 
 import java.io.IOException;
@@ -41,6 +41,7 @@ public class ClientService {
     public List<Client> findAll() { return clientRepository.findAll(); }
 
     public void create(Client client){
+        client.setId(UUID.randomUUID());
         clientRepository.create(client);
     }
 

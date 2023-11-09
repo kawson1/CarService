@@ -1,13 +1,13 @@
 package com.example.carservice.Controllers;
 
 import com.example.carservice.Controllers.Exception.BadRequestException;
-import com.example.carservice.Controllers.Exception.NotFoundException;
 import com.example.carservice.Garage;
 import com.example.carservice.Services.GarageService;
 import com.example.carservice.Services.VisitService;
 import com.example.carservice.Visit;
 import jakarta.inject.Inject;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.ws.rs.NotFoundException;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.WebApplicationException;
 import jakarta.ws.rs.core.Context;
@@ -50,6 +50,11 @@ public class VisitControllerImplementation implements VisitController {
                 .stream().filter(visit -> visit.getId().equals(id))
                 .findFirst()
                 .orElseThrow(NotFoundException::new);
+    }
+
+    @Override
+    public List<Visit> getVisits() {
+        return visitService.findAll();
     }
 
     @Override
@@ -112,6 +117,7 @@ public class VisitControllerImplementation implements VisitController {
                                 .ifPresentOrElse(
                                         visit -> visitService.delete(id),
                                         () -> {
+                                            System.out.println("EXCE");
                                             throw new NotFoundException();
                                         }
                                 );

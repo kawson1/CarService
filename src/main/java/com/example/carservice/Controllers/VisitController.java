@@ -16,6 +16,11 @@ public interface VisitController {
     Visit find(@PathParam("id") UUID id, @PathParam("garageId") UUID garageId);
 
     @GET
+    @Path("/visits")
+    @Produces(MediaType.APPLICATION_JSON)
+    List<Visit> getVisits();
+
+    @GET
     @Path("/garages/{garageId}/visits")
     @Produces(MediaType.APPLICATION_JSON)
     List<Visit> getVisits(@PathParam("garageId") UUID garageId);

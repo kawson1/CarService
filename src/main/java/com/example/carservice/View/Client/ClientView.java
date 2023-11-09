@@ -1,10 +1,8 @@
 package com.example.carservice.View.Client;
 
 import com.example.carservice.Client;
-import com.example.carservice.Controllers.Exception.NotFoundException;
 import com.example.carservice.Services.ClientService;
 import com.example.carservice.Services.VisitService;
-import com.example.carservice.Visit;
 import jakarta.faces.context.FacesContext;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Inject;
@@ -15,12 +13,8 @@ import lombok.Setter;
 
 import java.io.IOException;
 import java.io.Serializable;
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
-import java.util.stream.Collectors;
 
-import static java.lang.System.out;
+import java.util.UUID;
 
 /**
  * View bean for rendering single character edit form.

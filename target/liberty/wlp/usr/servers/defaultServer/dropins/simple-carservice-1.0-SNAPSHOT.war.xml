@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archive>
-    <dir sourceOnDisk="/home/student/Desktop/184948/CarService/src/main/webapp" targetInArchive="/"/>
-    <dir sourceOnDisk="/home/student/Desktop/184948/CarService/target/classes" targetInArchive="/WEB-INF/classes"/>
-    <file sourceOnDisk="/home/student/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar" targetInArchive="/WEB-INF/lib/gson-2.10.1.jar"/>
-    <file sourceOnDisk="/home/student/.m2/repository/javax/javaee-api/8.0/javaee-api-8.0.jar" targetInArchive="/WEB-INF/lib/javaee-api-8.0.jar"/>
-    <file sourceOnDisk="/home/student/.m2/repository/com/sun/mail/javax.mail/1.6.0/javax.mail-1.6.0.jar" targetInArchive="/WEB-INF/lib/javax.mail-1.6.0.jar"/>
-    <file sourceOnDisk="/home/student/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar" targetInArchive="/WEB-INF/lib/activation-1.1.jar"/>
-    <file sourceOnDisk="/home/student/Desktop/184948/CarService/target/tmp/META-INF/MANIFEST.MF" targetInArchive="/META-INF/MANIFEST.MF"/>
+    <dir sourceOnDisk="D:\PG\SEM 7\JEE\delete\CarService\src\main\webapp" targetInArchive="/"/>
+    <dir sourceOnDisk="D:\PG\SEM 7\JEE\delete\CarService\target\classes" targetInArchive="/WEB-INF/classes"/>
+    <file sourceOnDisk="C:\Users\Lukasz\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar" targetInArchive="/WEB-INF/lib/gson-2.10.1.jar"/>
+    <file sourceOnDisk="C:\Users\Lukasz\.m2\repository\javax\javaee-api\8.0\javaee-api-8.0.jar" targetInArchive="/WEB-INF/lib/javaee-api-8.0.jar"/>
+    <file sourceOnDisk="C:\Users\Lukasz\.m2\repository\com\sun\mail\javax.mail\1.6.0\javax.mail-1.6.0.jar" targetInArchive="/WEB-INF/lib/javax.mail-1.6.0.jar"/>
+    <file sourceOnDisk="C:\Users\Lukasz\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar" targetInArchive="/WEB-INF/lib/activation-1.1.jar"/>
+    <file sourceOnDisk="D:\PG\SEM 7\JEE\delete\CarService\target\tmp\META-INF\MANIFEST.MF" targetInArchive="/META-INF/MANIFEST.MF"/>
 </archive>

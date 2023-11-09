@@ -1,7 +1,6 @@
 package com.example.carservice.View.Client;
 
 import com.example.carservice.Client;
-import com.example.carservice.Controllers.Exception.NotFoundException;
 import com.example.carservice.Services.ClientService;
 import jakarta.faces.context.FacesContext;
 import jakarta.faces.view.ViewScoped;
