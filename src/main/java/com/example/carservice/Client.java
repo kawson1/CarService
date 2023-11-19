@@ -1,5 +1,6 @@
 package com.example.carservice;
 
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
@@ -10,12 +11,15 @@ import java.util.UUID;
 @Setter
 @Getter
 @Builder
-@ToString
-@EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
+@ToString
+@EqualsAndHashCode
+@Entity
+@Table(name = "clients")
 public class Client implements Serializable {
 
+    @Id
     private UUID id;
 
     private String name;
@@ -24,10 +28,16 @@ public class Client implements Serializable {
 
     private LocalDate birthdate;
 
+    @OneToMany(mappedBy = "client")
     private List<Visit> visitList;
 
-    private ClientType clientType;
+    @Enumerated(EnumType.STRING)
+    private ClientType clientType = ClientType.NEW;
 
+    @Lob
+    @Basic(fetch = FetchType.EAGER)
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
     private byte[] portrait;
 
 }

@@ -1,5 +1,6 @@
 package com.example.carservice;
 
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
@@ -13,12 +14,25 @@ import java.util.UUID;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
+@Entity
+@ToString
+@Table(name = "visits")
 public class Visit implements Serializable {
 
+    @Id
     public UUID id;
+
     public LocalDate date;
+
     public String VIN;
+
+    @ManyToOne
+    @JoinColumn(name = "garage_id")
+    @ToString.Exclude
     public Garage garage;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    @ToString.Exclude
     public Client client;
-    public List<Fault> faults;
 }

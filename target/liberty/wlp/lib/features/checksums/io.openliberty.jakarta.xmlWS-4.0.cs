@@ -1,4 +1,4 @@
-#Thu Nov 09 23:47:12 CET 2023
-lib/features/io.openliberty.jakarta.xmlWS-4.0.mf=99ac41728c43c9cfd324f06980d43e98
-dev/api/spec/io.openliberty.jakarta.xmlWS.4.0_1.0.82.jar=0b2888c8e5e43265b6b5d822ac2ef271
-dev/api/spec/io.openliberty.jakarta.soap.3.0_1.0.82.jar=dfabf39c8ec2f6699fd23e1763a35474
+#Wed Nov 15 12:02:56 CET 2023
+lib/features/io.openliberty.jakarta.xmlWS-4.0.mf=98e3460c42f26e04e0c68074b4df3793
+dev/api/spec/io.openliberty.jakarta.xmlWS.4.0_1.0.83.jar=500727ad5e03e522d672fb1b22c62709
+dev/api/spec/io.openliberty.jakarta.soap.3.0_1.0.83.jar=a1d2d068e721e29d86e99d50146d9bc5

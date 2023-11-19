@@ -1,3 +1,3 @@
-#Thu Nov 09 23:47:06 CET 2023
-dev/api/spec/io.openliberty.jakarta.faces.4.0_1.0.82.jar=1901c3aceb22facc4b0bf98f5e4f31c1
-lib/features/io.openliberty.jakarta.faces-4.0.mf=19d2c434cb79414a8e883a4e11f33492
+#Wed Nov 15 12:02:55 CET 2023
+dev/api/spec/io.openliberty.jakarta.faces.4.0_1.0.83.jar=545811c9a4cea3b2a237d77d02e32da7
+lib/features/io.openliberty.jakarta.faces-4.0.mf=629f3ed3d7755f8200c777e13bbc91b7

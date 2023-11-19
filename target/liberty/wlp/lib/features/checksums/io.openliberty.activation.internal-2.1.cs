@@ -1,3 +1,3 @@
-#Thu Nov 09 23:47:08 CET 2023
-lib/features/io.openliberty.activation.internal-2.1.mf=c00b7a3ac48f2460bea34acec5604012
-lib/io.openliberty.org.eclipse.angus.activation_1.0.82.jar=bc30b03a16e528b87d893f7994018858
+#Wed Nov 15 12:02:55 CET 2023
+lib/io.openliberty.org.eclipse.angus.activation_1.0.83.jar=8df9773f500d8d34ec209ca405539faf
+lib/features/io.openliberty.activation.internal-2.1.mf=06e2fa838358eed9a6fdff58562deb56

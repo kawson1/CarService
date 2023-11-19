@@ -5,6 +5,7 @@ import com.example.carservice.Components.FileUtility;
 import com.example.carservice.Repositories.ClientRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
 import jakarta.ws.rs.NotFoundException;
 import lombok.NoArgsConstructor;
 
@@ -40,29 +41,36 @@ public class ClientService {
 
     public List<Client> findAll() { return clientRepository.findAll(); }
 
+    @Transactional
     public void create(Client client){
-        client.setId(UUID.randomUUID());
+        if(client.getId() == null)
+            client.setId(UUID.randomUUID());
         clientRepository.create(client);
     }
 
+    @Transactional
     public void update(Client client){
         clientRepository.update(client);
     }
 
+    @Transactional
     public void delete(UUID id){
         clientRepository.delete(clientRepository.find(id).orElseThrow());
     }
 
+    @Transactional
     public void updatePortrait(UUID id, InputStream is) {
         clientRepository.find(id).ifPresent(client ->{
             try{
-                fileUtility.savePortrait(is.readAllBytes(), id);
+                client.setPortrait(is.readAllBytes());
+                clientRepository.update(client);
             } catch(IOException ex){
                 throw new IllegalStateException(ex);
             }
         });
     }
 
+    @Transactional
     public void deletePortrait(UUID id) {
         clientRepository.find(id).ifPresent(client ->{
             fileUtility.deletePortrait(id);
@@ -70,15 +78,8 @@ public class ClientService {
     }
 
     public byte[] getPortrait(UUID id) {
-        if(clientRepository.find(id).isPresent())
-        {
-            try{
-                return fileUtility.getPortrait(id);
-            }catch(IOException ex){
-                throw new NotFoundException("Portrait file not found");
-            }
-        }
-        else
-            throw new NotFoundException();
+        return clientRepository.find(id)
+                .map(Client::getPortrait)
+                .orElseThrow(NotFoundException::new);
     }
 }

@@ -5,8 +5,10 @@ import com.example.carservice.Garage;
 import com.example.carservice.Services.GarageService;
 import com.example.carservice.Services.VisitService;
 import com.example.carservice.Visit;
+import com.example.carservice.dto.VisitResponse;
 import jakarta.inject.Inject;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.transaction.TransactionalException;
 import jakarta.ws.rs.NotFoundException;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.WebApplicationException;
@@ -22,7 +24,6 @@ import java.util.UUID;
 public class VisitControllerImplementation implements VisitController {
 
     private final VisitService visitService;
-    private final GarageService garageService;
 
     private final UriInfo uriInfo;
 
@@ -40,7 +41,6 @@ public class VisitControllerImplementation implements VisitController {
             @SuppressWarnings("CdiInjectionPointsInspection") UriInfo uriInfo
     ) {
         this.visitService = visitService;
-        this.garageService = garageService;
         this.uriInfo = uriInfo;
     }
 
@@ -53,34 +53,40 @@ public class VisitControllerImplementation implements VisitController {
     }
 
     @Override
-    public List<Visit> getVisits() {
-        return visitService.findAll();
+    public List<VisitResponse> getVisits() {
+        return visitService.findAll()
+                .stream()
+                .map(visit -> VisitResponse.builder()
+                        .id(visit.getId())
+                        .VIN(visit.getVIN())
+                        .date(visit.getDate())
+                        .build())
+                .toList();
     }
 
     @Override
-    public List<Visit> getVisits(UUID garageId) {
-        return visitService.findAll(garageId);
+    public List<VisitResponse> getGarageVisits(UUID garageId) {
+        return visitService.findAll(garageId)
+                .stream()
+                .map(visit -> VisitResponse.builder()
+                        .id(visit.getId())
+                        .VIN(visit.getVIN())
+                        .date(visit.getDate())
+                        .build())
+                .toList();
     }
 
     @Override
     public void create(Visit visit, UUID garageId) {
-        System.out.println(garageId.toString());
         try {
-            Garage garage = garageService.find(garageId).orElseThrow(NotFoundException::new);
-            Visit visit_ = Visit.builder()
-                    .id(UUID.randomUUID())
-                    .VIN(visit.getVIN())
-                    .date(visit.getDate())
-                    .garage(garage)
-                    .build();
-            visitService.create(visit_);
-            response.setHeader("Location", uriInfo.getBaseUriBuilder()
-                    .path(VisitController.class, "find")
-                    .build(garageId, visit_.getId())
-                    .toString());
+            visitService.create(visit, garageId);
+//            response.setHeader("Location", uriInfo.getBaseUriBuilder()
+//                    .path(VisitController.class, "getVisits")
+//                    .build()
+//                    .toString());
             throw new WebApplicationException(Response.Status.CREATED);
-        } catch(IllegalArgumentException ex){
-            throw new BadRequestException(ex);
+        } catch(TransactionalException ex){
+            throw new NotFoundException();
         }
     }
 
@@ -117,7 +123,6 @@ public class VisitControllerImplementation implements VisitController {
                                 .ifPresentOrElse(
                                         visit -> visitService.delete(id),
                                         () -> {
-                                            System.out.println("EXCE");
                                             throw new NotFoundException();
                                         }
                                 );

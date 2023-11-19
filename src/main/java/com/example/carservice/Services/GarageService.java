@@ -1,10 +1,10 @@
 package com.example.carservice.Services;
 
 import com.example.carservice.Garage;
-import com.example.carservice.Components.FileUtility;
 import com.example.carservice.Repositories.GarageRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
 import jakarta.ws.rs.NotFoundException;
 import lombok.NoArgsConstructor;
 
@@ -36,16 +36,23 @@ public class GarageService {
 
     public List<Garage> findAll() { return garageRepository.findAll(); }
 
+    @Transactional
     public void create(Garage garage){
-        garage.setId(UUID.randomUUID());
+        if(garage.getId() == null)
+            garage.setId(UUID.randomUUID());
         garageRepository.create(garage);
     }
 
-    public void update(Garage garage){
-        garageRepository.update(garage);
+    @Transactional
+    public void update(Garage Garage){
+        garageRepository.update(Garage);
     }
 
+    @Transactional
     public void delete(UUID id){
+/*
+        garageRepository.delete(garageRepository.find(id).orElseThrow());
+*/
         garageRepository.find(id).ifPresentOrElse(
                 entity -> garageRepository.delete(entity),
                 () -> {

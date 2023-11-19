@@ -1,4 +1,4 @@
-#Thu Nov 09 23:47:12 CET 2023
-lib/features/io.openliberty.jakarta.persistence-3.1.mf=824505910acbdade76bba07d68971fab
-lib/io.openliberty.jakarta.persistence.api.3.1_1.0.82.jar=ba310a3fe8c0e5538ec3c864ec6000f3
-dev/api/spec/io.openliberty.jakarta.persistence.3.1_1.0.82.jar=dd010752c53da424a414ae0a4186178d
+#Wed Nov 15 12:02:56 CET 2023
+lib/features/io.openliberty.jakarta.persistence-3.1.mf=eb73cde081489a96deb696fbcef4a7df
+dev/api/spec/io.openliberty.jakarta.persistence.3.1_1.0.83.jar=ad852e42876082cbee236cf1e40a92c9
+lib/io.openliberty.jakarta.persistence.api.3.1_1.0.83.jar=001d850e5b15230a29453015230b8745

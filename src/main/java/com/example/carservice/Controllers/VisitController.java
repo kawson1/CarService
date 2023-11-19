@@ -1,6 +1,7 @@
 package com.example.carservice.Controllers;
 
 import com.example.carservice.Visit;
+import com.example.carservice.dto.VisitResponse;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 
@@ -18,12 +19,12 @@ public interface VisitController {
     @GET
     @Path("/visits")
     @Produces(MediaType.APPLICATION_JSON)
-    List<Visit> getVisits();
+    List<VisitResponse> getVisits();
 
     @GET
     @Path("/garages/{garageId}/visits")
     @Produces(MediaType.APPLICATION_JSON)
-    List<Visit> getVisits(@PathParam("garageId") UUID garageId);
+    List<VisitResponse> getGarageVisits(@PathParam("garageId") UUID garageId);
 
     @POST
     @Path("/garages/{garageId}/visits")

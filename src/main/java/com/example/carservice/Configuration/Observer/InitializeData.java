@@ -80,75 +80,75 @@ public class InitializeData {
                 .clientType(ClientType.NEW)
                 .build();
 
-        clientService.create(c1);
-        clientService.create(c2);
-        clientService.create(c3);
-        clientService.create(c4);
+//        clientService.create(c1);
+//        clientService.create(c2);
+//        clientService.create(c3);
+//        clientService.create(c4);
 
         Garage g1 = Garage.builder()
-                        .id(UUID.fromString("c4804e0f-769e-4ab9-9ebe-0578fb4f00a6"))
-                        .title("Pimp my car")
-                        .city("Gdansk")
-                        .zipCode("80-800")
-                        .countEmployees(0)
-                        .build();
+                .id(UUID.fromString("c4804e0f-769e-4ab9-9ebe-0578fb4f00a7"))
+                .title("Pimp my car")
+                .city("Gdansk")
+                .zipCode("80-800")
+                .countEmployees(0)
+                .build();
 
         Garage g2 = Garage.builder()
-                        .id(UUID.randomUUID())
-                        .title("GK Warsztat Gdansk")
-                        .city("Gdansk")
-                        .zipCode("80-800")
-                        .countEmployees(0)
-                        .build();
+                .id(UUID.randomUUID())
+                .title("GK Warsztat Gdansk")
+                .city("Gdansk")
+                .zipCode("80-800")
+                .countEmployees(0)
+                .build();
 
         Garage g3 = Garage.builder()
-                        .id(UUID.randomUUID())
-                        .title("P4TR0L Workshop")
-                        .city("Gdansk")
-                        .zipCode("80-800")
-                        .countEmployees(0)
-                        .build();
+                .id(UUID.randomUUID())
+                .title("P4TR0L Workshop")
+                .city("Gdansk")
+                .zipCode("80-800")
+                .countEmployees(0)
+                .build();
 
-        garageService.create(g1);
-        garageService.create(g2);
-        garageService.create(g3);
+//        garageService.create(g1);
+//        garageService.create(g2);
+//        garageService.create(g3);
 
         Visit v1 = Visit.builder()
-                        .id(UUID.fromString("c4804e0f-769e-4ab9-9ebe-0578fb4f00a6"))
-                        .date(LocalDate.of(2012,5,13))
-                        .VIN("4T1BF1FK9DU292392")
-                        .garage(g1)
-                        .client(c1)
-                        .build();
+                .id(UUID.fromString("c4804e0f-769e-4ab9-9ebe-0578fb4f00a8"))
+                .date(LocalDate.of(2012,5,13))
+                .VIN("4T1BF1FK9DU292392")
+                .garage(g1)
+                .client(c1)
+                .build();
 
         Visit v2 = Visit.builder()
-                        .id(UUID.randomUUID())
-                        .date(LocalDate.of(2014,11,24))
-                        .VIN("1GNDS13S532111299")
-                        .garage(g1)
-                        .client(c1)
-                        .build();
+                .id(UUID.randomUUID())
+                .date(LocalDate.of(2014,11,24))
+                .VIN("1GNDS13S532111299")
+                .garage(g1)
+                .client(c1)
+                .build();
 
         Visit v3 = Visit.builder()
-                        .id(UUID.randomUUID())
-                        .date(LocalDate.of(2016,8,5))
-                        .VIN("2B3HD46R31H659452")
-                        .garage(g3)
-                        .client(c2)
-                        .build();
+                .id(UUID.randomUUID())
+                .date(LocalDate.of(2016,8,5))
+                .VIN("2B3HD46R31H659452")
+                .garage(g3)
+                .client(c2)
+                .build();
 
         Visit v4 = Visit.builder()
-                        .id(UUID.randomUUID())
-                        .date(LocalDate.of(2018,2,1))
-                        .VIN("1NXBU40EX9Z021701")
-                        .garage(g2)
-                        .client(c3)
-                        .build();
+                .id(UUID.randomUUID())
+                .date(LocalDate.of(2018,2,1))
+                .VIN("1NXBU40EX9Z021701")
+                .garage(g2)
+                .client(c3)
+                .build();
 
-        visitService.create(v1);
-        visitService.create(v2);
-        visitService.create(v3);
-        visitService.create(v4);
+//        visitService.create(v1);
+//        visitService.create(v2);
+//        visitService.create(v3);
+//        visitService.create(v4);
 
         requestContextController.deactivate();
     }

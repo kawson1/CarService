@@ -1,19 +1,19 @@
-#Thu Nov 09 23:47:12 CET 2023
-lib/com.ibm.ws.cdi.internal.jakarta_1.0.82.jar=4602df03a04b7abd909f4d47b482ff8c
+#Wed Nov 15 12:02:56 CET 2023
 dev/api/ibm/schema/ibm-managed-bean-bnd_1_0.xsd=000e5fb4e1f752ab98e76f3e43920b63
-lib/io.openliberty.org.jboss.weld5_1.0.82.jar=80299957c4c5094731ff34d9b018b422
-lib/io.openliberty.org.jboss.classfilewriter.1.3_1.3.82.jar=df2f4f0f23f5dfcae8784fef66faa311
-dev/api/third-party/io.openliberty.cdi.4.0.thirdparty_1.0.82.jar=0510b55d1235d952b186915a501cbdaf
-lib/features/io.openliberty.cdi-4.0.mf=6e3cec50f58ae4df086d14662a7b9277
-lib/com.ibm.ws.cdi.weld.jakarta_1.0.82.jar=0d770feb5cb3796975bce95be218603b
-lib/io.openliberty.org.jboss.weld5.se_1.0.82.jar=7aecef67e31312cb1c0658076d1fe010
-lib/io.openliberty.org.jboss.logging35_1.0.82.jar=9c23f75188a833246eb7f52d6d60c6fb
-lib/io.openliberty.cdi.4.0.internal.weld_1.0.82.jar=51fbe9ace90debf8c7f56b7eb1b441ae
-lib/io.openliberty.cdi.4.0.internal.services.fragment_1.0.82.jar=72c214bccc0bea453d37592540a62b98
-lib/io.openliberty.cdi.4.0.interfaces_1.0.82.jar=1b2fa003b9ab399949495d6f2dc36f56
-dev/spi/ibm/io.openliberty.cdi.spi_1.1.82.jar=a3731d5e81b08b217fada5659f963e45
+dev/spi/ibm/io.openliberty.cdi.spi_1.1.83.jar=d083626f492602992c329e6c9211c983
+lib/io.openliberty.org.jboss.classfilewriter.1.3_1.3.83.jar=3233846e65eb78aecbf97d0dd4d076f2
+lib/com.ibm.ws.managedobject_1.0.83.jar=212dc176cf9c759a5fce42b05f81747c
+lib/com.ibm.ws.cdi.interfaces.jakarta_1.0.83.jar=8faec1c4ff73c0e88ab364ae506aac4e
+lib/com.ibm.ws.org.jboss.jdeparser.1.0.0_1.0.83.jar=3c7fb2ac922fd35be4384a0640bf3e3a
+lib/features/io.openliberty.cdi-4.0.mf=b20d5f3f01cbb18c235cb7fe5a1244e8
+lib/io.openliberty.cdi.4.0.interfaces_1.0.83.jar=7abc33673a4711572e61d937787c1df5
+lib/io.openliberty.cdi.4.0.internal.weld_1.0.83.jar=6e4d0c7705c5c3400d796255079fb107
+lib/io.openliberty.org.jboss.weld5_1.0.83.jar=37775420ddcb541aefe3f430ca99fe09
 dev/api/ibm/schema/ibm-managed-bean-bnd_1_1.xsd=9a494dab3af1ccd4f13f22cca4bd969c
-dev/spi/ibm/javadoc/io.openliberty.cdi.spi_1.1-javadoc.zip=da41f01c61c2122a584750fdc0e5c9fc
-lib/com.ibm.ws.managedobject_1.0.82.jar=0126c9931c0357c4c85d2210616f65a7
-lib/com.ibm.ws.cdi.interfaces.jakarta_1.0.82.jar=bc253556f8f4f159dbbd931319e98307
-lib/com.ibm.ws.org.jboss.jdeparser.1.0.0_1.0.82.jar=83ae10e3542e60b9a14116a70d27aae5
+dev/spi/ibm/javadoc/io.openliberty.cdi.spi_1.1-javadoc.zip=f7e26828e3def407b1b16bab8357bde3
+lib/com.ibm.ws.cdi.weld.jakarta_1.0.83.jar=7e6a0816b867ac1a30f24246fc1883b5
+lib/io.openliberty.org.jboss.weld5.se_1.0.83.jar=2ed97a744ad11185b22fe5ae4f732f49
+lib/io.openliberty.org.jboss.logging35_1.0.83.jar=63c8ac5b5bca45d30c3171b3de1348a3
+dev/api/third-party/io.openliberty.cdi.4.0.thirdparty_1.0.83.jar=d280ffb48ce87d270f921fd11171891d
+lib/com.ibm.ws.cdi.internal.jakarta_1.0.83.jar=e4ca755137b9a14f1bd5f22f109a1f96
+lib/io.openliberty.cdi.4.0.internal.services.fragment_1.0.83.jar=7720b2d53dd317a88436677b52870e8b

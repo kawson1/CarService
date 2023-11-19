@@ -1,10 +1,10 @@
-#Thu Nov 09 23:47:07 CET 2023
-lib/com.ibm.ws.org.apache.httpcomponents_1.0.82.jar=85e6e0d8121625935c767e202259486d
-lib/io.openliberty.org.jboss.resteasy.common.ee10_1.0.82.jar=c7b6183ce3bf450587be0cbe316de996
-lib/io.openliberty.org.apache.commons.logging_1.2.82.jar=690281c6c3bca16e4cb05e7a574a376f
-dev/api/ibm/javadoc/io.openliberty.jaxrs30_1.0-javadoc.zip=aebf276d5627d78f6445e6f719d91def
-dev/api/ibm/io.openliberty.jaxrs30_1.0.82.jar=6a3aad9a19971c283ec759ee413548ac
-lib/com.ibm.ws.jaxrs.2.x.config_1.0.82.jar=654b125d18f94fe088197a65661e04d9
-lib/features/io.openliberty.restfulWSClient-3.1.mf=89f9410596a692039c65a2b131917bd8
-lib/io.openliberty.org.jboss.logging35_1.0.82.jar=9c23f75188a833246eb7f52d6d60c6fb
-lib/io.openliberty.org.apache.commons.codec_1.15.82.jar=5632abe3bf44d0ef7bfc85a4cf87c52f
+#Wed Nov 15 12:02:55 CET 2023
+lib/io.openliberty.org.apache.commons.codec_1.15.83.jar=0151995e29b59cd068f4b7a4899e9a7c
+lib/io.openliberty.org.apache.commons.logging_1.2.83.jar=66e4c8590200c545e827c218e349c0fa
+lib/com.ibm.ws.org.apache.httpcomponents_1.0.83.jar=bffe8a7db96bfe079bf3a66c64fa0304
+dev/api/ibm/io.openliberty.jaxrs30_1.0.83.jar=c25c5aa769163cfa9ec0bb4e6205791b
+dev/api/ibm/javadoc/io.openliberty.jaxrs30_1.0-javadoc.zip=fd165edd4be4f1c1a6b66fd7d7359a16
+lib/com.ibm.ws.jaxrs.2.x.config_1.0.83.jar=64964dacc3da0c49fae0752273745755
+lib/io.openliberty.org.jboss.logging35_1.0.83.jar=63c8ac5b5bca45d30c3171b3de1348a3
+lib/features/io.openliberty.restfulWSClient-3.1.mf=982b8514ec04c32ef08a821f6aa1f7e1
+lib/io.openliberty.org.jboss.resteasy.common.ee10_1.0.83.jar=d1d5b0674d2fc97d32aeb286585f6fcc

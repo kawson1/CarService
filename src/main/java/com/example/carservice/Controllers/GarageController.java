@@ -1,6 +1,7 @@
 package com.example.carservice.Controllers;
 
 import com.example.carservice.Garage;
+import com.example.carservice.dto.GarageResponse;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 
@@ -13,12 +14,12 @@ public interface GarageController {
     @GET
     @Path("/garages/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    Garage find(@PathParam("id") UUID id);
+    GarageResponse find(@PathParam("id") UUID id);
 
     @GET
     @Path("/garages")
     @Produces(MediaType.APPLICATION_JSON)
-    List<Garage> getGarages();
+    List<GarageResponse> getGarages();
 
     @POST
     @Path("/garages")

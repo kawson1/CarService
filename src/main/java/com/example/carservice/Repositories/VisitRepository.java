@@ -13,4 +13,5 @@ public interface VisitRepository extends Repository<Visit, UUID> {
 
     List<Visit> findAllByDate(Date date);
 
+    List<Visit> findAllByGarageId(UUID garageId);
 }

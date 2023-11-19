@@ -4,6 +4,7 @@ import com.example.carservice.Repositories.VisitRepository;
 import com.example.carservice.Visit;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
 import jakarta.ws.rs.NotFoundException;
 import lombok.NoArgsConstructor;
 
@@ -17,9 +18,12 @@ public class VisitService {
 
     private final VisitRepository visitRepository;
 
+    private final GarageService garageService;
+
     @Inject
-    public VisitService(VisitRepository visitRepository){
+    public VisitService(VisitRepository visitRepository, GarageService garageService){
         this.visitRepository = visitRepository;
+        this.garageService = garageService;
     }
 
     public Optional<Visit> find(UUID id){
@@ -32,20 +36,39 @@ public class VisitService {
 
     public List<Visit> findAll() { return visitRepository.findAll(); }
 
-    public List<Visit> findAll(UUID garageId) {
-        return visitRepository.findAll()
-            .stream().filter(visit -> visit.garage.getId().equals(garageId)).toList();
+    public List<Visit> findAll(UUID garageId) { return visitRepository.findAllByGarageId(garageId); }
+
+    @Transactional
+    public void create(Visit visit, UUID garageId){
+        if(visit.getId() == null)
+            visit.setId(UUID.randomUUID());
+        garageService.find(garageId).ifPresentOrElse(
+                garage -> {
+                    visit.setGarage(garage);
+                    visitRepository.create(visit);
+                },
+                () -> {
+                    throw new IllegalArgumentException("Garage does not exists.");
+                });
     }
 
+    @Transactional
     public void create(Visit visit){
+        if(visit.getId() == null)
+            visit.setId(UUID.randomUUID());
         visitRepository.create(visit);
     }
 
+    @Transactional
     public void update(Visit visit){
         visitRepository.update(visit);
     }
 
+    @Transactional
     public void delete(UUID id){
+/*
+        garageRepository.delete(garageRepository.find(id).orElseThrow());
+*/
         visitRepository.find(id).ifPresentOrElse(
                 entity -> visitRepository.delete(entity),
                 () -> {

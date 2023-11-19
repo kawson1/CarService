@@ -1,3 +1,3 @@
-#Thu Nov 09 23:47:14 CET 2023
-lib/features/io.openliberty.cdi3.0-transaction2.0.mf=79f9876eb9059088726fe78c2dcafc07
-lib/com.ibm.ws.cdi.transaction.jakarta_1.0.82.jar=6f0d27c279003956b81f1102da182deb
+#Wed Nov 15 12:02:56 CET 2023
+lib/features/io.openliberty.cdi3.0-transaction2.0.mf=6a9584e883e3bb37e1525b53f3668293
+lib/com.ibm.ws.cdi.transaction.jakarta_1.0.83.jar=dfc19d22167eb823cead0b642cc74979

@@ -1,6 +1,7 @@
 package com.example.carservice.Controllers;
 
 import com.example.carservice.Client;
+import com.example.carservice.dto.ClientResponse;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 
@@ -14,14 +15,14 @@ public interface ClientController {
     @GET
     @Path("/clients/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    Client find(@PathParam("id") UUID id);
+    ClientResponse find(@PathParam("id") UUID id);
 
-    Client find(String name);
+    ClientResponse find(String name);
 
     @GET
     @Path("/clients")
     @Produces(MediaType.APPLICATION_JSON)
-    List<Client> getClients();
+    List<ClientResponse> getClients();
 
     @POST
     @Path("/clients")
@@ -45,7 +46,8 @@ public interface ClientController {
     @PUT
     @Path("/clients/{id}/portrait")
     @Consumes(MediaType.MULTIPART_FORM_DATA)
-    void putClientPortrait(UUID id, InputStream portrait);
+    void putClientPortrait(@PathParam("id") UUID id,
+                           @SuppressWarnings("RestParamTypeInspection") @FormParam("portrait") InputStream portrait);
 
     void deleteClientPortrait(UUID id);
 }

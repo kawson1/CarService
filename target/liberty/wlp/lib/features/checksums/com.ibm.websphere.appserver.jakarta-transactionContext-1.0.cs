@@ -1,3 +1,3 @@
-#Thu Nov 09 23:47:05 CET 2023
-lib/features/com.ibm.websphere.appserver.jakarta-transactionContext-1.0.mf=353fbddd2e4c5720836d55fd55ff82fe
-lib/com.ibm.ws.transaction.context.jakarta_1.0.82.jar=4f1d7db31b077859dddbfb2b9ba4ba6e
+#Wed Nov 15 12:02:56 CET 2023
+lib/com.ibm.ws.transaction.context.jakarta_1.0.83.jar=c1010b114abfbdade687bb560ba27298
+lib/features/com.ibm.websphere.appserver.jakarta-transactionContext-1.0.mf=a41bc1e877e5e29b98a85321ad92c57d

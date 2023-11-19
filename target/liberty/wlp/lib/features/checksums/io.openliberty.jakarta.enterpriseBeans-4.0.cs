@@ -1,3 +1,3 @@
-#Thu Nov 09 23:47:13 CET 2023
-dev/api/spec/io.openliberty.jakarta.enterpriseBeans.4.0_1.0.82.jar=1c09f34f8269d9975743d9162b7010c2
-lib/features/io.openliberty.jakarta.enterpriseBeans-4.0.mf=023654be8504e24737e50201b42ad2a2
+#Wed Nov 15 12:02:57 CET 2023
+lib/features/io.openliberty.jakarta.enterpriseBeans-4.0.mf=71d281bbe0d6b297b21dd47874861cbd
+dev/api/spec/io.openliberty.jakarta.enterpriseBeans.4.0_1.0.83.jar=b88918ce7efddc529652015400dd812b

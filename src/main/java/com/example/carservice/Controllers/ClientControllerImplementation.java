@@ -4,6 +4,7 @@ import com.example.carservice.Client;
 import com.example.carservice.Controllers.Exception.BadRequestException;
 import com.example.carservice.Services.ClientService;
 
+import com.example.carservice.dto.ClientResponse;
 import jakarta.inject.Inject;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.ws.rs.*;
@@ -41,20 +42,44 @@ public class ClientControllerImplementation implements ClientController {
         this.uriInfo = uriInfo;
     }
 
-    public Client find(UUID id){
+    @Override
+    public ClientResponse find(UUID id){
         return clientService.find(id)
+                .map(client -> ClientResponse.builder()
+                        .surname(client.getSurname())
+                        .id(client.getId())
+                        .clientType(client.getClientType())
+                        .name(client.getName())
+                        .build())
                 .orElseThrow(NotFoundException::new);
     }
 
-    public Client find(String name){
+    @Override
+    public ClientResponse find(String name){
         return clientService.find(name)
+                .map(client -> ClientResponse.builder()
+                        .surname(client.getSurname())
+                        .id(client.getId())
+                        .clientType(client.getClientType())
+                        .name(client.getName())
+                        .build())
                 .orElseThrow(NotFoundException::new);
     }
 
-    public List<Client> getClients(){
-        return clientService.findAll();
+    @Override
+    public List<ClientResponse> getClients(){
+        return clientService.findAll()
+                .stream()
+                .map(client -> ClientResponse.builder()
+                        .surname(client.getSurname())
+                        .id(client.getId())
+                        .clientType(client.getClientType())
+                        .name(client.getName())
+                        .build())
+                .toList();
     }
 
+    @Override
     public void create(Client client){
         try {
             clientService.create(client);
@@ -68,6 +93,7 @@ public class ClientControllerImplementation implements ClientController {
         }
     }
 
+    @Override
     public void update(Client client){
         try {
             clientService.update(client);
@@ -76,6 +102,7 @@ public class ClientControllerImplementation implements ClientController {
         }
     }
 
+    @Override
     public void delete(UUID id){
         clientService.find(id).ifPresentOrElse(
                 entity -> clientService.delete(id),
@@ -85,6 +112,7 @@ public class ClientControllerImplementation implements ClientController {
         );
     }
 
+    @Override
     public byte[] getPortrait(UUID id) {
         if(clientService.find(id).isPresent())
             return clientService.getPortrait(id);
@@ -92,6 +120,7 @@ public class ClientControllerImplementation implements ClientController {
             throw new NotFoundException();
     }
 
+    @Override
     public void putClientPortrait(UUID id, InputStream portrait) {
         clientService.find(id).ifPresentOrElse(
                 entity -> {
@@ -107,6 +136,7 @@ public class ClientControllerImplementation implements ClientController {
         );
     }
 
+    @Override
     public void deleteClientPortrait(UUID id) {
         clientService.find(id).ifPresentOrElse(
                 entity -> clientService.deletePortrait(id),

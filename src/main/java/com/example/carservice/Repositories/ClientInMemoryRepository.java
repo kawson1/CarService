@@ -1,9 +1,9 @@
 package com.example.carservice.Repositories;
 
 import com.example.carservice.Client;
-import com.example.carservice.Components.DataStore;
 import jakarta.enterprise.context.RequestScoped;
-import jakarta.inject.Inject;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,45 +12,44 @@ import java.util.UUID;
 @RequestScoped
 public class ClientInMemoryRepository implements ClientRepository{
 
-    private final DataStore store;
+    /**
+     * Connection with the database (not thread safe).
+     */
+    private EntityManager em;
 
-    @Inject
-    public ClientInMemoryRepository(DataStore store){
-        this.store = store;
+    @PersistenceContext
+    public void setEm(EntityManager em) {
+        this.em = em;
     }
 
     @Override
     public Optional<Client> findByName(String name) {
-        return store.findAllClients().stream()
-                .filter(client -> client.getName().equals(name))
-                .findFirst();
+        return Optional.ofNullable(em.find(Client.class, name));
     }
 
     @Override
     public Optional<Client> find(UUID id) {
-        return store.findAllClients().stream()
-                .filter(client -> client.getId().equals(id))
-                .findFirst();
+        return Optional.ofNullable(em.find(Client.class, id));
     }
 
     @Override
     public List<Client> findAll() {
-        return store.findAllClients();
+        return em.createQuery("select c from Client c", Client.class).getResultList();
     }
 
     @Override
     public void create(Client entity) {
-        store.createClient(entity);
+        em.persist(entity);
     }
 
     @Override
     public void delete(Client entity) {
-        store.deleteClient(entity);
+        em.remove(em.find(Client.class, entity.getId()));
     }
 
     @Override
     public void update(Client entity) {
-        store.updateClient(entity);
+        em.merge(entity);
     }
 
 }

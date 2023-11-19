@@ -1,4 +1,4 @@
-#Thu Nov 09 23:47:14 CET 2023
-lib/features/io.openliberty.jakarta.websocket-2.1.mf=27f4ae2c17e9b2454968d3e0ca39a478
-dev/api/spec/io.openliberty.jakarta.websocket.2.1_1.0.82.jar=f653dc3b88cbb135c6f5ec0f589aafff
-dev/api/spec/io.openliberty.jakarta.websocket.client.2.1_1.0.82.jar=3cfe3b23a2cee0b3e0630a0e1b89763e
+#Wed Nov 15 12:02:55 CET 2023
+lib/features/io.openliberty.jakarta.websocket-2.1.mf=556911533f848b16272eb2a6a57dc214
+dev/api/spec/io.openliberty.jakarta.websocket.client.2.1_1.0.83.jar=581b751509ad4aed9907fd3713872ecc
+dev/api/spec/io.openliberty.jakarta.websocket.2.1_1.0.83.jar=8716dcfa05d2617486ff0c6d0eb582fd

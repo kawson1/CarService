@@ -2,7 +2,7 @@ Created-By: 17.0.4.1 (IBM Corporation)
 IBM-API-Package: jakarta.annotation; type=spec,
  jakarta.annotation.security; type=spec,
  jakarta.annotation.sql; type=spec
-IBM-AppliesTo: io.openliberty;productVersion="23.0.0.10"
+IBM-AppliesTo: io.openliberty;productVersion="23.0.0.11"
 IBM-Feature-Version: 2
 IBM-InstallTo: core
 IBM-License-Agreement: wlp/lafiles/LA

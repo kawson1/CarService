@@ -1,3 +1,3 @@
-#Thu Nov 09 23:47:08 CET 2023
-lib/features/io.openliberty.jakarta.validation-3.0.mf=5ad12be7a2e7cd69fa62f9ed49db96d3
-dev/api/spec/io.openliberty.jakarta.validation.3.0_1.0.82.jar=163aeaffe4a29950dea465b84bae63cd
+#Wed Nov 15 12:02:56 CET 2023
+lib/features/io.openliberty.jakarta.validation-3.0.mf=af55a983bd970a9faece959c1076a65b
+dev/api/spec/io.openliberty.jakarta.validation.3.0_1.0.83.jar=b2deed240c9fa018dd465a82854f2e76

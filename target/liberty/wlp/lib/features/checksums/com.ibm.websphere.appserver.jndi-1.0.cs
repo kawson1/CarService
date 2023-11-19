@@ -1,6 +1,6 @@
-#Thu Nov 09 23:47:13 CET 2023
-lib/com.ibm.ws.jndi.url.contexts_1.0.82.jar=e1e38f3926ed86276d0680ed4454c16d
-lib/com.ibm.ws.org.apache.aries.jndi.core_1.1.82.jar=209119afec60b6cfe3c0deb8232d5e27
-lib/com.ibm.ws.jndi_1.0.82.jar=451d3381b2d59ee2bdcc9f9fc4d741d2
-lib/features/com.ibm.websphere.appserver.jndi-1.0.mf=2a2f6454d718414b0b5acfc0b444ef90
-lib/com.ibm.ws.org.apache.aries.jndi.api_1.1.82.jar=70dd4499e2a2b34011184af4955b2c14
+#Wed Nov 15 12:02:56 CET 2023
+lib/com.ibm.ws.jndi_1.0.83.jar=557255daf1971f8e754142b3a2725ee8
+lib/com.ibm.ws.org.apache.aries.jndi.core_1.1.83.jar=337f66309c2208ad72aea0dd8980dc00
+lib/com.ibm.ws.jndi.url.contexts_1.0.83.jar=9c08f10ec1f5cdddcb1782bc50ee253c
+lib/features/com.ibm.websphere.appserver.jndi-1.0.mf=2a1dd5ea2c56f73a9b27a920cf4b30e8
+lib/com.ibm.ws.org.apache.aries.jndi.api_1.1.83.jar=1bd8a71822d09e11cfd003e07d4827d2

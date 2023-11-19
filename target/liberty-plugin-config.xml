@@ -3,13 +3,13 @@
     <activeBuildProfiles>
         <profileId>liberty</profileId>
     </activeBuildProfiles>
-    <installDirectory>D:\PG\SEM 7\JEE\delete\CarService\target\liberty\wlp</installDirectory>
-    <serverDirectory>D:\PG\SEM 7\JEE\delete\CarService\target\liberty\wlp\usr\servers\defaultServer</serverDirectory>
-    <userDirectory>D:\PG\SEM 7\JEE\delete\CarService\target\liberty\wlp\usr</userDirectory>
-    <serverOutputDirectory>D:\PG\SEM 7\JEE\delete\CarService\target\liberty\wlp\usr\servers\defaultServer</serverOutputDirectory>
+    <installDirectory>/home/student/Desktop/CarService/target/liberty/wlp</installDirectory>
+    <serverDirectory>/home/student/Desktop/CarService/target/liberty/wlp/usr/servers/defaultServer</serverDirectory>
+    <userDirectory>/home/student/Desktop/CarService/target/liberty/wlp/usr</userDirectory>
+    <serverOutputDirectory>/home/student/Desktop/CarService/target/liberty/wlp/usr/servers/defaultServer</serverOutputDirectory>
     <serverName>defaultServer</serverName>
-    <configDirectory>D:\PG\SEM 7\JEE\delete\CarService\src\main\liberty\config</configDirectory>
-    <configFile>D:\PG\SEM 7\JEE\delete\CarService\src\main\liberty\config\server.xml</configFile>
+    <configDirectory>/home/student/Desktop/CarService/src/main/liberty/config</configDirectory>
+    <configFile>/home/student/Desktop/CarService/src/main/liberty/config/server.xml</configFile>
     <appsDirectory>dropins</appsDirectory>
     <looseApplication>true</looseApplication>
     <stripVersion>false</stripVersion>
@@ -18,16 +18,16 @@
     <assemblyArtifact>
         <groupId>io.openliberty</groupId>
         <artifactId>openliberty-kernel</artifactId>
-        <version>23.0.0.10</version>
+        <version>23.0.0.11</version>
         <type>zip</type>
     </assemblyArtifact>
-    <assemblyArchive>C:\Users\Lukasz\.m2\repository\io\openliberty\openliberty-kernel\23.0.0.10\openliberty-kernel-23.0.0.10.zip</assemblyArchive>
-    <assemblyInstallDirectory>D:\PG\SEM 7\JEE\delete\CarService\target\liberty</assemblyInstallDirectory>
+    <assemblyArchive>/home/student/.m2/repository/io/openliberty/openliberty-kernel/23.0.0.11/openliberty-kernel-23.0.0.11.zip</assemblyArchive>
+    <assemblyInstallDirectory>/home/student/Desktop/CarService/target/liberty</assemblyInstallDirectory>
     <refresh>false</refresh>
-    <installAppsConfigDropins>D:\PG\SEM 7\JEE\delete\CarService\target\liberty\wlp\usr\servers\defaultServer\configDropins\defaults\install_apps_configuration_1491924271.xml</installAppsConfigDropins>
+    <installAppsConfigDropins>/home/student/Desktop/CarService/target/liberty/wlp/usr/servers/defaultServer/configDropins/defaults/install_apps_configuration_1491924271.xml</installAppsConfigDropins>
     <projectType>war</projectType>
-    <projectCompileDependency>com.google.code.gson:gson:2.10.1</projectCompileDependency>
-    <projectCompileDependency>javax:javaee-api:8.0</projectCompileDependency>
-    <projectCompileDependency>com.sun.mail:javax.mail:1.6.0</projectCompileDependency>
-    <projectCompileDependency>javax.activation:activation:1.1</projectCompileDependency>
+    <projectCompileDependency>org.hibernate.validator:hibernate-validator:7.0.5.Final</projectCompileDependency>
+    <projectCompileDependency>jakarta.validation:jakarta.validation-api:3.0.0</projectCompileDependency>
+    <projectCompileDependency>org.jboss.logging:jboss-logging:3.4.1.Final</projectCompileDependency>
+    <projectCompileDependency>com.fasterxml:classmate:1.5.1</projectCompileDependency>
 </liberty-plugin-config>

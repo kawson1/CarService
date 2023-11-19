@@ -1,3 +1,3 @@
-#Thu Nov 09 23:47:06 CET 2023
-dev/api/spec/io.openliberty.jakarta.restfulWS.3.1_1.0.82.jar=51bedef25e539ee75da851ad96a9f935
-lib/features/io.openliberty.jakarta.restfulWS-3.1.mf=5bf4faccd6ddf2d97855b0f280bc87be
+#Wed Nov 15 12:02:55 CET 2023
+dev/api/spec/io.openliberty.jakarta.restfulWS.3.1_1.0.83.jar=c5075684e9db284f6e6c1e4d6cd33c28
+lib/features/io.openliberty.jakarta.restfulWS-3.1.mf=1715a8f45fe4b78de24da067313cf2cd

@@ -1,4 +1,4 @@
-#Thu Nov 09 23:47:06 CET 2023
-dev/api/ibm/io.openliberty.servlet_1.1.82.jar=8bb7238bec0715a56159b1eaf9a693e2
-lib/features/com.ibm.websphere.appserver.servlet-6.0.mf=828a072a120accfa134a095ff1d6d67e
-dev/api/ibm/javadoc/io.openliberty.servlet_1.1-javadoc.zip=ddd4907e50060e0b16a42c92a641716e
+#Wed Nov 15 12:02:57 CET 2023
+lib/features/com.ibm.websphere.appserver.servlet-6.0.mf=9c5cef63648e9e9ed74ba8de3e0ddff9
+dev/api/ibm/io.openliberty.servlet_1.1.83.jar=9f6969dc7ff758e2d53532053f8fed39
+dev/api/ibm/javadoc/io.openliberty.servlet_1.1-javadoc.zip=885c6fed6a6caa51438555653e1d43c4

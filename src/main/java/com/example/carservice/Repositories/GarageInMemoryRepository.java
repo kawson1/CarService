@@ -1,9 +1,9 @@
 package com.example.carservice.Repositories;
 
-import com.example.carservice.Components.DataStore;
 import com.example.carservice.Garage;
 import jakarta.enterprise.context.RequestScoped;
-import jakarta.inject.Inject;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,41 +12,40 @@ import java.util.UUID;
 @RequestScoped
 public class GarageInMemoryRepository implements GarageRepository{
 
-    private final DataStore store;
+    /**
+     * Connection with the database (not thread safe).
+     */
+    private EntityManager em;
 
-    @Inject
-    public GarageInMemoryRepository(DataStore store){
-        this.store = store;
+    @PersistenceContext
+    public void setEm(EntityManager em) {
+        this.em = em;
     }
 
     @Override
     public Optional<Garage> findByTitle(String title) {
-        return store.findAllGarages().stream()
-                .filter(garage -> garage.title.equals(title))
-                .findFirst();
+        return Optional.ofNullable(em.find(Garage.class, title));
     }
 
     @Override
     public Optional<Garage> find(UUID id) {
-        return store.findAllGarages().stream()
-                .filter(garage -> garage.id.equals(id))
-                .findFirst();
+        return Optional.ofNullable(em.find(Garage.class, id));
     }
 
     @Override
     public List<Garage> findAll() {
-        return store.findAllGarages();
+        return em.createQuery("select g from Garage g", Garage.class).getResultList();
     }
 
     @Override
-    public void create(Garage entity) { store.createGarage(entity); }
+    public void create(Garage entity) { em.persist(entity); }
 
     @Override
-    public void delete(Garage entity) { store.deleteGarage(entity); }
+    public void delete(Garage entity) { em.remove(em.find(Garage.class, entity.getId())); }
 
     @Override
     public void update(Garage entity) {
-        store.updateGarage(entity);
+        em.merge(entity);
     }
 
 }
