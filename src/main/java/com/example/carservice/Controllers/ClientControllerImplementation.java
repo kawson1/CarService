@@ -1,28 +1,41 @@
 package com.example.carservice.Controllers;
 
 import com.example.carservice.Client;
+import com.example.carservice.ClientRoles;
 import com.example.carservice.Controllers.Exception.BadRequestException;
 import com.example.carservice.Services.ClientService;
 
 import com.example.carservice.dto.ClientResponse;
+import jakarta.annotation.Resource;
+import jakarta.annotation.security.DeclareRoles;
+import jakarta.annotation.security.RolesAllowed;
+import jakarta.ejb.EJB;
 import jakarta.inject.Inject;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.*;
 import lombok.extern.java.Log;
 
 import java.io.InputStream;
+import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
+@DeclareRoles({
+        ClientRoles.ADMIN,
+        ClientRoles.USER
+})
 @Path("")
 @Log
 public class ClientControllerImplementation implements ClientController {
 
-    private final ClientService clientService;
+    private ClientService clientService;
 
     /**
-     * Allows to create {@link UriBuilder} based on current request.
+     * Allows to create {@link jakarta.ws.rs.core.UriBuilder} based on current request.
      */
     private final UriInfo uriInfo;
 
@@ -35,14 +48,28 @@ public class ClientControllerImplementation implements ClientController {
 
     @Inject
     public ClientControllerImplementation(
-            ClientService clientService,
             @SuppressWarnings("CdiInjectionPointsInspection") UriInfo uriInfo
     ) {
-        this.clientService = clientService;
         this.uriInfo = uriInfo;
     }
 
+    @EJB
+    public void setService(ClientService service) { this.clientService = service; }
+
+    @Context
+    SecurityContext securityContext;
+
+    @GET
+    @Path("/clients/current-role")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<String> roles(){
+        return Arrays.stream(ClientControllerImplementation.class.getAnnotation(DeclareRoles.class).value())
+                .filter(roleName -> securityContext.isUserInRole(roleName))
+                .collect(Collectors.toList());
+    }
+
     @Override
+    @RolesAllowed(ClientRoles.ADMIN)
     public ClientResponse find(UUID id){
         return clientService.find(id)
                 .map(client -> ClientResponse.builder()
@@ -55,6 +82,7 @@ public class ClientControllerImplementation implements ClientController {
     }
 
     @Override
+    @RolesAllowed(ClientRoles.ADMIN)
     public ClientResponse find(String name){
         return clientService.find(name)
                 .map(client -> ClientResponse.builder()
@@ -67,6 +95,7 @@ public class ClientControllerImplementation implements ClientController {
     }
 
     @Override
+    @RolesAllowed(ClientRoles.ADMIN)
     public List<ClientResponse> getClients(){
         return clientService.findAll()
                 .stream()
@@ -93,6 +122,7 @@ public class ClientControllerImplementation implements ClientController {
         }
     }
 
+    @RolesAllowed(ClientRoles.ADMIN)
     @Override
     public void update(Client client){
         try {
@@ -102,6 +132,7 @@ public class ClientControllerImplementation implements ClientController {
         }
     }
 
+    @RolesAllowed(ClientRoles.ADMIN)
     @Override
     public void delete(UUID id){
         clientService.find(id).ifPresentOrElse(
@@ -112,14 +143,16 @@ public class ClientControllerImplementation implements ClientController {
         );
     }
 
+    @RolesAllowed(ClientRoles.ADMIN)
     @Override
     public byte[] getPortrait(UUID id) {
         if(clientService.find(id).isPresent())
             return clientService.getPortrait(id);
         else
-            throw new NotFoundException();
+            return new byte[0];
     }
 
+    @RolesAllowed(ClientRoles.ADMIN)
     @Override
     public void putClientPortrait(UUID id, InputStream portrait) {
         clientService.find(id).ifPresentOrElse(
@@ -136,6 +169,7 @@ public class ClientControllerImplementation implements ClientController {
         );
     }
 
+    @RolesAllowed(ClientRoles.ADMIN)
     @Override
     public void deleteClientPortrait(UUID id) {
         clientService.find(id).ifPresentOrElse(

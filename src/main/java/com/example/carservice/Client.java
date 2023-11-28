@@ -28,11 +28,25 @@ public class Client implements Serializable {
 
     private LocalDate birthdate;
 
-    @OneToMany(mappedBy = "client")
-    private List<Visit> visitList;
+    @ToString.Exclude
+    private String password;
+
+    @Column(nullable = false, unique = true)
+    private String login;
+
+//    @OneToMany(mappedBy = "client")
+//    private List<Visit> visitList;
 
     @Enumerated(EnumType.STRING)
     private ClientType clientType = ClientType.NEW;
+
+    /**
+     * User's security roles.
+     */
+    @CollectionTable(name = "client__roles", joinColumns = @JoinColumn(name = "id"))
+    @Column(name = "role")
+    @ElementCollection(fetch = FetchType.EAGER)
+    private List<String> roles;
 
     @Lob
     @Basic(fetch = FetchType.EAGER)

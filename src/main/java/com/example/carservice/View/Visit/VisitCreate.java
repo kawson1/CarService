@@ -6,6 +6,7 @@ import com.example.carservice.Services.ClientService;
 import com.example.carservice.Services.GarageService;
 import com.example.carservice.Services.VisitService;
 import com.example.carservice.Visit;
+import jakarta.ejb.EJB;
 import jakarta.enterprise.context.ConversationScoped;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Inject;
@@ -27,7 +28,7 @@ public class VisitCreate implements Serializable {
 
     private final VisitService service;
     private final GarageService garageService;
-    private final ClientService clientService;
+    private ClientService clientService;
 
     @Setter
     @Getter
@@ -48,11 +49,13 @@ public class VisitCreate implements Serializable {
     private List<Client> clients;
 
     @Inject
-    public VisitCreate(VisitService service, GarageService garageService, ClientService clientService){
+    public VisitCreate(VisitService service, GarageService garageService){
         this.service = service;
         this.garageService = garageService;
-        this.clientService = clientService;
     }
+
+    @EJB
+    public void setClientService(ClientService service) { this.clientService = service; }
 
     public void init(){
         this.visit = Visit.builder()

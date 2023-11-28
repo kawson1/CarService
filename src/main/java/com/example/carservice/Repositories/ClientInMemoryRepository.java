@@ -1,15 +1,18 @@
 package com.example.carservice.Repositories;
 
 import com.example.carservice.Client;
+import com.example.carservice.Visit;
+import jakarta.enterprise.context.Dependent;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.NoResultException;
 import jakarta.persistence.PersistenceContext;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-@RequestScoped
+@Dependent
 public class ClientInMemoryRepository implements ClientRepository{
 
     /**
@@ -24,7 +27,22 @@ public class ClientInMemoryRepository implements ClientRepository{
 
     @Override
     public Optional<Client> findByName(String name) {
-        return Optional.ofNullable(em.find(Client.class, name));
+        try {
+            return Optional.of(em.createQuery("select c from Client c where c.name = :name", Client.class)
+                    .setParameter("name", name)
+                    .getSingleResult());
+        } catch (NoResultException ex) {
+            return Optional.empty();
+        }
+    }
+
+    @Override
+    public Optional<Client> findByLogin(String login) {
+        return Optional.ofNullable(em.createQuery("select c from Client c where c.login = :login", Client.class)
+                .setParameter("login", login)
+                .getResultList()
+                .stream().findFirst()
+                .orElse(null));
     }
 
     @Override

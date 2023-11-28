@@ -1,6 +1,7 @@
 package com.example.carservice.Repositories;
 
 import com.example.carservice.Visit;
+import jakarta.enterprise.context.Dependent;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
@@ -10,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-@RequestScoped
+@Dependent
 public class VisitInMemoryRepository implements VisitRepository {
 
     /**
@@ -49,6 +50,13 @@ public class VisitInMemoryRepository implements VisitRepository {
     public List<Visit> findAllByGarageId(UUID garageId) {
         return em.createQuery("select v from Visit v where v.garage.id = :garageId", Visit.class)
                 .setParameter("garageId", garageId)
+                .getResultList();
+    }
+
+    @Override
+    public List<Visit> findAllByClientId(UUID clientId) {
+        return em.createQuery("select v from Visit v where v.client.id = :clientId", Visit.class)
+                .setParameter("clientId", clientId)
                 .getResultList();
     }
 

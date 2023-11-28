@@ -2,6 +2,11 @@ package com.example.carservice.Services;
 
 import com.example.carservice.Repositories.VisitRepository;
 import com.example.carservice.Visit;
+import com.example.carservice.dto.CreateVisitRequest;
+import jakarta.annotation.security.DeclareRoles;
+import jakarta.annotation.security.RolesAllowed;
+import jakarta.ejb.LocalBean;
+import jakarta.ejb.Stateless;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
@@ -13,17 +18,21 @@ import java.util.Optional;
 import java.util.UUID;
 
 @NoArgsConstructor(force = true)
-@ApplicationScoped
+@LocalBean
+@Stateless
 public class VisitService {
 
     private final VisitRepository visitRepository;
 
     private final GarageService garageService;
 
+    private final ClientService clientService;
+
     @Inject
-    public VisitService(VisitRepository visitRepository, GarageService garageService){
+    public VisitService(VisitRepository visitRepository, GarageService garageService, ClientService clientService){
         this.visitRepository = visitRepository;
         this.garageService = garageService;
+        this.clientService = clientService;
     }
 
     public Optional<Visit> find(UUID id){
@@ -38,7 +47,8 @@ public class VisitService {
 
     public List<Visit> findAll(UUID garageId) { return visitRepository.findAllByGarageId(garageId); }
 
-    @Transactional
+    public List<Visit> findAllByClientId(UUID clientId) { return visitRepository.findAllByClientId(clientId); }
+
     public void create(Visit visit, UUID garageId){
         if(visit.getId() == null)
             visit.setId(UUID.randomUUID());
@@ -52,19 +62,40 @@ public class VisitService {
                 });
     }
 
-    @Transactional
+    public void create(CreateVisitRequest visit){
+        Visit v = new Visit();
+        if(visit.getId() == null)
+            visit.setId(UUID.randomUUID());
+        garageService.find(visit.getGarageId()).ifPresentOrElse(
+                garage -> {
+                    v.setGarage(garage);
+                },
+                () -> {
+                    throw new IllegalArgumentException("Garage does not exists.");
+                });
+        clientService.find(visit.getClientId()).ifPresentOrElse(
+                client -> {
+                    v.setClient(client);
+                },
+                () -> {
+                    throw new IllegalArgumentException("Client does not exists.");
+                });
+        v.setId(visit.getId());
+        v.setDate(visit.getDate());
+        v.setVIN(visit.getVIN());
+        visitRepository.create(v);
+    }
+
     public void create(Visit visit){
         if(visit.getId() == null)
             visit.setId(UUID.randomUUID());
         visitRepository.create(visit);
     }
 
-    @Transactional
     public void update(Visit visit){
         visitRepository.update(visit);
     }
 
-    @Transactional
     public void delete(UUID id){
 /*
         garageRepository.delete(garageRepository.find(id).orElseThrow());

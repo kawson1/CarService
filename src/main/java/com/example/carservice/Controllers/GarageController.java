@@ -1,7 +1,10 @@
 package com.example.carservice.Controllers;
 
+import com.example.carservice.ClientRoles;
 import com.example.carservice.Garage;
 import com.example.carservice.dto.GarageResponse;
+import jakarta.annotation.security.DeclareRoles;
+import jakarta.annotation.security.RolesAllowed;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 

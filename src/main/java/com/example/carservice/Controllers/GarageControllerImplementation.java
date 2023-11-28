@@ -1,19 +1,21 @@
 package com.example.carservice.Controllers;
 
+import com.example.carservice.ClientRoles;
 import com.example.carservice.Garage;
 import com.example.carservice.Controllers.Exception.BadRequestException;
 import com.example.carservice.Services.GarageService;
 import com.example.carservice.Services.VisitService;
 import com.example.carservice.dto.GarageResponse;
+import jakarta.annotation.security.DeclareRoles;
+import jakarta.annotation.security.RolesAllowed;
+import jakarta.ejb.EJB;
 import jakarta.inject.Inject;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.ws.rs.NotFoundException;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.WebApplicationException;
-import jakarta.ws.rs.core.Context;
-import jakarta.ws.rs.core.Response;
-import jakarta.ws.rs.core.UriBuilder;
-import jakarta.ws.rs.core.UriInfo;
+import jakarta.ws.rs.core.*;
 import lombok.extern.java.Log;
 
 import java.util.List;
@@ -21,11 +23,12 @@ import java.util.UUID;
 
 @Path("")
 @Log
+@DeclareRoles({ClientRoles.ADMIN, ClientRoles.USER})
 public class GarageControllerImplementation implements GarageController{
 
-    private final GarageService garageService;
+    private GarageService garageService;
 
-    private final VisitService visitService;
+    private VisitService visitService;
 
     /**
      * Allows to create {@link UriBuilder} based on current request.
@@ -34,23 +37,23 @@ public class GarageControllerImplementation implements GarageController{
 
     private HttpServletResponse response;
 
+
     @Context
     public void setResponse(HttpServletResponse response){
         this.response = response;
     }
 
     @Inject
-    public GarageControllerImplementation(
-            GarageService garageService,
-            VisitService visitService,
-            @SuppressWarnings("CdiInjectionPointsInspection") UriInfo uriInfo
-    ) {
-        this.garageService = garageService;
-        this.visitService = visitService;
-        this.uriInfo = uriInfo;
-    }
+    public GarageControllerImplementation(@SuppressWarnings("CdiInjectionPointsInspection") UriInfo uriInfo) { this.uriInfo = uriInfo; }
+
+    @EJB
+    public void setGarageService(GarageService service) { this.garageService = service; }
+
+    @EJB
+    public void setVisitService(VisitService service) { this.visitService = service; }
 
     @Override
+    @RolesAllowed({ClientRoles.ADMIN, ClientRoles.USER})
     public GarageResponse find(UUID id){
         return garageService.find(id)
                 .map(
@@ -64,12 +67,8 @@ public class GarageControllerImplementation implements GarageController{
                 .orElseThrow(NotFoundException::new);
     }
 
-//    public Garage find(String name){
-//        return garageService.find(name)
-//                .orElseThrow(NotFoundException::new);
-//    }
-
     @Override
+    @RolesAllowed({ClientRoles.ADMIN, ClientRoles.USER})
     public List<GarageResponse> getGarages(){
         return garageService.findAll()
                 .stream()
@@ -83,7 +82,9 @@ public class GarageControllerImplementation implements GarageController{
                 .toList();
     }
 
+
     @Override
+    @RolesAllowed(ClientRoles.ADMIN)
     public void create(Garage garage){
         try {
             garageService.create(garage);
@@ -98,6 +99,7 @@ public class GarageControllerImplementation implements GarageController{
     }
 
     @Override
+    @RolesAllowed(ClientRoles.ADMIN)
     public void update(Garage garage){
         try {
             garageService.update(garage);
@@ -107,6 +109,7 @@ public class GarageControllerImplementation implements GarageController{
     }
 
     @Override
+    @RolesAllowed(ClientRoles.ADMIN)
     public void delete(UUID id){
         garageService.find(id).ifPresentOrElse(
                 entity -> garageService.delete(id),

@@ -2,6 +2,7 @@ package com.example.carservice.View.Client;
 
 import com.example.carservice.Client;
 import com.example.carservice.Services.ClientService;
+import jakarta.ejb.EJB;
 import jakarta.faces.context.FacesContext;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Inject;
@@ -24,7 +25,7 @@ import static java.lang.System.out;
 @Named
 public class ClientEdit implements Serializable {
 
-    private final ClientService service;
+    private ClientService service;
 
     @Setter
     @Getter
@@ -40,11 +41,8 @@ public class ClientEdit implements Serializable {
     @Getter
     private Client client;
 
-    @Inject
-    public ClientEdit(ClientService service) {
-        this.service = service;
-    }
-
+    @EJB
+    public void setClientService(ClientService service) { this.service = service; }
 
     public void init() throws IOException{
         service.find(id)

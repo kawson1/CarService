@@ -9,4 +9,6 @@ public interface ClientRepository extends Repository<Client, UUID>{
 
     Optional<Client> findByName(String name);
 
+    Optional<Client> findByLogin(String login);
+
 }

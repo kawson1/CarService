@@ -2,6 +2,8 @@ package com.example.carservice.Services;
 
 import com.example.carservice.Garage;
 import com.example.carservice.Repositories.GarageRepository;
+import jakarta.ejb.LocalBean;
+import jakarta.ejb.Stateless;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
@@ -16,7 +18,8 @@ import java.util.UUID;
  * Force makes that every final property will be set null / 0 / false
  */
 @NoArgsConstructor(force = true)
-@ApplicationScoped
+@LocalBean
+@Stateless
 public class GarageService {
 
     private final GarageRepository garageRepository;
@@ -36,19 +39,16 @@ public class GarageService {
 
     public List<Garage> findAll() { return garageRepository.findAll(); }
 
-    @Transactional
     public void create(Garage garage){
         if(garage.getId() == null)
             garage.setId(UUID.randomUUID());
         garageRepository.create(garage);
     }
 
-    @Transactional
     public void update(Garage Garage){
         garageRepository.update(Garage);
     }
 
-    @Transactional
     public void delete(UUID id){
 /*
         garageRepository.delete(garageRepository.find(id).orElseThrow());

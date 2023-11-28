@@ -3,6 +3,7 @@ package com.example.carservice.View.Client;
 import com.example.carservice.Client;
 import com.example.carservice.Services.ClientService;
 import com.example.carservice.Services.VisitService;
+import jakarta.ejb.EJB;
 import jakarta.faces.context.FacesContext;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Inject;
@@ -23,7 +24,7 @@ import java.util.UUID;
 @Named
 public class ClientView implements Serializable {
 
-    private final ClientService service;
+    private ClientService service;
     private final VisitService visitService;
 
     @Setter
@@ -34,11 +35,12 @@ public class ClientView implements Serializable {
     private Client client;
 
     @Inject
-    public ClientView(ClientService service, VisitService visitService) {
-        this.service = service;
+    public ClientView(VisitService visitService) {
         this.visitService = visitService;
     }
 
+    @EJB
+    public void setService(ClientService service) { this.service = service; }
 
     public void init() throws IOException{
         service.find(id)

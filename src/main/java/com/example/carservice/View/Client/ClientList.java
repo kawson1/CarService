@@ -3,6 +3,7 @@ package com.example.carservice.View.Client;
 import com.example.carservice.Client;
 import com.example.carservice.Services.ClientService;
 import com.example.carservice.Services.VisitService;
+import jakarta.ejb.EJB;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
@@ -13,14 +14,16 @@ import java.util.List;
 @Named
 public class ClientList {
 
-    private final ClientService service;
+    private ClientService service;
     private final VisitService visitService;
 
     @Inject
-    public ClientList(ClientService service, VisitService visitService){
-        this.service = service;
+    public ClientList(VisitService visitService){
         this.visitService = visitService;
     }
+
+    @EJB
+    public void setService(ClientService service) { this.service = service; }
 
     public List<Client> getClients(){
         return service.findAll();

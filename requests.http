@@ -1,3 +1,13 @@
+# CREDENTIALS
+# YWRtaW46YWRtaW4=      - ADMIN
+# a2xpZW50MjprbGllbnQy - USER
+
+# CURRENT ROLE
+GET http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/clients/current-role
+Authorization: Basic YWRtaW46YWRtaW4=
+
+###
+
 # GET CLIENTS
 GET http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/clients
 
@@ -21,7 +31,9 @@ Content-Type: application/json
   "id": "c4804e0f-769e-4ab9-9ebe-0578fb4f00a6",
   "name": "NEW NAME",
   "surname": "KOWALSKI",
-  "birthdate": "1990-10-10"
+  "birthdate": "1990-10-10",
+  "login": "klient1",
+  "password": "password1"
 }
 
 ###
@@ -63,9 +75,9 @@ DELETE http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/clients/c4804e0f
 
 ## GARAGE ##
 
-
 # GET GARAGES
 GET http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/garages
+Authorization: Basic a2xpZW50MjprbGllbnQy
 
 ###
 
@@ -91,28 +103,16 @@ Content-Type: application/json
   "countEmployees": 5
 }
 
-###
-
-# CREATE GARAGE
-POST http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/garages
-Content-Type: application/json
-
-{
-  "id": "c4804e0f-769e-4ab9-9ebe-0578fb4f00a6",
-  "title": "STATIC GARAGE",
-  "city": "STATIC GARAGE",
-  "zipCode": "90-900",
-  "countEmployees": 5
-}
 
 ###
 
 # CREATE GARAGE
 POST http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/garages
 Content-Type: application/json
+Authorization: Basic YWRtaW46YWRtaW4=
 
 {
-  "title": "NEW GARAGE",
+  "title": "TEST",
   "city": "NEW CITY",
   "zipCode": "90-900",
   "countEmployees": 5
@@ -127,18 +127,58 @@ GET http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/visits
 
 ###
 
-# GET VISITS
+# GET ALL GARAGE VISITS
 GET http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/garages/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/visits
 
 ###
 
-# GET VISIT
+# GET SINGLE GARAGE VISIT
 GET http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/garages/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/visits/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
 
 ###
 
-# DELETE VISIT
+# DELETE GARAGE VISIT
 DELETE http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/garages/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/visits/3bd89b99-6c20-4ef7-9d8c-f8fca59e2a44
+
+###
+
+# GET ALL CLIENT VISITS
+GET http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/clients/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/visits
+
+###
+
+# GET SINGLE CLIENT VISIT
+GET http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/clients/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/visits/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
+
+###
+
+# DELETE CLIENT VISIT
+DELETE http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/clients/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/visits/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
+
+###
+
+# CREATE CLIENT VISIT
+POST http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/clients/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/visits
+Content-Type: application/json
+
+{
+  "date": "2021-11-11",
+  "VIN": "TESTOWYVIN123",
+  "garageId": "c4804e0f-769e-4ab9-9ebe-0578fb4f00a6"
+}
+
+###
+
+# UPDATE CLIENT VISIT
+PUT http://localhost:5000/simple-carservice-1.0-SNAPSHOT/api/clients/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/visits
+Content-Type: application/json
+
+{
+  "id": "6d2ec5f6-6825-40a7-a664-4fba5af876fd",
+  "date": "2021-11-11",
+  "VIN": "XXXXXXXXXXXXXXXXX"
+}
+
 
 ###
 
@@ -162,5 +202,6 @@ Content-Type: application/json
   "date": "2021-11-11",
   "VIN": "TESTOWYVIN123"
 }
+
 
 
